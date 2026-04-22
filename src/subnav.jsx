@@ -72,10 +72,16 @@ const SubNav = ({ current, lang = "es" }) => {
           <a href="index.html#pricing">{L ? "Pricing" : "Precios"}</a>
         </div>
         <div className="nav-right">
-          <a href={langSwitchUrl} style={{ display: "inline-flex", border: "1px solid var(--line-strong)", borderRadius: 999, overflow: "hidden", fontFamily: "var(--font-mono)", fontSize: 11, letterSpacing: "0.06em", textDecoration: "none" }}>
-            <span style={{ padding: "7px 12px", background: L ? "transparent" : "var(--ink)", color: L ? "var(--mute)" : "var(--paper)" }}>ES</span>
-            <span style={{ padding: "7px 12px", background: L ? "var(--ink)" : "transparent", color: L ? "var(--paper)" : "var(--mute)" }}>EN</span>
-          </a>
+          <div style={{ display: "inline-flex", border: "1px solid var(--line-strong)", borderRadius: 999, overflow: "hidden", fontFamily: "var(--font-mono)", fontSize: 11, letterSpacing: "0.06em" }}>
+            {L
+              ? <a href={langSwitchUrl} style={{ padding: "7px 12px", background: "transparent", color: "var(--mute)", textDecoration: "none" }}>ES</a>
+              : <span style={{ padding: "7px 12px", background: "var(--ink)", color: "var(--paper)", cursor: "default" }}>ES</span>
+            }
+            {L
+              ? <span style={{ padding: "7px 12px", background: "var(--ink)", color: "var(--paper)", cursor: "default" }}>EN</span>
+              : <a href={langSwitchUrl} style={{ padding: "7px 12px", background: "transparent", color: "var(--mute)", textDecoration: "none" }}>EN</a>
+            }
+          </div>
           <a href={demoUrl} className="btn btn-primary" style={{ padding: "8px 14px", fontSize: 13 }}>{L ? "Book a demo" : "Solicitar demo"}</a>
         </div>
       </div>
