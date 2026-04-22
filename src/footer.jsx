@@ -1,36 +1,8 @@
-// Footer + final CTA
+// Footer + final CTA — matches SubFooter structure
 function Footer({ t }) {
   const L = t._lang === "en";
   const demoUrl = L ? "https://nextscenario.com/book-demo/" : "https://nextscenario.com/es/reservar-demo/";
   const langSwitchUrl = L ? "../es/index.html" : "../en/index.html";
-
-  const productLinks = L ? [
-    { n: "Integrations", h: "integrations.html" },
-    { n: "Banks", h: "banks.html" },
-    { n: "Financial models", h: "financial-models.html" },
-    { n: "Forecast", h: "sales-forecast.html" },
-    { n: "Cashflow", h: "cashflow.html" },
-    { n: "Pricing", h: "#pricing" },
-  ] : [
-    { n: "Integraciones", h: "integraciones.html" },
-    { n: "Bancos", h: "bancos.html" },
-    { n: "Modelos financieros", h: "modelos-financieros.html" },
-    { n: "Forecast", h: "forecast-ventas.html" },
-    { n: "Cashflow", h: "cashflow.html" },
-    { n: "Precios", h: "#pricing" },
-  ];
-
-  const useCaseLinks = L ? [
-    { n: "Ecommerce", h: "use-case-ecommerce.html" },
-    { n: "Retail", h: "use-case-retail.html" },
-    { n: "SaaS", h: "use-case-saas.html" },
-    { n: "Marketplace", h: "use-case-marketplace.html" },
-  ] : [
-    { n: "Ecommerce", h: "caso-ecommerce.html" },
-    { n: "Retail", h: "caso-retail.html" },
-    { n: "SaaS", h: "caso-saas.html" },
-    { n: "Marketplace", h: "caso-marketplace.html" },
-  ];
 
   return (
     <>
@@ -68,16 +40,52 @@ function Footer({ t }) {
             </div>
             <div className="foot-col">
               <h5>{L ? "Product" : "Producto"}</h5>
-              {productLinks.map((l, i) => <a key={i} href={l.h}>{l.n}</a>)}
+              {(L ? [
+                { n: "Integrations", h: "integrations.html" },
+                { n: "Banks", h: "banks.html" },
+                { n: "Financial models", h: "financial-models.html" },
+                { n: "Forecast", h: "sales-forecast.html" },
+                { n: "Cashflow", h: "cashflow.html" },
+                { n: "Pricing", h: "#pricing" },
+              ] : [
+                { n: "Integraciones", h: "integraciones.html" },
+                { n: "Bancos", h: "bancos.html" },
+                { n: "Modelos financieros", h: "modelos-financieros.html" },
+                { n: "Forecast", h: "forecast-ventas.html" },
+                { n: "Cashflow", h: "cashflow.html" },
+                { n: "Precios", h: "#pricing" },
+              ]).map((l, i) => <a key={i} href={l.h}>{l.n}</a>)}
             </div>
             <div className="foot-col">
               <h5>{L ? "Use cases" : "Casos de uso"}</h5>
-              {useCaseLinks.map((l, i) => <a key={i} href={l.h}>{l.n}</a>)}
+              {(L ? [
+                { n: "Ecommerce", h: "use-case-ecommerce.html" },
+                { n: "Retail", h: "use-case-retail.html" },
+                { n: "SaaS", h: "use-case-saas.html" },
+                { n: "Marketplace", h: "use-case-marketplace.html" },
+              ] : [
+                { n: "Ecommerce", h: "caso-ecommerce.html" },
+                { n: "Retail", h: "caso-retail.html" },
+                { n: "SaaS", h: "caso-saas.html" },
+                { n: "Marketplace", h: "caso-marketplace.html" },
+              ]).map((l, i) => <a key={i} href={l.h}>{l.n}</a>)}
             </div>
             <div className="foot-col">
-              <h5>{L ? "Language" : "Idioma"}</h5>
+              <h5>{L ? "Company" : "Empresa"}</h5>
+              <a href={demoUrl}>{L ? "Book a demo" : "Solicitar demo"}</a>
               <a href={langSwitchUrl}>{L ? "Español (ES)" : "English (EN)"}</a>
-              <a href={demoUrl} style={{ marginTop: 14, display: "block" }}>{L ? "Book a demo" : "Solicitar demo"}</a>
+              <div style={{ marginTop: 16 }}>
+                <h5>Legal</h5>
+                {(L ? [
+                  { n: "Privacy policy", h: "privacy.html" },
+                  { n: "Terms of service", h: "terms.html" },
+                  { n: "Cookie policy", h: "cookies.html" },
+                ] : [
+                  { n: "Política de privacidad", h: "privacidad.html" },
+                  { n: "Términos y condiciones", h: "terminos.html" },
+                  { n: "Política de cookies", h: "cookies.html" },
+                ]).map((l, i) => <a key={i} href={l.h}>{l.n}</a>)}
+              </div>
             </div>
           </div>
           <div className="foot-meta">

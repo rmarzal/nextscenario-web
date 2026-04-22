@@ -4,7 +4,6 @@
 
 // Page mapping: ES filename <-> EN filename
 const PAGE_MAP = {
-  // ES -> EN
   "index.html": "index.html",
   "integraciones.html": "integrations.html",
   "bancos.html": "banks.html",
@@ -16,6 +15,9 @@ const PAGE_MAP = {
   "modelos-financieros.html": "financial-models.html",
   "forecast-ventas.html": "sales-forecast.html",
   "cashflow.html": "cashflow.html",
+  "privacidad.html": "privacy.html",
+  "terminos.html": "terms.html",
+  "cookies.html": "cookies.html",
   // EN -> ES (reverse)
   "integrations.html": "integraciones.html",
   "banks.html": "bancos.html",
@@ -26,6 +28,9 @@ const PAGE_MAP = {
   "use-case-marketplace.html": "caso-marketplace.html",
   "financial-models.html": "modelos-financieros.html",
   "sales-forecast.html": "forecast-ventas.html",
+  "privacy.html": "privacidad.html",
+  "terms.html": "terminos.html",
+  "cookies.html": "cookies.html",
 };
 
 function getLangSwitchUrl(current, lang) {
@@ -67,7 +72,7 @@ const SubNav = ({ current, lang = "es" }) => {
           <a href="index.html#pricing">{L ? "Pricing" : "Precios"}</a>
         </div>
         <div className="nav-right">
-          <a href={langSwitchUrl} className="lang-toggle-link" style={{ display: "inline-flex", border: "1px solid var(--line-strong)", borderRadius: 999, overflow: "hidden", fontFamily: "var(--font-mono)", fontSize: 11, letterSpacing: "0.06em", textDecoration: "none" }}>
+          <a href={langSwitchUrl} style={{ display: "inline-flex", border: "1px solid var(--line-strong)", borderRadius: 999, overflow: "hidden", fontFamily: "var(--font-mono)", fontSize: 11, letterSpacing: "0.06em", textDecoration: "none" }}>
             <span style={{ padding: "7px 12px", background: L ? "transparent" : "var(--ink)", color: L ? "var(--mute)" : "var(--paper)" }}>ES</span>
             <span style={{ padding: "7px 12px", background: L ? "var(--ink)" : "transparent", color: L ? "var(--paper)" : "var(--mute)" }}>EN</span>
           </a>
@@ -81,6 +86,7 @@ const SubNav = ({ current, lang = "es" }) => {
 const SubFooter = ({ lang = "es", current }) => {
   const L = lang === "en";
   const langSwitchUrl = getLangSwitchUrl(current, lang);
+  const demoUrl = L ? "https://nextscenario.com/book-demo/" : "https://nextscenario.com/es/reservar-demo/";
   return (
     <footer>
       <div className="container">
@@ -122,9 +128,21 @@ const SubFooter = ({ lang = "es", current }) => {
             ]).map((l, i) => <a key={i} href={l.h}>{l.n}</a>)}
           </div>
           <div className="foot-col">
-            <h5>{L ? "Language" : "Idioma"}</h5>
+            <h5>{L ? "Company" : "Empresa"}</h5>
+            <a href={demoUrl}>{L ? "Book a demo" : "Solicitar demo"}</a>
             <a href={langSwitchUrl}>{L ? "Español (ES)" : "English (EN)"}</a>
-            <a href={L ? "https://nextscenario.com/book-demo/" : "https://nextscenario.com/es/reservar-demo/"} style={{ marginTop: 14, display: "block" }}>{L ? "Book a demo" : "Solicitar demo"}</a>
+            <div style={{ marginTop: 16 }}>
+              <h5>{L ? "Legal" : "Legal"}</h5>
+              {(L ? [
+                { n: "Privacy policy", h: "privacy.html" },
+                { n: "Terms of service", h: "terms.html" },
+                { n: "Cookie policy", h: "cookies.html" },
+              ] : [
+                { n: "Política de privacidad", h: "privacidad.html" },
+                { n: "Términos y condiciones", h: "terminos.html" },
+                { n: "Política de cookies", h: "cookies.html" },
+              ]).map((l, i) => <a key={i} href={l.h}>{l.n}</a>)}
+            </div>
           </div>
         </div>
         <div className="foot-meta">
