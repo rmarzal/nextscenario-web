@@ -1,12 +1,13 @@
 // App root — uses SubNav for consistent menu across all pages
-const { useState: useStateApp, useEffect: useEffectApp } = React;
+// Language is determined by URL path (/es/ or /en/), not localStorage
+const { useEffect: useEffectApp } = React;
 
 function App() {
-  const [lang, setLang] = useStateApp(() => localStorage.getItem("ns_lang") || "es");
-  const [tweaks, setTweaks] = useStateApp(() => ({ ...(window.TWEAK_DEFAULTS || {}) }));
+  // Detect language from URL path
+  const lang = window.location.pathname.includes("/en/") ? "en" : "es";
+  const [tweaks] = React.useState(() => ({ ...(window.TWEAK_DEFAULTS || {}) }));
 
   useEffectApp(() => {
-    localStorage.setItem("ns_lang", lang);
     document.documentElement.lang = lang;
   }, [lang]);
 
@@ -21,7 +22,7 @@ function App() {
     }, { threshold: 0.12 });
     document.querySelectorAll(".reveal").forEach(el => io.observe(el));
     return () => io.disconnect();
-  }, [lang]);
+  }, []);
 
   const t = { ...window.TR[lang], _lang: lang };
 
@@ -46,7 +47,6 @@ function App() {
       <Pricing t={t} />
       <FAQ t={t} />
       <Footer t={t} />
-      <Tweaks tweaks={tweaks} setTweaks={setTweaks} lang={lang} />
     </>
   );
 }
