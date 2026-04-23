@@ -8,7 +8,7 @@ lang: 'es'
 tags: []
 heroImage: 'https://nextscenario.com/wp-content/uploads/2023/11/ltv.png'
 heroAlt: 'Cómo calcular el Lifetime Value en SaaS. Guía rápida'
-translationOf: ""
+translationOf: 'life-time-value-saas'
 author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/lifetime-value-saas/'
 needsReview: false

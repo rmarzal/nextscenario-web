@@ -8,7 +8,7 @@ lang: 'en'
 tags: []
 heroImage: 'https://nextscenario.com/wp-content/uploads/2022/06/7.jpg'
 heroAlt: 'SaaS ARPU: a very useful metric in a Saas model'
-translationOf: ""
+translationOf: 'arpu-saas'
 author: 'nextscenario'
 migratedFrom: 'https://nextscenario.com/arpu-saas-what-is/'
 needsReview: false

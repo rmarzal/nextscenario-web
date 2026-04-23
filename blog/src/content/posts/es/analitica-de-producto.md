@@ -8,7 +8,7 @@ lang: 'es'
 tags: []
 heroImage: 'https://nextscenario.com/wp-content/uploads/2023/11/image-2.png'
 heroAlt: 'Qué es la analítica de producto:  Una guía completa para medir y'
-translationOf: ""
+translationOf: 'product-analytics-a-complete-guide'
 author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/analitica-de-producto/'
 needsReview: false

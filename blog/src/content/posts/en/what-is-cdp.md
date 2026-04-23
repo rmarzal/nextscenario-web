@@ -8,7 +8,7 @@ lang: 'en'
 tags: []
 heroImage: 'https://nextscenario.com/wp-content/uploads/2023/02/customer-data-platformENG-1024x576-1.png'
 heroAlt: 'What is a customer data platform (CDP) and what are its advantages?'
-translationOf: ""
+translationOf: 'que-es-un-cdp'
 author: 'nextscenario'
 migratedFrom: 'https://nextscenario.com/what-is-cdp/'
 needsReview: false

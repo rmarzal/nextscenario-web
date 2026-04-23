@@ -8,7 +8,7 @@ lang: 'es'
 tags: []
 heroImage: 'https://nextscenario.com/wp-content/uploads/2023/11/como-calcular-el-churn.png'
 heroAlt: 'Churn Rate en Saas: ¿Cómo medirlo e identificarlo?'
-translationOf: ""
+translationOf: 'churn-rate-in-saas-how-to-measure-and-identify-it'
 author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/churn-rate-saas/'
 needsReview: false

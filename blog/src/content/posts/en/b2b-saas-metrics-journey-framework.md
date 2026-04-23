@@ -8,7 +8,7 @@ lang: 'en'
 tags: []
 heroImage: 'https://nextscenario.com/wp-content/uploads/2023/11/111.jpeg'
 heroAlt: 'B2b Saas Metrics Journey Framework'
-translationOf: ""
+translationOf: 'saas-metrics-journey-framework'
 author: 'nextscenario'
 migratedFrom: 'https://nextscenario.com/b2b-saas-metrics-journey-framework/'
 needsReview: false

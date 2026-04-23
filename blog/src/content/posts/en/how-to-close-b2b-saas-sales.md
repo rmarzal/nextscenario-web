@@ -8,7 +8,7 @@ lang: 'en'
 tags: []
 heroImage: 'https://nextscenario.com/wp-content/uploads/2023/08/Saas-Sales-funnel.jpg'
 heroAlt: 'How to close B2B SaaS sales systematically'
-translationOf: ""
+translationOf: 'ventas-saas-b2b'
 author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/how-to-close-b2b-saas-sales/'
 needsReview: false

@@ -8,7 +8,7 @@ lang: 'es'
 tags: []
 heroImage: 'https://nextscenario.com/wp-content/uploads/2022/06/ingresos-periodicos-mensuales-del-mrr-concepto-con-palabras-clave-personas-e-iconos-ilustracion-vectorial-plana-aislado-en-235245750-1024x509-1.jpg'
 heroAlt: 'MRR SaaS: Qué es y cómo medirlo'
-translationOf: ""
+translationOf: 'mrr-saas'
 author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/mrr-saas/'
 needsReview: false

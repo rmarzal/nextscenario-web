@@ -8,7 +8,7 @@ lang: 'es'
 tags: []
 heroImage: 'https://nextscenario.com/wp-content/uploads/2023/12/image-1024x476.png'
 heroAlt: 'Análisis de las 8 mejores herramientas de Product Analytics para'
-translationOf: ""
+translationOf: 'best-product-analytics-tools'
 author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/mejores-herramientas-product-analytics/'
 needsReview: false

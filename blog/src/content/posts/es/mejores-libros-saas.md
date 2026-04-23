@@ -8,7 +8,7 @@ lang: 'es'
 tags: []
 heroImage: 'https://nextscenario.com/wp-content/uploads/2022/12/a.jpg'
 heroAlt: 'Mejores libros Saas en 2025'
-translationOf: ""
+translationOf: 'best-saas-books'
 author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/mejores-libros-saas/'
 needsReview: false

@@ -8,7 +8,7 @@ lang: 'es'
 tags: []
 heroImage: 'https://nextscenario.com/wp-content/uploads/2024/11/MARGEN-NETO-VS-BRUTO.jpg'
 heroAlt: 'Margen Bruto y Margen Neto: Diferencias, fórmulas y consejos'
-translationOf: ""
+translationOf: 'gross-margin-vs-net-margin'
 author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/margen-neto-y-margen-bruto/'
 needsReview: false

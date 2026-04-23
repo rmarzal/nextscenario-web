@@ -8,7 +8,7 @@ lang: 'es'
 tags: []
 heroImage: 'https://nextscenario.com/wp-content/uploads/2023/11/image-12.png'
 heroAlt: 'Excel Forecasting para Startups Saas: Una guía completa'
-translationOf: ""
+translationOf: 'excel-forecasting-for-startups'
 author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/excel-forecasting-para-startups/'
 needsReview: false

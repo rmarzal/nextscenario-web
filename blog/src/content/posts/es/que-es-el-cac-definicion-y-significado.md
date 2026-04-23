@@ -8,7 +8,7 @@ lang: 'es'
 tags: []
 heroImage: 'https://nextscenario.com/wp-content/uploads/2023/12/Que-es-el-Cac-1024x683.jpg'
 heroAlt: '¿Que es el CAC? Definición y Significado'
-translationOf: ""
+translationOf: 'what-is-cac-definition-and-calculation'
 author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/que-es-el-cac-definicion-y-significado/'
 needsReview: false

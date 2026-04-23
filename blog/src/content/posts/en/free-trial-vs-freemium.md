@@ -8,7 +8,7 @@ lang: 'en'
 tags: []
 heroImage: 'https://nextscenario.com/wp-content/uploads/2023/06/product-led-funnel-1-1024x509.png'
 heroAlt: 'Modelo Freemium vs Pruebas gratuitas'
-translationOf: ""
+translationOf: 'prueba-gratuita-vs-freemium-descubre-cual-es-la-mejor-opcion-para-tu-startup-saas'
 author: 'nextscenario'
 migratedFrom: 'https://nextscenario.com/free-trial-vs-freemium/'
 needsReview: false

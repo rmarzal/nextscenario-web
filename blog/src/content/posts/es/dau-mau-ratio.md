@@ -8,7 +8,7 @@ lang: 'es'
 tags: []
 heroImage: 'https://nextscenario.com/wp-content/uploads/2022/07/1-1024x576-1.jpg'
 heroAlt: 'DAU MAU Ratio: Mide el stickiness de tu Saas'
-translationOf: ""
+translationOf: 'dau-mau-ratio-saas'
 author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/dau-mau-ratio/'
 needsReview: false
