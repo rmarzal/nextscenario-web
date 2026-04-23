@@ -1,9 +1,10 @@
 // Footer + final CTA — matches SubFooter structure
 function Footer({ t }) {
   const L = t._lang === "en";
-  const demoUrl = L ? "https://nextscenario.com/book-demo/" : "https://nextscenario.com/es/reservar-demo/";
+  const demoUrl = getDemoUrl(t._lang);
   // EN at root, ES at /es/
   const langSwitchUrl = L ? "es/index.html" : "../index.html";
+  const registerUrl = L ? REGISTER_EN : REGISTER_ES;
 
   return (
     <>
@@ -14,7 +15,7 @@ function Footer({ t }) {
               <div className="cta-h" dangerouslySetInnerHTML={{ __html: t.ctaFinal.title.replace(/(decidir|deciding)/i, '<em>$1</em>') }} />
               <div className="cta-sub">{t.ctaFinal.sub}</div>
               <div style={{ marginTop: 28, display: "flex", gap: 12, flexWrap: "wrap" }}>
-                <a href={demoUrl} className="btn btn-accent">{t.ctaFinal.primary}<Icon name="arrow-right" size={14} /></a>
+                <a href={registerUrl} className="btn btn-accent">{t.ctaFinal.primary}<Icon name="arrow-right" size={14} /></a>
                 <a href={demoUrl} className="btn" style={{ color: "var(--paper)", border: "1px solid color-mix(in oklab, var(--paper) 28%, transparent)", background: "transparent" }}>{t.ctaFinal.secondary}</a>
               </div>
             </div>
@@ -74,6 +75,8 @@ function Footer({ t }) {
             <div className="foot-col">
               <h5>{L ? "Company" : "Empresa"}</h5>
               <a href={demoUrl}>{L ? "Book a demo" : "Solicitar demo"}</a>
+              <a href={registerUrl}>{L ? "Sign up free" : "Registro gratuito"}</a>
+              <a href={LOGIN_URL}>Login</a>
               <a href={langSwitchUrl}>{L ? "Español (ES)" : "English (EN)"}</a>
               <div style={{ marginTop: 16 }}>
                 <h5>Legal</h5>

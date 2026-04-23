@@ -13,8 +13,8 @@ function WhatsApp({ t }) {
               {t.whatsapp.bullets.map((b, i) => <li key={i}><span className="chk" style={{ color: "var(--ink)" }}>✓</span>{b}</li>)}
             </ul>
             <div style={{ marginTop: 28, display: "flex", gap: 12, flexWrap: "wrap" }}>
-              <a href={t._lang === "en" ? "https://nextscenario.com/book-demo/" : "https://nextscenario.com/es/reservar-demo/"} className="btn btn-primary">{t._lang === "en" ? "Book a demo" : "Solicitar demo"}<Icon name="arrow-right" size={14} /></a>
-              <a href="#product" className="btn btn-ghost">{t._lang === "en" ? "See product" : "Ver producto"}</a>
+              <a href={getRegisterUrl(t._lang)} className="btn btn-primary">{t._lang === "en" ? "Start free" : "Empieza gratis"}<Icon name="arrow-right" size={14} /></a>
+              <a href={getDemoUrl(t._lang)} className="btn btn-ghost">{t._lang === "en" ? "Book a demo" : "Solicitar demo"}</a>
             </div>
           </div>
 

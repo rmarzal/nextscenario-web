@@ -21,7 +21,7 @@ function Pricing({ t }) {
               <ul className="price-list">
                 {p.features.map((f, j) => <li key={j}><span className="chk">✓</span>{f}</li>)}
               </ul>
-              <a href={t._lang === "en" ? "https://nextscenario.com/book-demo/" : "https://nextscenario.com/es/reservar-demo/"} className={"btn " + (p.hi ? "btn-accent" : "btn-primary")} style={{ justifyContent: "center" }}>{p.cta}<Icon name="arrow-right" size={14} /></a>
+              <a href={getRegisterUrl(t._lang)} className={"btn " + (p.hi ? "btn-accent" : "btn-primary")} style={{ justifyContent: "center" }}>{p.cta}<Icon name="arrow-right" size={14} /></a>
             </div>
           ))}
         </div>

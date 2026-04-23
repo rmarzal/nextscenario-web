@@ -31,8 +31,8 @@ function ModelosPage() {
           <h1 className="sub-h1">P&L y <em>modelo financiero</em> vivo. Sin <span className="hl">Excel</span>.</h1>
           <p className="sub-lede">Cuenta de pérdidas y ganancias, balance y estructura de costes que se actualizan solos con los datos reales de tu negocio. Cierra el mes el día 1.</p>
           <div className="sub-ctas">
-            <a href="https://nextscenario.com/es/reservar-demo/" className="btn btn-primary">Ver demo del modelo →</a>
-            <a href="https://nextscenario.com/es/reservar-demo/" className="btn btn-ghost">Descargar plantilla</a>
+            <a href="reservar-demo.html" className="btn btn-primary">Ver demo del modelo →</a>
+            <a href="reservar-demo.html" className="btn btn-ghost">Descargar plantilla</a>
           </div>
         </div>
       </section>

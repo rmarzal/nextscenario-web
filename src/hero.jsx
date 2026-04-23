@@ -74,8 +74,8 @@ function Hero({ t, tweaks }) {
             <h1 className="h1" dangerouslySetInnerHTML={{ __html: renderHeadline(t._lang === 'en' ? (tweaks.headline_en || t.hero.h1) : (tweaks.headline_es || t.hero.h1), t._lang) }} />
             <p className="lede">{t._lang === 'en' ? (tweaks.subhead_en) : (tweaks.subhead_es)}</p>
             <div className="hero-ctas">
-              <a href={t._lang === "en" ? "https://nextscenario.com/book-demo/" : "https://nextscenario.com/es/reservar-demo/"} className="btn btn-primary"><Icon name="zap" size={14} />{t._lang === "en" ? "Book a demo" : "Solicitar demo"}<Icon name="arrow-right" size={14} /></a>
-              <a href="#product" className="btn btn-ghost">{t._lang === "en" ? "See product" : "Ver producto"}</a>
+              <a href={getRegisterUrl(t._lang)} className="btn btn-primary"><Icon name="zap" size={14} />{t._lang === "en" ? "Start free" : "Empieza gratis"}<Icon name="arrow-right" size={14} /></a>
+              <a href={getDemoUrl(t._lang)} className="btn btn-ghost">{t._lang === "en" ? "Book a demo" : "Solicitar demo"}</a>
             </div>
             <div className="hero-trust">{t.hero.trust}</div>
           </div>

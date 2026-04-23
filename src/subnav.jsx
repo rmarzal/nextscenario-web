@@ -1,7 +1,9 @@
 // Shared sub-page nav + footer — bilingual
 // EN pages at root (/), ES pages in /es/
-// All internal links are relative (same directory)
-// Language switch: from root -> es/ , from es/ -> ../
+// Links
+const REGISTER_EN = "https://nextscenario.es/register?&utm_source=landingweb&utm_medium=button&utm_campaign=home&utm_content=english";
+const REGISTER_ES = "https://nextscenario.es/register?&es?utm_source=landingweb&utm_medium=button&utm_campaign=home&utm_content=spanish";
+const LOGIN_URL = "https://nextscenario.es/login";
 
 // Page mapping for language switch
 const PAGE_MAP_ES_TO_EN = {
@@ -19,25 +21,25 @@ const PAGE_MAP_ES_TO_EN = {
   "privacidad.html": "privacy.html",
   "terminos.html": "terms.html",
   "cookies.html": "cookies.html",
+  "reservar-demo.html": "book-demo.html",
 };
 const PAGE_MAP_EN_TO_ES = {};
 Object.entries(PAGE_MAP_ES_TO_EN).forEach(([es, en]) => { PAGE_MAP_EN_TO_ES[en] = es; });
 
 function getLangSwitchUrl(current, lang) {
   if (lang === "es") {
-    // From /es/page.html -> go to /page-en.html (root)
-    const enFile = PAGE_MAP_ES_TO_EN[current] || "index.html";
-    return "../" + enFile;
+    return "../" + (PAGE_MAP_ES_TO_EN[current] || "index.html");
   } else {
-    // From /page.html (root) -> go to /es/page-es.html
-    const esFile = PAGE_MAP_EN_TO_ES[current] || "index.html";
-    return "es/" + esFile;
+    return "es/" + (PAGE_MAP_EN_TO_ES[current] || "index.html");
   }
 }
 
+function getDemoUrl(lang) { return lang === "en" ? "book-demo.html" : "reservar-demo.html"; }
+function getRegisterUrl(lang) { return lang === "en" ? REGISTER_EN : REGISTER_ES; }
+
 const SubNav = ({ current, lang = "es" }) => {
   const L = lang === "en";
-  const demoUrl = L ? "https://nextscenario.com/book-demo/" : "https://nextscenario.com/es/reservar-demo/";
+  const demoUrl = getDemoUrl(lang);
   const langSwitchUrl = getLangSwitchUrl(current, lang);
 
   const links = L ? [
@@ -77,6 +79,7 @@ const SubNav = ({ current, lang = "es" }) => {
               : <a href={langSwitchUrl} style={{ padding: "7px 12px", background: "transparent", color: "var(--mute)", textDecoration: "none" }}>EN</a>
             }
           </div>
+          <a href={LOGIN_URL} className="btn btn-ghost" style={{ padding: "8px 14px", fontSize: 13 }}>Login</a>
           <a href={demoUrl} className="btn btn-primary" style={{ padding: "8px 14px", fontSize: 13 }}>{L ? "Book a demo" : "Solicitar demo"}</a>
         </div>
       </div>
@@ -87,7 +90,8 @@ const SubNav = ({ current, lang = "es" }) => {
 const SubFooter = ({ lang = "es", current }) => {
   const L = lang === "en";
   const langSwitchUrl = getLangSwitchUrl(current, lang);
-  const demoUrl = L ? "https://nextscenario.com/book-demo/" : "https://nextscenario.com/es/reservar-demo/";
+  const demoUrl = getDemoUrl(lang);
+  const registerUrl = getRegisterUrl(lang);
   return (
     <footer>
       <div className="container">
@@ -131,6 +135,8 @@ const SubFooter = ({ lang = "es", current }) => {
           <div className="foot-col">
             <h5>{L ? "Company" : "Empresa"}</h5>
             <a href={demoUrl}>{L ? "Book a demo" : "Solicitar demo"}</a>
+            <a href={registerUrl}>{L ? "Sign up free" : "Registro gratuito"}</a>
+            <a href={LOGIN_URL}>Login</a>
             <a href={langSwitchUrl}>{L ? "Español (ES)" : "English (EN)"}</a>
             <div style={{ marginTop: 16 }}>
               <h5>Legal</h5>
@@ -157,7 +163,8 @@ const SubFooter = ({ lang = "es", current }) => {
 
 const SubCTA = ({ title, sub, lang = "es" }) => {
   const L = lang === "en";
-  const demoUrl = L ? "https://nextscenario.com/book-demo/" : "https://nextscenario.com/es/reservar-demo/";
+  const demoUrl = getDemoUrl(lang);
+  const registerUrl = getRegisterUrl(lang);
   const t = title || (L ? "Start deciding with real-time data." : "Empieza a decidir con datos en tiempo real.");
   const s = sub || (L ? "14-day free trial. No card. 30-minute setup." : "14 días gratis. Sin tarjeta. Instalación en 30 minutos.");
   return (
@@ -168,8 +175,8 @@ const SubCTA = ({ title, sub, lang = "es" }) => {
             <div className="cta-h"><em>{t}</em></div>
             <div className="cta-sub">{s}</div>
             <div style={{ marginTop: 24, display: "flex", gap: 12, flexWrap: "wrap" }}>
-              <a href={demoUrl} className="btn btn-accent">{L ? "Book a demo →" : "Solicitar demo →"}</a>
-              <a href="index.html#pricing" className="btn" style={{ color: "var(--paper)", border: "1px solid color-mix(in oklab, var(--paper) 28%, transparent)", background: "transparent" }}>{L ? "See pricing" : "Ver precios"}</a>
+              <a href={registerUrl} className="btn btn-accent">{L ? "Start free →" : "Empieza gratis →"}</a>
+              <a href={demoUrl} className="btn" style={{ color: "var(--paper)", border: "1px solid color-mix(in oklab, var(--paper) 28%, transparent)", background: "transparent" }}>{L ? "Book a demo" : "Solicitar demo"}</a>
             </div>
           </div>
         </div>
@@ -179,4 +186,5 @@ const SubCTA = ({ title, sub, lang = "es" }) => {
 };
 
 window.SubNav = SubNav; window.SubFooter = SubFooter; window.SubCTA = SubCTA;
-window.getLangSwitchUrl = getLangSwitchUrl;
+window.getLangSwitchUrl = getLangSwitchUrl; window.getDemoUrl = getDemoUrl; window.getRegisterUrl = getRegisterUrl;
+window.REGISTER_EN = REGISTER_EN; window.REGISTER_ES = REGISTER_ES; window.LOGIN_URL = LOGIN_URL;

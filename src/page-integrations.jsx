@@ -85,7 +85,7 @@ function IntegrationsPage() {
           <p className="sub-lede">Más de 40 integraciones nativas con bancos, pasarelas, ERPs, ecommerce, marketplaces y herramientas de marketing. Lectura segura, sincronización continua.</p>
           <div className="sub-ctas">
             <a href="#catalogo" className="btn btn-primary">Ver todas las integraciones →</a>
-            <a href="https://nextscenario.com/es/reservar-demo/" className="btn btn-ghost">Solicitar una integración</a>
+            <a href="reservar-demo.html" className="btn btn-ghost">Solicitar una integración</a>
           </div>
 
           <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 12, marginTop: 48 }}>

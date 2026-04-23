@@ -4,7 +4,7 @@ function UseCasePage({ cfg }) {
   const L = lang === "en";
   const homeHref = "index.html";
   const casesHref = L ? "use-cases.html" : "casos-de-uso.html";
-  const demoUrl = L ? "https://nextscenario.com/book-demo/" : "https://nextscenario.com/es/reservar-demo/";
+  const demoUrl = getDemoUrl(lang);
 
   return (
     <>

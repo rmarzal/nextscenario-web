@@ -85,7 +85,7 @@ function IntegrationsPageEN() {
           <p className="sub-lede">40+ native integrations with banks, payment gateways, ERPs, ecommerce, marketplaces and marketing tools. Secure read access, continuous sync.</p>
           <div className="sub-ctas">
             <a href="#catalogo" className="btn btn-primary">View all integrations →</a>
-            <a href="https://nextscenario.com/book-demo/" className="btn btn-ghost">Request an integration</a>
+            <a href="book-demo.html" className="btn btn-ghost">Request an integration</a>
           </div>
 
           <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 12, marginTop: 48 }}>

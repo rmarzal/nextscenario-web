@@ -31,8 +31,8 @@ function ModelosPageEN() {
           <h1 className="sub-h1">Live P&L and <em>financial model</em>. No <span className="hl">Excel</span>.</h1>
           <p className="sub-lede">Profit and loss statement, balance sheet and cost structure that update automatically with your real business data. Close the month on day 1.</p>
           <div className="sub-ctas">
-            <a href="https://nextscenario.com/book-demo/" className="btn btn-primary">See model demo →</a>
-            <a href="https://nextscenario.com/book-demo/" className="btn btn-ghost">Download template</a>
+            <a href="book-demo.html" className="btn btn-primary">See model demo →</a>
+            <a href="book-demo.html" className="btn btn-ghost">Download template</a>
           </div>
         </div>
       </section>
