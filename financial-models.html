@@ -4,19 +4,19 @@
 <meta charset="utf-8" />
 <meta name="robots" content="noindex, nofollow" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<link rel="alternate" hreflang="es" href="https://nextscenario.com/es/forecast-ventas.html" />
-<link rel="alternate" hreflang="en" href="https://nextscenario.com/en/sales-forecast.html" />
-<link rel="alternate" hreflang="x-default" href="https://nextscenario.com/es/forecast-ventas.html" />
-<link rel="canonical" href="https://nextscenario.com/en/sales-forecast.html" />
-<meta name="description" content="Project sales with optimistic, base and conservative scenarios. Historical data and pipeline." />
-<meta property="og:title" content="Sales Forecast · NextScenario" />
-<meta property="og:description" content="Project sales with optimistic, base and conservative scenarios. Historical data and pipeline." />
+<link rel="alternate" hreflang="es" href="https://nextscenario.com/es/modelos-financieros.html" />
+<link rel="alternate" hreflang="en" href="https://nextscenario.com/financial-models.html" />
+<link rel="alternate" hreflang="x-default" href="https://nextscenario.com/es/modelos-financieros.html" />
+<link rel="canonical" href="https://nextscenario.com/financial-models.html" />
+<meta name="description" content="Live P&L and financial models. No Excel. Close the month on day 1." />
+<meta property="og:title" content="Financial Models · NextScenario" />
+<meta property="og:description" content="Live P&L and financial models. No Excel. Close the month on day 1." />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://nextscenario.com/en/sales-forecast.html" />
+<meta property="og:url" content="https://nextscenario.com/financial-models.html" />
 <meta property="og:locale" content="en_US" />
 <meta property="og:locale:alternate" content="es_ES" />
 <meta property="og:site_name" content="NextScenario" />
-<title>Sales Forecast · NextScenario</title>
+<title>Financial Models · NextScenario</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600&family=Geist:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -323,9 +323,9 @@ section { padding: 96px 0; border-top: 1px solid var(--line); }
 }
 .cta-card::after { content: ""; position: absolute; inset: 0; background: radial-gradient(700px 300px at 0% 100%, color-mix(in oklab, var(--accent) 18%, transparent), transparent 55%); pointer-events: none; }
 @media (max-width: 880px) { .cta-card { grid-template-columns: 1fr; padding: 48px 28px; } }
-.cta-h { font-size: clamp(32px, 4.2vw, 58px); letter-spacing: -0.025em; font-weight: 500; line-height: 1.08; margin-bottom: 12px; }
+.cta-h { font-size: clamp(36px, 4.6vw, 64px); letter-spacing: -0.03em; font-weight: 500; line-height: 0.98; }
 .cta-h em { font-family: var(--font-serif); font-style: italic; font-weight: 400; }
-.cta-sub { color: color-mix(in oklab, var(--paper) 68%, transparent); margin-top: 24px; font-size: 16px; max-width: 460px; line-height: 1.5; }
+.cta-sub { color: color-mix(in oklab, var(--paper) 68%, transparent); margin-top: 18px; font-size: 16px; max-width: 460px; }
 
 footer { padding: 56px 0 40px; border-top: 1px solid var(--line); }
 .foot-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 40px; }
@@ -498,25 +498,16 @@ footer { padding: 56px 0 40px; border-top: 1px solid var(--line); }
 </style>
 </head>
 <body>
-<template id="__bundler_thumbnail" data-bg-color="#F6F4EE">
-  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
-    <rect width="1200" height="800" fill="#F6F4EE"/>
-    <path d="M180 520 Q360 440 540 460 T900 320 T1020 260" fill="none" stroke="#0A1230" stroke-width="6"/>
-    <path d="M180 560 Q360 540 540 560 T900 500 T1020 460" fill="none" stroke="#5B8CFF" stroke-width="4" stroke-dasharray="8 8"/>
-    <path d="M180 600 Q360 620 540 640 T900 660 T1020 640" fill="none" stroke="#E24A4A" stroke-width="4" stroke-dasharray="8 8"/>
-    <circle cx="1020" cy="260" r="14" fill="#D4FF3F" stroke="#0A1230" stroke-width="3"/>
-    <text x="180" y="240" font-family="serif" font-style="italic" font-size="84" fill="#0A1230">Forecast</text>
-  </svg>
-</template>
 <div id="root"></div>
 
 <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
 
-<script type="text/babel" src="../src/icons.jsx"></script>
-<script type="text/babel" src="../src/charts.jsx"></script>
-<script type="text/babel" src="../src/subnav.jsx"></script>
-<script type="text/babel" src="../src/page-forecast-en.jsx"></script>
+<script type="text/babel" src="src/icons.jsx"></script>
+<script type="text/babel" src="src/brandlogos.jsx"></script>
+<script type="text/babel" src="src/charts.jsx"></script>
+<script type="text/babel" src="src/subnav.jsx"></script>
+<script type="text/babel" src="src/page-modelos-en.jsx"></script>
 </body>
 </html>

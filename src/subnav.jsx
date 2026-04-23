@@ -1,9 +1,10 @@
-// Shared sub-page nav + footer — bilingual (ES/EN)
-// Both ES and EN pages live in /es/ and /en/ subdirectories
-// All internal links are relative (same directory), language switch uses ../
+// Shared sub-page nav + footer — bilingual
+// EN pages at root (/), ES pages in /es/
+// All internal links are relative (same directory)
+// Language switch: from root -> es/ , from es/ -> ../
 
-// Page mapping: ES filename <-> EN filename
-const PAGE_MAP = {
+// Page mapping for language switch
+const PAGE_MAP_ES_TO_EN = {
   "index.html": "index.html",
   "integraciones.html": "integrations.html",
   "bancos.html": "banks.html",
@@ -18,26 +19,20 @@ const PAGE_MAP = {
   "privacidad.html": "privacy.html",
   "terminos.html": "terms.html",
   "cookies.html": "cookies.html",
-  // EN -> ES (reverse)
-  "integrations.html": "integraciones.html",
-  "banks.html": "bancos.html",
-  "use-cases.html": "casos-de-uso.html",
-  "use-case-ecommerce.html": "caso-ecommerce.html",
-  "use-case-retail.html": "caso-retail.html",
-  "use-case-saas.html": "caso-saas.html",
-  "use-case-marketplace.html": "caso-marketplace.html",
-  "financial-models.html": "modelos-financieros.html",
-  "sales-forecast.html": "forecast-ventas.html",
-  "privacy.html": "privacidad.html",
-  "terms.html": "terminos.html",
-  "cookies.html": "cookies.html",
 };
+const PAGE_MAP_EN_TO_ES = {};
+Object.entries(PAGE_MAP_ES_TO_EN).forEach(([es, en]) => { PAGE_MAP_EN_TO_ES[en] = es; });
 
 function getLangSwitchUrl(current, lang) {
-  const otherLang = lang === "en" ? "es" : "en";
-  const currentFile = current || "index.html";
-  const otherFile = PAGE_MAP[currentFile] || "index.html";
-  return "../" + otherLang + "/" + otherFile;
+  if (lang === "es") {
+    // From /es/page.html -> go to /page-en.html (root)
+    const enFile = PAGE_MAP_ES_TO_EN[current] || "index.html";
+    return "../" + enFile;
+  } else {
+    // From /page.html (root) -> go to /es/page-es.html
+    const esFile = PAGE_MAP_EN_TO_ES[current] || "index.html";
+    return "es/" + esFile;
+  }
 }
 
 const SubNav = ({ current, lang = "es" }) => {
@@ -138,7 +133,7 @@ const SubFooter = ({ lang = "es", current }) => {
             <a href={demoUrl}>{L ? "Book a demo" : "Solicitar demo"}</a>
             <a href={langSwitchUrl}>{L ? "Español (ES)" : "English (EN)"}</a>
             <div style={{ marginTop: 16 }}>
-              <h5>{L ? "Legal" : "Legal"}</h5>
+              <h5>Legal</h5>
               {(L ? [
                 { n: "Privacy policy", h: "privacy.html" },
                 { n: "Terms of service", h: "terms.html" },
@@ -184,4 +179,4 @@ const SubCTA = ({ title, sub, lang = "es" }) => {
 };
 
 window.SubNav = SubNav; window.SubFooter = SubFooter; window.SubCTA = SubCTA;
-window.PAGE_MAP = PAGE_MAP; window.getLangSwitchUrl = getLangSwitchUrl;
+window.getLangSwitchUrl = getLangSwitchUrl;

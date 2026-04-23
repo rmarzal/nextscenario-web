@@ -4,7 +4,8 @@ const { useEffect: useEffectApp } = React;
 
 function App() {
   // Detect language from URL path
-  const lang = window.location.pathname.includes("/en/") ? "en" : "es";
+  // EN at root (/), ES at /es/
+  const lang = window.location.pathname.includes("/es/") ? "es" : "en";
   const [tweaks] = React.useState(() => ({ ...(window.TWEAK_DEFAULTS || {}) }));
 
   useEffectApp(() => {

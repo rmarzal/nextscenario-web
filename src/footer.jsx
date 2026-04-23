@@ -2,7 +2,8 @@
 function Footer({ t }) {
   const L = t._lang === "en";
   const demoUrl = L ? "https://nextscenario.com/book-demo/" : "https://nextscenario.com/es/reservar-demo/";
-  const langSwitchUrl = L ? "../es/index.html" : "../en/index.html";
+  // EN at root, ES at /es/
+  const langSwitchUrl = L ? "es/index.html" : "../index.html";
 
   return (
     <>
