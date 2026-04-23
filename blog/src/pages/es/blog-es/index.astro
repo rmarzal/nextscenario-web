@@ -1,0 +1,33 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import PostCard from '../../../components/PostCard.astro';
+import { listAbsUrl } from '../../../lib/i18n';
+
+const posts = (await getCollection('post', ({ data }) => data.lang === 'es' && !data.draft)).sort(
+  (a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime()
+);
+
+const title = 'Blog — NextScenario';
+const description =
+  'Finanzas SaaS sin relleno. Unit economics, cash planning y reporting explicados por operadores. Datos primero.';
+---
+
+<BaseLayout title={title} description={description} lang="es" canonical={listAbsUrl('es')}>
+  <section class="blog-hero">
+    <div class="container">
+      <p class="eyebrow">Blog de NextScenario</p>
+      <h1>Finanzas que <em>de verdad</em> funcionan.</h1>
+      <p class="lede">
+        Deep dives sobre métricas SaaS, planificación de caja y reporting — escrito por operadores,
+        no por consultores.
+      </p>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="post-grid">
+      {posts.map((post) => <PostCard post={post} />)}
+    </div>
+  </section>
+</BaseLayout>

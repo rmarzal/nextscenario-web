@@ -1,10 +1,42 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "bash ./build-site.sh",
+  "outputDirectory": "__out",
+  "cleanUrls": true,
+  "trailingSlash": true,
   "headers": [
     {
       "source": "/(.*)",
       "headers": [
         { "key": "X-Robots-Tag", "value": "noindex, nofollow" }
       ]
+    },
+    {
+      "source": "/_assets/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
     }
+  ],
+  "redirects": [
+    { "source": "/feed/:path*", "destination": "/", "permanent": true },
+    { "source": "/comments/feed/", "destination": "/", "permanent": true },
+    { "source": "/:slug/amp/", "destination": "/:slug/", "permanent": true },
+    { "source": "/es/:slug/amp/", "destination": "/es/:slug/", "permanent": true },
+    { "source": "/wp-admin/:path*", "destination": "/", "permanent": true },
+    { "source": "/wp-login.php", "destination": "/", "permanent": true },
+    { "source": "/author/:slug/", "destination": "/blog/", "permanent": true },
+    { "source": "/es/author/:slug/", "destination": "/es/blog-es/", "permanent": true },
+    { "source": "/tag/:slug/", "destination": "/blog/", "permanent": true },
+    { "source": "/category/:slug/", "destination": "/blog/", "permanent": true },
+    { "source": "/es/etiqueta/:slug/", "destination": "/es/blog-es/", "permanent": true },
+    { "source": "/es/categoria/:slug/", "destination": "/es/blog-es/", "permanent": true },
+
+    { "source": "/margen-neto-y-margen-bruto/", "destination": "/es/margen-neto-y-margen-bruto/", "permanent": true },
+    { "source": "/analisis-de-correlacion/", "destination": "/es/analisis-de-correlacion/", "permanent": true },
+    { "source": "/cuenta-de-perdidas-y-ganancias/", "destination": "/es/cuenta-de-perdidas-y-ganancias/", "permanent": true },
+    { "source": "/estudio-de-cohortes/", "destination": "/es/estudio-de-cohortes/", "permanent": true },
+    { "source": "/software-cashflow/", "destination": "/es/software-cashflow/", "permanent": true },
+    { "source": "/plantilla-de-dashboard-power-bi-crea-visualizaciones-impactantes-en-minutos/", "destination": "/es/plantilla-de-dashboard-power-bi-crea-visualizaciones-impactantes-en-minutos/", "permanent": true }
   ]
 }

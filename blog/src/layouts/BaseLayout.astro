@@ -1,0 +1,128 @@
+---
+import '../styles/blog.css';
+import { UI, type Lang, listUrl, postAbsUrl } from '../lib/i18n';
+
+interface Props {
+  title: string;
+  description: string;
+  lang: Lang;
+  canonical?: string;
+  ogImage?: string;
+  alternates?: Array<{ lang: Lang; slug: string }>;
+  noIndex?: boolean;
+  jsonLd?: Record<string, any>;
+}
+
+const {
+  title,
+  description,
+  lang,
+  canonical,
+  ogImage = 'https://nextscenario.com/og-default.png',
+  alternates = [],
+  noIndex = false,
+  jsonLd,
+} = Astro.props;
+
+const canonicalHref = canonical ?? new URL(Astro.url.pathname, Astro.site).toString();
+const ui = UI[lang];
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light" />
+
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalHref} />
+
+    {noIndex && <meta name="robots" content="noindex, nofollow" />}
+
+    {/* hreflang pair + x-default → Spanish (per brand book default) */}
+    {alternates.map((a) => (
+      <link rel="alternate" hreflang={a.lang} href={postAbsUrl(a.lang, a.slug)} />
+    ))}
+    {alternates.find((a) => a.lang === 'es') && (
+      <link
+        rel="alternate"
+        hreflang="x-default"
+        href={postAbsUrl('es', alternates.find((a) => a.lang === 'es')!.slug)}
+      />
+    )}
+
+    {/* Open Graph */}
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalHref} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:locale" content={lang === 'es' ? 'es_ES' : 'en_US'} />
+    <meta property="og:site_name" content="NextScenario" />
+
+    {/* Twitter */}
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="alternate" type="application/rss+xml" title="NextScenario Blog (ES)" href="/es/blog-es/rss.xml" />
+    <link rel="alternate" type="application/rss+xml" title="NextScenario Blog (EN)" href="/blog/rss.xml" />
+
+    {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container site-header-inner">
+        <a href={lang === 'es' ? '/es/' : '/'} class="logo" aria-label="NextScenario">
+          <span class="logo-mark" aria-hidden="true"></span>
+          <span>NextScenario</span>
+        </a>
+        <nav class="site-nav">
+          <a href={listUrl(lang)}>{ui.blogTitle}</a>
+          <a href={lang === 'es' ? '/es/reservar-demo' : '/book-demo'}>
+            {lang === 'es' ? 'Solicitar demo' : 'Book a demo'}
+          </a>
+          {alternates.length > 0 && (
+            <a
+              class="lang-switch"
+              href={postAbsUrl(
+                alternates[0].lang,
+                alternates[0].slug,
+              )}
+            >
+              {lang === 'es' ? 'EN' : 'ES'}
+            </a>
+          )}
+          {alternates.length === 0 && (
+            <a class="lang-switch" href={listUrl(lang === 'es' ? 'en' : 'es')}>
+              {lang === 'es' ? 'EN' : 'ES'}
+            </a>
+          )}
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer-inner">
+        <span>© {new Date().getFullYear()} NextScenario — Financial Data</span>
+        <nav style="display:flex;gap:20px;">
+          <a href={listUrl(lang)}>{ui.blogTitle}</a>
+          <a href={lang === 'es' ? '/es/terminos' : '/terms'}>
+            {lang === 'es' ? 'Términos' : 'Terms'}
+          </a>
+          <a href={lang === 'es' ? '/es/privacidad' : '/privacy'}>
+            {lang === 'es' ? 'Privacidad' : 'Privacy'}
+          </a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

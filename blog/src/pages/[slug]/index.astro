@@ -1,0 +1,97 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { formatDate, postAbsUrl, UI } from '../../lib/i18n';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('post', ({ data }) => data.lang === 'en' && !data.draft);
+  return posts.map((post) => ({ params: { slug: post.data.slug }, props: { post } }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+const {
+  title,
+  description,
+  pubDate,
+  updatedDate,
+  heroImage,
+  heroAlt,
+  tags,
+  translationOf,
+  canonical,
+  author,
+} = post.data;
+
+const alternates = translationOf ? [{ lang: 'es' as const, slug: translationOf }] : [];
+const ui = UI.en;
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: title,
+  description,
+  image: heroImage,
+  datePublished: pubDate.toISOString(),
+  dateModified: (updatedDate ?? pubDate).toISOString(),
+  author: { '@type': 'Organization', name: author, url: 'https://nextscenario.com' },
+  publisher: {
+    '@type': 'Organization',
+    name: 'NextScenario',
+    logo: {
+      '@type': 'ImageObject',
+      url: 'https://nextscenario.com/og-default.png',
+    },
+  },
+  mainEntityOfPage: postAbsUrl('en', post.data.slug),
+  inLanguage: 'en',
+};
+---
+
+<BaseLayout
+  title={`${title} — NextScenario`}
+  description={description}
+  lang="en"
+  canonical={canonical ?? postAbsUrl('en', post.data.slug)}
+  ogImage={heroImage}
+  alternates={alternates}
+  jsonLd={jsonLd}
+>
+  <article class="article">
+    <div class="container">
+      <header>
+        <p class="eyebrow">
+          <a href="/blog/" style="color:inherit;">← {ui.backToBlog}</a>
+        </p>
+        <h1>{title}</h1>
+        <p class="lede">{description}</p>
+        <div class="meta">
+          <span>{ui.publishedOn} {formatDate(pubDate, 'en')}</span>
+          {updatedDate && <span>{ui.updatedOn} {formatDate(updatedDate, 'en')}</span>}
+          <span>{author}</span>
+        </div>
+        {tags.length > 0 && (
+          <div class="tag-row">
+            {tags.map((t: string) => <span class="tag-pill">{t}</span>)}
+          </div>
+        )}
+      </header>
+
+      {heroImage && (
+        <div class="hero-image">
+          <img src={heroImage} alt={heroAlt ?? title} loading="eager" />
+        </div>
+      )}
+
+      <div class="prose">
+        <Content />
+      </div>
+
+      <aside class="cta-block">
+        <h3>See your own numbers like this — in real time.</h3>
+        <p>NextScenario plugs into your banks, Stripe and ad platforms. Cash, revenue and margins update live.</p>
+        <a class="btn" href="/book-demo">Book a demo →</a>
+      </aside>
+    </div>
+  </article>
+</BaseLayout>
