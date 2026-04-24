@@ -10,13 +10,13 @@ const posts = (await getCollection('post', ({ data }) => data.lang === 'es' && !
 
 const title = 'Blog — NextScenario';
 const description =
-  'Finanzas SaaS sin relleno. Unit economics, cash planning y reporting explicados por operadores. Datos primero.';
+  'Finanzas que de verdad funcionan: deep dives sobre métricas SaaS, planificación de caja y reporting. Escrito por operadores, no por consultores.';
 ---
 
 <BaseLayout title={title} description={description} lang="es" canonical={listAbsUrl('es')}>
   <section class="blog-hero">
     <div class="container">
-      <p class="eyebrow">Blog de NextScenario</p>
+      <p class="eyebrow">Blog NextScenario</p>
       <h1>Finanzas que <em>de verdad</em> funcionan.</h1>
       <p class="lede">
         Deep dives sobre métricas SaaS, planificación de caja y reporting — escrito por operadores,
