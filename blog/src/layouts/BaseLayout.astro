@@ -83,7 +83,7 @@ const ui = UI[lang];
         </a>
         <nav class="site-nav">
           <a href={listUrl(lang)}>{ui.blogTitle}</a>
-          <a href={lang === 'es' ? '/es/reservar-demo' : '/book-demo'}>
+          <a href={lang === 'es' ? '/es/reservar-demo.html' : '/book-demo.html'}>
             {lang === 'es' ? 'Solicitar demo' : 'Book a demo'}
           </a>
           {alternates.length > 0 ? (
@@ -120,10 +120,10 @@ const ui = UI[lang];
         <span>© {new Date().getFullYear()} NextScenario — Financial Data</span>
         <nav style="display:flex;gap:20px;">
           <a href={listUrl(lang)}>{ui.blogTitle}</a>
-          <a href={lang === 'es' ? '/es/terminos' : '/terms'}>
+          <a href={lang === 'es' ? '/es/terminos.html' : '/terms.html'}>
             {lang === 'es' ? 'Términos' : 'Terms'}
           </a>
-          <a href={lang === 'es' ? '/es/privacidad' : '/privacy'}>
+          <a href={lang === 'es' ? '/es/privacidad.html' : '/privacy.html'}>
             {lang === 'es' ? 'Privacidad' : 'Privacy'}
           </a>
         </nav>
