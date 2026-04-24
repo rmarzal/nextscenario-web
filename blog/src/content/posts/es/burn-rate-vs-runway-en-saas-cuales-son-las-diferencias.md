@@ -40,7 +40,7 @@ El runway es la cantidad de meses que una startup puede sobrevivir, antes de que
 
 Esta es la fórmula para el cálculo del runway:
 
-> Runway = Caja/ burn rate
+> `Runway = Caja/ burn rate`
 
 Tener en cuenta el runway es clave ya que te permite anticiparte y buscar soluciones antes de quedarte sin caja y cerrar.
 
@@ -50,7 +50,7 @@ Vamos con un ejemplo:
 
 Supongamos que te gastas 10.000 euros al mes. Has conseguido levantar 200.000 euros a través de business angels, pero aún no tienes ingresos. Vamos a calcular el runway:
 
-> Runway = 200.000 / 10.000 = 20 meses
+> `Runway = 200.000 / 10.000 = 20 meses`
 
 Trabajas durante un mes y luego se te ocurre una nueva y revolucionaria función de software que no puedes desarrollar solo. Traer un equipo de I+D y alquilar una oficina por 10.000 dólares más se convierte en una necesidad.
 

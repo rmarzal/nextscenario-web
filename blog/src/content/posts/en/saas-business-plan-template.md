@@ -148,9 +148,9 @@ The detailed sections of the main cashflow tab are explained below:
   * Total new MRR
   * Lost MRR: Lost recurring revenue
   * Lost MRR Acount contractions: Lost recurring revenue from customers continuing but downgrading to a lower plan.
-  * Customer churn:Net new MRR= Net recurring revenue.
+  * Customer churn:Net new `MRR= Net recurring revenue.`
   * MRR end of month: MRR at the end of the month.
-  * ARPA= Average revenue per customer
+  * `ARPA= Average revenue per customer`
   * Sales_cycle_days
 
 ### Retention metrics
@@ -191,7 +191,7 @@ Fees and taxes:
   * Marketing campaigns
   * Total CAC (blended with teams): Customer acquisition cost with all campaigns and sales and marketing team costs.
   * CAC Campaign marketing = CAC with marketing campaigns only.
-  * CAC Sales = CAC with sales team costs only.
+  * CAC `Sales = CAC with sales team costs only.`
 
 **INVESTMENT**
 

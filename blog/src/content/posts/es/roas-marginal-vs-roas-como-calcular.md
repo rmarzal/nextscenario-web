@@ -31,7 +31,7 @@ El Roas es una de las métricas de captación más utilizadas en campañas de pa
 
 ### Formula de roas
 
-**Roas= Ingresos directos obtenidos por ads/ Total de gasto en ads**
+**`Roas= Ingresos directos obtenidos por ads/ Total de gasto en ads**`
 
 ## Calculadora Roas
 

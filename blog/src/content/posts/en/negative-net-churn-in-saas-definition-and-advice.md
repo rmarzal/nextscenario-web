@@ -32,8 +32,8 @@ We can distinguish churn in two ways:
 Churn calculation:
 
   * **Customer churn rate =** (churned customers) / (customers at the start of the period).
-  * **Gross Monthly Recurring Revenue (MRR) Churn Rate =** (churn + MRR shrinkage) / (MRR at start of period)
-  * **Net MRR Churn Rate =**(churn + MRR contraction) - (MRR expansion + MRR reactivation) / (MRR at the beginning of the period)
+  * **Gross Monthly Recurring Revenue (MRR) Churn `Rate =** (churn + MRR shrinkage) / (MRR at start of period)`
+  * **Net MRR Churn `Rate =**(churn + MRR contraction) - (MRR expansion + MRR reactivation) / (MRR at the beginning of the period)`
 
 ![](https://nextscenario.com/wp-content/uploads/2023/07/1111111-1-1024x321-1.png)
 
@@ -45,7 +45,7 @@ In short, negative churn is the only type of churn you want.
 
 Negative net Monthly Recurring Revenue (MRR) churn exists when the MRRs gained from existing customers through expansion and reactivation exceed the MRRs lost through churn and contraction. Simply put: the customers you keep bring in more money than those who leave bring out.
 
-Net Churn MRR = (Churn + Shrinkage MRR) - (Expansion and Reactivation MRR) / (MRR at the beginning of the period)
+Net Churn `MRR = (Churn + Shrinkage MRR) - (Expansion and Reactivation MRR) / (MRR at the beginning of the period)`
 
 ![](https://nextscenario.com/wp-content/uploads/2023/07/222222-1.png)
 

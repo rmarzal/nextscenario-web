@@ -102,7 +102,7 @@ El coste de adquisición de cliente determina cuánto nos cuesta conseguir un cl
 Para calcularlo podemos hacerlo a través de la siguiente fórmula:
     
     
-                             CAC = Inversión Marketing o ventas /Número Nuevos Clientes
+                             `CAC = Inversión Marketing o ventas /Número Nuevos Clientes`
 
 Donde en la inversión en marketing debemos imputar todos los gastos de marketing: personal, ads, herramientas…
 
@@ -113,10 +113,10 @@ Es recomendable calcular el coste de captación de leads y usuarios, para saber 
 ![](https://nextscenario.com/wp-content/uploads/2023/11/3.png)
     
     
-                             Coste Adquisición Leads = Inversión Marketing o sales /Número Leads Totales
+                             Coste Adquisición `Leads = Inversión Marketing o sales /Número Leads Totales`
     
     
-                             Coste Adquisición Usuario = Inversión Marketing o sales /Número nuevos usuarios
+                             Coste Adquisición `Usuario = Inversión Marketing o sales /Número nuevos usuarios`
 
 **Fuentes de datos:** Excel, Base de datos, G.Analytics, CRM: Hubspot, Sales Force, Mailchimp…
 
@@ -173,7 +173,7 @@ Por lo tanto el ratio DAU MAU, es la proporción de usuarios activos mensuales, 
 > _Paul Graham, VC y cofundador de Y Combinator._
     
     
-                             Stickines= Daily Active Users /  Monthly Active Users = DAU/MAU Ratio
+                             Stickines= Daily Active Users /  Monthly Active `Users = DAU/MAU Ratio`
 
 Como es una métrica más especifica y en algunos casos menos conocida, voy con algunos consejos sobre el cálculo del DAU / MAU:
 
@@ -257,7 +257,7 @@ El MRR puede tener los siguientes movimientos:
 Una métrica clave para ver el crecimiento es el Nuevo MRR Neto.
     
     
-                             Nuevo Mrr Neto Mes = Mrr Nuevo Mes + Mrr Expansión + MRR Resurrected - Churn Mrr - Contraction Mrr
+                             Nuevo Mrr Neto `Mes = Mrr Nuevo Mes + Mrr Expansión + MRR Resurrected - Churn Mrr - Contraction Mrr`
 
 El resultado nos indica cuanto MRR estás ganando o perdiendo cada periodo.
 
@@ -288,7 +288,7 @@ El MRR nos permite medir con precisión el crecimiento y el momentum. En un SaaS
 El ARR nos indica los ingresos que tenemos anualmente.
     
     
-                             ARR= 12 * MRR
+                             `ARR= 12 * MRR`
 
 Cuando no tenemos un MRR mensual en constante crecimiento, es decir, si nuestro gráfico no es un palo de hockey, sino es más un sierra :(, es interesante mostrar el ARR en algunos informes, en lugar del MRR, ya que ayuda a “maquillar” nuestros números.
 
@@ -299,10 +299,10 @@ Cuando no tenemos un MRR mensual en constante crecimiento, es decir, si nuestro 
 Es el pago medio entre todos los usuarios o cuentas de clientes.
     
     
-                             ARPU= Total Revenue/ Total user
+                             `ARPU= Total Revenue/ Total user`
     
     
-                             ARPA= Total Revenue/ Total amounts o customers
+                             `ARPA= Total Revenue/ Total amounts o customers`
 
 ![](https://nextscenario.com/wp-content/uploads/2023/11/8.png)
 
@@ -313,7 +313,7 @@ _El churn es el grado en que estamos perdiendo, usuarios, clientes o ingresos._
 ¿Cómo calcularlo?
     
     
-                             Customer Churn Rate= Número Clientes Baja /Total Clientes Inicio Periodo
+                             Customer Churn `Rate= Número Clientes Baja /Total Clientes Inicio Periodo`
 
 Hay 2 maneras de identificar el churn, las empresas lo suelen ofrecer diferentes acciones:
 
@@ -327,7 +327,7 @@ Es mejor reconocer el churn al final del periodo de prueba.
 Es muy aconsejable poder calcular el user Churn y el MRR Churn.
     
     
-                             User Churn= Num Usuarios Baja/ UsuariosTotalesInicioPeriodo
+                             User `Churn= Num Usuarios Baja/ UsuariosTotalesInicioPeriodo`
 
 El User Churn nos indica el porcentaje de usuarios que perdemos.
 
@@ -338,7 +338,7 @@ Nos indica cuanto dinero dejamos de ingresar debido a la baja de clientes.
 Es relevante calcular el revenue churn, porque hay distintos niveles de pricing y depende mucho de sí se ha dado de baja alguien con un plan superior o un básico.
     
     
-                             Revenue Churn = (Mrr Perdido – Mrr Obtenido Por Expansión) / Mrr Inicial * 100
+                             Revenue `Churn = (Mrr Perdido – Mrr Obtenido Por Expansión) / Mrr Inicial * 100`
 
 ### Revenue Growth Rate:
 
@@ -347,7 +347,7 @@ La tasa de crecimiento de ingresos es una de las métricas principales que indic
 La podemos calcular con la siguiente formula:
     
     
-                             Mrr Growth Rate = [Net Mrr Month B - Net Mrr Month A ]/Net Mrr Month A* 100
+                             Mrr Growth `Rate = [Net Mrr Month B - Net Mrr Month A ]/Net Mrr Month A* 100`
     
     
                              También se puede calcular a través del ARPU
@@ -361,8 +361,8 @@ Puedes usar nuestra herramientas gratuita de data analysis para Saas para calcul
 La tasa de retención de usuarios, es una métrica clave para indicar el valor que aportamos a nuestros clientes. Esta métrica nos indica que porcentaje de clientes a los que les corresponde renovar su plan, lo acaba haciendo.
     
     
-                             Customer Retention Rate= 
-    Num Usuarios Renuevan / Num Usuarios Totales Que Tienen Que Renovar
+                             Customer Retention `Rate= 
+    Num Usuarios Renuevan / Num Usuarios Totales Que Tienen Que Renovar`
 
 Retención de clientes alta = baja tasa de churn → churn y fidelización altamente relacionados
 
@@ -371,7 +371,7 @@ Lo que es la ecuación de retención es simple de aplicar, lo complicado es defi
 ### Net Retention Rate
     
     
-                             Net Retention Rate = Gross Retention + Upsell
+                             Net Retention `Rate = Gross Retention + Upsell`
 
 ### Gross Margin
 
@@ -414,7 +414,7 @@ El LTV es el valor que nos dejan nuestros clientes durante todo su ciclo de vida
 Se puede calcular con las siguientes fórmulas.
     
     
-                             LTV = ARPA x Average Customer Lifetime x Gross Margin
+                             `LTV = ARPA x Average Customer Lifetime x Gross Margin`
 
 Donde,
     
@@ -424,7 +424,7 @@ Donde,
 Por lo tanto se puede calcular directamente desde esta fórmula:
     
     
-                             LTV = ARPA x Gross Margin/Churn Rate
+                             `LTV = ARPA x Gross Margin/Churn Rate`
 
 ### CAC Payback
 

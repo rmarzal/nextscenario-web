@@ -43,11 +43,11 @@ El cálculo del MAU es una tarea esencial para cualquier empresa que desee medir
 
 Para calcular el MAU, se puede utilizar la siguiente fórmula:
 
-**MAU = (Número de usuarios únicos que iniciaron sesión durante el mes / Cantidad total de usuarios únicos) x 100%**
+**`MAU = (Número de usuarios únicos que iniciaron sesión durante el mes / Cantidad total de usuarios únicos) x 100%**`
 
 Por ejemplo, si una aplicación tiene 10.000 usuarios únicos y 5.000 de ellos iniciaron sesión durante el mes, entonces el MAU sería:
 
-**MAU = (5,000 / 10,000) x 100% = 50%**
+**`MAU = (5,000 / 10,000) x 100% = 50%**`
 
 Es importante tener en cuenta que el MAU no solo mide la cantidad de usuarios que han iniciado sesión en un período de tiempo determinado, sino también la frecuencia y la duración de su uso. Por lo tanto, el MAU es una métrica clave para evaluar la retención de usuarios y la satisfacción del cliente.
 

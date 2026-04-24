@@ -35,7 +35,7 @@ The CMRR is based on **monthly recurring revenue that has been recognized** for 
 
 Also, it is essential to consider that there is no universally accepted formula for the term CMRR, which means that your company has some latitude to use the most accurate metric to measure your data. However, most software-as-a-service (SaaS) companies employ a formula similar to the following:
 
-**CMRR = MRR + New Bookings + Expansion MRR- Churned MRR + Upgrades **.
+**`CMRR = MRR + New Bookings + Expansion MRR- Churned MRR + Upgrades **.`
 
 The first component is the **MRR** , which is the amount of recurring revenue normalized to a monthly amount. The second component is **New Bookings** , which is new business committed where both parties have signed the contract. The third component is **Churn MRR** , which is the rate at which a company loses subscribers. Finally, **downgrades and upgrades** are also considered in the formula, as they represent positive or negative changes in subscriber accounts. Together, these components provide an accurate view of a SaaS company's committed recurring revenue.
 

@@ -29,7 +29,7 @@ The Gross Dollar Retention formula is relatively straightforward. It involves di
 
 Here's the formula:
 
-`GDR = (End of Period Revenue / Start of Period Revenue) * 100`
+``GDR = (End of Period Revenue / Start of Period Revenue) * 100``
 
 Let's break down the components of this formula:
 

@@ -27,7 +27,7 @@ EBITDA is particularly useful when comparing companies within the same industry,
 
 Calculating EBITDA is relatively straightforward. You start with a company's net income, then add back interest, taxes, depreciation, and amortization. The formula looks like this:
 
-EBITDA = Net Income + Interest + Taxes + Depreciation + Amortization
+`EBITDA = Net Income + Interest + Taxes + Depreciation + Amortization`
 
 By adding these items back to net income, EBITDA provides a clearer picture of a company's [operational profitability](/?p=13310), as it excludes non-operating expenses.
 
@@ -41,7 +41,7 @@ Just like EBITDA, Cash EBITDA is a useful tool for comparing the financial perfo
 
 The calculation for Cash EBITDA is a bit more complex than for EBITDA. It starts with EBITDA, but then adds back any non-cash expenses and subtracts any non-cash income. The formula looks like this:
 
-Cash EBITDA = EBITDA + Non-Cash Expenses - Non-Cash Income
+Cash `EBITDA = EBITDA + Non-Cash Expenses - Non-Cash Income`
 
 This calculation provides a clearer picture of a company's ability to generate cash flow from its operations.
 

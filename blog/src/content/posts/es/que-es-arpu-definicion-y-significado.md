@@ -51,7 +51,7 @@ A continuación, se presenta un ejemplo de cálculo del ARPU:
 
 Supongamos que una empresa de streaming de música ha obtenido ingresos totales de $100,000 durante el mes de octubre. Durante ese mismo mes, la empresa ha tenido 10,000 usuarios activos. El ingreso promedio por usuario se calcula dividiendo los ingresos totales entre el número de usuarios activos:
 
-ARPU = $100,000 / 10,000 = $10
+`ARPU = $100,000 / 10,000 = $10`
 
 En este caso, el ARPU de la empresa de streaming de música durante el mes de octubre es de $10.
 
@@ -119,7 +119,7 @@ En resumen, mejorar el ARPU requiere de una combinación de estrategias de segme
 
 **¿Cómo se calcula el ARPU?**
 
-El ARPU se calcula dividiendo los ingresos totales de una empresa por el número total de usuarios activos durante un período de tiempo determinado. La fórmula matemática es: ARPU = ingresos totales / número de usuarios activos.
+El ARPU se calcula dividiendo los ingresos totales de una empresa por el número total de usuarios activos durante un período de tiempo determinado. La fórmula matemática es: `ARPU = ingresos totales / número de usuarios activos.`
 
 **¿Qué es el ARPU en finanzas?**
 
@@ -135,8 +135,8 @@ Los ingresos por ventas se calculan multiplicando el precio de venta de un produ
 
 **¿Qué es el CLTV y cómo se calcula?**
 
-El CLTV (Customer Lifetime Value) es una métrica utilizada para medir el valor monetario de un cliente a lo largo de su ciclo de vida. Se calcula multiplicando el valor promedio de compra del cliente por el número de compras que realiza durante su ciclo de vida y luego multiplicando ese número por la duración del ciclo de vida del cliente. La fórmula matemática es: CLTV = valor promedio de compra x número de compras x duración del ciclo de vida del cliente.
+El CLTV (Customer Lifetime Value) es una métrica utilizada para medir el valor monetario de un cliente a lo largo de su ciclo de vida. Se calcula multiplicando el valor promedio de compra del cliente por el número de compras que realiza durante su ciclo de vida y luego multiplicando ese número por la duración del ciclo de vida del cliente. La fórmula matemática es: `CLTV = valor promedio de compra x número de compras x duración del ciclo de vida del cliente.`
 
 **¿Qué es el CAC Payback y por qué es importante?**
 
-El CAC Payback (Customer Acquisition Cost Payback) es una métrica utilizada para medir el tiempo que tarda una empresa en recuperar el costo de adquisición de un cliente. Es importante porque ayuda a las empresas a evaluar la eficacia de sus estrategias de marketing y a determinar cuánto tiempo y recursos deben invertir en la adquisición de nuevos clientes. La fórmula matemática es: CAC Payback = costo de adquisición de cliente / ingresos por cliente.
+El CAC Payback (Customer Acquisition Cost Payback) es una métrica utilizada para medir el tiempo que tarda una empresa en recuperar el costo de adquisición de un cliente. Es importante porque ayuda a las empresas a evaluar la eficacia de sus estrategias de marketing y a determinar cuánto tiempo y recursos deben invertir en la adquisición de nuevos clientes. La fórmula matemática es: CAC `Payback = costo de adquisición de cliente / ingresos por cliente.`

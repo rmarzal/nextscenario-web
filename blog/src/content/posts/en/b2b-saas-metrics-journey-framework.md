@@ -102,7 +102,7 @@ The customer acquisition cost determines how much it costs us to acquire a custo
 
 To calculate it we can do it through the following formula:
 
-> CAC = Marketing Investment/Number of New Customers 
+> `CAC = Marketing Investment/Number of New Customers`
 
 Where in the marketing investment we must impute all marketing expenses: staff, ads, tools….
 
@@ -116,7 +116,7 @@ It is advisable to calculate the cost of lead and user acquisition, to know the 
 
 > Cost of Leads Acquisition = Marketing Investment/Number of Total Leads 
 
-> User Acquisition Cost = Marketing Investment/Number of new users
+> User Acquisition `Cost = Marketing Investment/Number of new users`
 
 **Data Sources:** Excel, Database, G.Analytics, CRM: Hubspot, Sales Force, Mailchimp….
 
@@ -158,7 +158,7 @@ Monthly active users (MAU) are the total active users during a period of a month
 
 The ratio of daily active users (DAU) to monthly active users (MAU) measures the “stickness of a product”, i.e. the frequency with which people interact with it.
 
-> Stickines= Daily Active Users / Monthly Active Users = DAU/MAU Ratio
+> Stickines= Daily Active Users / Monthly Active `Users = DAU/MAU Ratio`
 
 As we have seen above, DAU, is the number of unique users interacting with the product in a one day window, MAU is the number of unique users interacting with the product over a 30 day period (usually 30 consecutive days), therefore the DAU / MAU ratio, is the proportion of monthly active users, interacting with your product, in a day.
 
@@ -240,7 +240,7 @@ The MRR can have the following movements:
 
 A key metric to see growth at B2b Saas Metrics Journey is Net New MRR.
 
-> Net New Mrr Net Month = Mrr New Month + Mrr Expansion + MRR Resurrected — Churn Mrr — Contraction Mrr
+> Net New Mrr Net `Month = Mrr New Month + Mrr Expansion + MRR Resurrected — Churn Mrr — Contraction Mrr`
 
 The result tells us how much MRR you are gaining or losing each period.
 
@@ -268,7 +268,7 @@ MRR allows us to accurately measure growth and momentum. In a SaaS you can make 
 
 The ARR tells us how much revenue we have annually.
 
-> ARR= 12 * MRR
+> `ARR= 12 * MRR`
 
 When we don’t have a constantly growing monthly MRR, i.e. if our graph is not a field hockey stick, but more of a saw :(, it is interesting to show the ARR in some reports, instead of the MRR, as it helps to “make up” our numbers.
 
@@ -280,9 +280,9 @@ It is the average payment among all users or customer accounts.
 
 ![](https://nextscenario.com/wp-content/uploads/2023/11/8.png)
 
-> ARPU= Total Revenue/ Total user
+> `ARPU= Total Revenue/ Total user`
 
-> ARPA= Total Revenue/ Total amounts or customers
+> `ARPA= Total Revenue/ Total amounts or customers`
 
 ### Saas Churn rate
 
@@ -290,7 +290,7 @@ The churn rate is the degree to which we are losing users, customers or revenue.
 
 How to calculate it?
 
-> Churn Rate= Number of customers /Total subscribers at the beginning of the period
+> Churn `Rate= Number of customers /Total subscribers at the beginning of the period`
 
 There are 2 ways to identify churn, companies usually offer different actions:
 
@@ -303,7 +303,7 @@ It is better to recognize churn at the end of the trial period.
 
 It is highly recommended to be able to calculate the user Churn and MRR Churn.
 
-> User Churn= Num Users Unsubscribes/ TotalUsersStartPeriod
+> User `Churn= Num Users Unsubscribes/ TotalUsersStartPeriod`
 
 The User Churn indicates the users we lose.
 
@@ -313,7 +313,7 @@ It tells us how much money we lose due to customer churn.
 
 It is more important to value the revenue churn, because there are different levels of membership and it depends a lot on whether someone with a higher or lower level of membership has unsubscribed.
 
-> Revenue Churn = (Mrr Lost — Mrr Obtained by Expansion) / Initial Mrr * 100
+> Revenue `Churn = (Mrr Lost — Mrr Obtained by Expansion) / Initial Mrr * 100`
 
 ### Revenue Growth Rate:
 
@@ -323,7 +323,7 @@ Revenue growth rate is one of the main metrics that indicate traction and a metr
 
 It can be calculated with the following formula:
 
-> Mrr Growth Rate = [Net Mrr Month B — Net Mrr Month A ]/Net Mrr Month A* 100
+> Mrr Growth `Rate = [Net Mrr Month B — Net Mrr Month A ]/Net Mrr Month A* 100`
 
 It can also be calculated through ARPU
 
@@ -331,7 +331,7 @@ It can also be calculated through ARPU
 
 Customer retention rate is a key metric to indicate the value we bring to our customers. This metric tells us what percentage of users who are due to renew their plan end up doing so.
 
-> Customer Retention Rate= Num Users Renewing / Num Total Users Due for Renewal
+> Customer Retention `Rate= Num Users Renewing / Num Total Users Due for Renewal`
 
 High customer retention = low churn rate -> churn and loyalty are highly correlated.
 
@@ -339,7 +339,7 @@ The retention equation is simple to apply, the tricky part is defining and bench
 
 ### Net Retention Rate
 
-> Net Retention Rate = Gross Retention + Upsell
+> Net Retention `Rate = Gross Retention + Upsell`
 
 ### Gross Margin
 
@@ -372,7 +372,7 @@ LTV is the value that our customers leave us during their entire life cycle.
 
 It can be calculated using the following formulas.
 
-> LTV = ARPA x Average Customer Lifetime x Gross Margin
+> `LTV = ARPA x Average Customer Lifetime x Gross Margin`
 
 Where,
 
@@ -380,7 +380,7 @@ Where,
 
 Therefore it can be calculated directly from this formula:
 
-> LTV = ARPA x Gross Margin/Churn Rate
+> `LTV = ARPA x Gross Margin/Churn Rate`
 
 ### CAC Payback
 

@@ -47,25 +47,25 @@ Understanding a KPI is one thing; calculating it is another. Let's delve into th
 
 The conversion rate is a measure of how many leads or prospects take the desired action (e.g., make a purchase, sign up for a newsletter).
 
-Conversion Rate=(Number of ConversionsTotal Leads)×100Conversion Rate=(Total LeadsNumber of Conversions​)×100
+Conversion `Rate=(Number of ConversionsTotal Leads)×100Conversion Rate=(Total LeadsNumber of Conversions​)×100`
 
 ### 2\. Average Deal Size
 
 The Average Deal Size gives you a snapshot of the value you can expect from each closed deal.
 
-Average Deal Size=Total RevenueNumber of DealsAverage Deal Size=Number of DealsTotal Revenue​
+Average Deal `Size=Total RevenueNumber of DealsAverage Deal Size=Number of DealsTotal Revenue​`
 
 ### 3\. Sales Cycle Length
 
 The Sales Cycle Length indicates the average time required to close a deal.
 
-Sales Cycle Length=Total Days to Close DealsNumber of Closed DealsSales Cycle Length=Number of Closed DealsTotal Days to Close Deals​
+Sales Cycle `Length=Total Days to Close DealsNumber of Closed DealsSales Cycle Length=Number of Closed DealsTotal Days to Close Deals​`
 
 ### 4\. Customer Acquisition Cost (CAC)
 
 CAC is a measure of how much you're spending to acquire each new customer.
 
-CAC=Total Sales and Marketing ExpensesNumber of New Customers AcquiredCAC=Number of New Customers AcquiredTotal Sales and Marketing Expenses​
+`CAC=Total Sales and Marketing ExpensesNumber of New Customers AcquiredCAC=Number of New Customers AcquiredTotal Sales and Marketing Expenses​`
 
 ### 5\. Customer Lifetime Value (CLV)
 
@@ -81,15 +81,15 @@ Outbound Sales Metrics are all about the outreach activities that your sales tea
 
 This metric gauges the efficacy of your cold calling strategies.
 
-Cold Call Success Rate=(Successful CallsTotal Calls Made)×100Cold Call Success Rate=(Total Calls MadeSuccessful Calls​)×100
+Cold Call Success `Rate=(Successful CallsTotal Calls Made)×100Cold Call Success Rate=(Total Calls MadeSuccessful Calls​)×100`
 
 ### 2\. Email Open and Response Rates
 
 These metrics offer insights into your email outreach campaigns.
 
-Email Open Rate=(Emails OpenedEmails Sent)×100Email Open Rate=(Emails SentEmails Opened​)×100
+Email Open `Rate=(Emails OpenedEmails Sent)×100Email Open Rate=(Emails SentEmails Opened​)×100`
 
-Email Response Rate=(Emails RespondedEmails Sent)×100Email Response Rate=(Emails SentEmails Responded​)×100
+Email Response `Rate=(Emails RespondedEmails Sent)×100Email Response Rate=(Emails SentEmails Responded​)×100`
 
 ### 3\. Lead-to-Meeting Conversion
 

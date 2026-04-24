@@ -227,6 +227,6 @@ Para llevar
 
 Estos cambios deberían mejorar la visibilidad de sus resultados pasados, pero también hacer más precisas sus previsiones futuras. Conseguirás unos libros con un aspecto más limpio, más fáciles de entender y de compartir con tu consejo de administración o tus inversores.
 
-Y recuerde. Coste de ingresos SaaS = alojamiento y soporte.
+Y recuerde. Coste de ingresos `SaaS = alojamiento y soporte.`
 
 Nota: Esto no es un asesoramiento fiscal ni contable. No soy un CPA o un abogado, y usted debe consultar con la suya antes de hacer cualquier cambio permanente en sus libros.

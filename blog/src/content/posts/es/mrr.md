@@ -51,7 +51,7 @@ Los Ingresos Mensuales Recurrentes, comúnmente abreviados como "MRR", son todos
 
 El cálculo del MRR es bastante sencillo. Tienes que multiplicar tus ingresos medios por cuenta por el número total de clientes de ese mes. 
 
-MRR = número de clientes * importe medio facturado(ARPA) 
+`MRR = número de clientes * importe medio facturado(ARPA)`
 
 Así, 10 clientes que te paguen una media de 100 euros mensuales significarían un MRR de 1.000 euros. 
 

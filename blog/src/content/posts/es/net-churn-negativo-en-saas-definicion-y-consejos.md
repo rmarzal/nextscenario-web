@@ -32,9 +32,9 @@ A un alto nivel, se puede ver el churn de dos maneras:
 
 Cálculo del churn:
 
-  * **Customer Churn Rate =** (clientes abandonados) / (clientes al inicio del periodo)
+  * **Customer Churn `Rate =** (clientes abandonados) / (clientes al inicio del periodo)`
   * **Tasa de Churn de ingresos recurrentes mensuales brutos (MRR) =** (churn + contracción de MRR) / (MRR al inicio del periodo)
-  * **Net MRR Churn =**(churn + contracción de MRR) - (expansión + reactivación de MRR) / (MRR al inicio del periodo)
+  * **Net MRR `Churn =**(churn + contracción de MRR) - (expansión + reactivación de MRR) / (MRR al inicio del periodo)`
 
 ![](https://nextscenario.com/wp-content/uploads/2023/07/1111111-1-1024x321-1.png)
 
@@ -44,7 +44,7 @@ En pocas palabras, el churn negativo es el único tipo de churn que deseas.
 
 El churn neto negativo de Ingresos Recurrentes Mensuales (MRR) existe cuando los MRR obtenidos de los clientes existentes por expansión y reactivación superan los MRR perdidos por churn y contracción. En pocas palabras: los clientes que conserva le aportan más dinero del que le restan los que se marchan.
 
-Tasa neta de Churn MRR = (Churn + Contracción MRR) - (Expansión y Reactivación MRR) / (MRR al inicio del periodo)
+Tasa neta de Churn `MRR = (Churn + Contracción MRR) - (Expansión y Reactivación MRR) / (MRR al inicio del periodo)`
 
 ![](https://nextscenario.com/wp-content/uploads/2023/07/222222-1.png)
 

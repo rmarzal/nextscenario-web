@@ -117,12 +117,31 @@ a:hover { color: var(--accent-2); }
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--mute);
+  background: var(--paper-2);
   border: 1px solid var(--line-strong);
   border-radius: var(--radius-pill);
-  padding: 6px 14px;
+  padding: 6px 12px 6px 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
 }
 
-.lang-switch:hover { color: var(--ink); border-color: var(--ink); }
+.lang-switch:hover {
+  color: var(--ink);
+  background: var(--accent);
+  border-color: var(--ink);
+}
+
+.lang-switch-flag {
+  font-size: 14px;
+  line-height: 1;
+  display: inline-block;
+}
+
+.lang-switch-label {
+  font-weight: 500;
+}
 
 .site-footer {
   border-top: 1px solid var(--line);
@@ -301,6 +320,103 @@ a:hover { color: var(--accent-2); }
 }
 
 .article .hero-image img { width: 100%; height: auto; display: block; }
+
+/* CSS-only fallback hero for posts without heroImage — matches brand tokens */
+.hero-image--fallback {
+  position: relative;
+  aspect-ratio: 16 / 8;
+  background: var(--ink);
+  color: var(--paper);
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  padding: 32px;
+}
+
+.hero-image--fallback::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 80% 20%, rgba(212, 255, 63, 0.24), transparent 55%),
+    radial-gradient(ellipse at 20% 85%, rgba(91, 140, 255, 0.18), transparent 50%);
+  pointer-events: none;
+}
+
+.hero-image--fallback::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(246, 244, 238, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(246, 244, 238, 0.06) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: radial-gradient(ellipse at 50% 50%, #000 30%, transparent 85%);
+  pointer-events: none;
+}
+
+.hero-fallback-mark {
+  position: absolute;
+  top: 32px;
+  left: 32px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.hero-fallback-mark .logo-mark {
+  position: relative;
+  width: 28px;
+  height: 28px;
+}
+
+.hero-fallback-mark .logo-mark::before,
+.hero-fallback-mark .logo-mark::after {
+  content: '';
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+}
+
+.hero-fallback-mark .logo-mark::before {
+  background: var(--paper);
+  transform: translate(-3px, -3px);
+  opacity: 0.12;
+}
+
+.hero-fallback-mark .logo-mark::after {
+  background: var(--accent);
+  transform: translate(3px, 3px);
+  mix-blend-mode: screen;
+}
+
+.hero-fallback-meta {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(246, 244, 238, 0.72);
+}
+
+.hero-fallback-tag {
+  background: var(--accent);
+  color: var(--ink);
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+  font-weight: 500;
+  letter-spacing: 0.08em;
+}
+
+.hero-fallback-brand {
+  font-weight: 500;
+  color: var(--paper);
+}
 
 /* Prose */
 

@@ -35,7 +35,7 @@ El CMRR se basa en **ingresos recurrentes mensuales que han sido reconocidos** c
 
 También, es esencial considerar que no hay una fórmula universalmente aceptada para el término CMRR, lo que implica que su empresa tiene cierta libertad para utilizar la métrica más precisa para medir sus datos. No obstante, la mayoría de las compañías de software como servicio (SaaS) emplean una fórmula similar a la siguiente:
 
-**CMRR = MRR + Nuevas Reservas + Expansion MRR- Churned MRR + Mejoras**
+**`CMRR = MRR + Nuevas Reservas + Expansion MRR- Churned MRR + Mejoras**`
 
 El primer componente es el **MRR** , que es la cantidad de ingresos recurrentes normalizados en una cantidad mensual. El segundo componente son las **nuevas reservas** , que son nuevos negocios comprometidos en los que ambas partes han firmado el contrato. El tercer componente es el **Churn MRR** , que es la tasa a la que una empresa pierde suscriptores. Finalmente, **las degradaciones y actualizaciones** también se consideran en la fórmula, ya que representan cambios positivos o negativos en las cuentas de los suscriptores. Juntos, estos componentes proporcionan una visión precisa de los ingresos recurrentes comprometidos de una empresa de tipo SaaS.
 

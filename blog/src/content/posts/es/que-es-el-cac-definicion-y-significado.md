@@ -53,7 +53,7 @@ El CAC es una métrica importante para cualquier negocio que busque medir el cos
 
 La fórmula para el cálculo del CAC es simple. Primero, se deben considerar los gastos totales en marketing y ventas, que incluyen todos los programas, salarios, comisiones, bonos, etc. Luego, se divide ese gasto entre el número de clientes nuevos adquiridos durante ese periodo. La fórmula se ve así:
 
-CAC = gastos totales en marketing y ventas / número de clientes nuevos adquiridos
+`CAC = gastos totales en marketing y ventas / número de clientes nuevos adquiridos`
 
 Es importante tener en cuenta que el periodo que se elige para evaluar el CAC puede variar. Puede ser un mes, trimestre o año, dependiendo de las necesidades del negocio.
 
@@ -61,7 +61,7 @@ Un ejemplo de cómo calcular el CAC sería el siguiente:
 
 Supongamos que una empresa ha gastado $10,000 en marketing y ventas durante un mes y ha adquirido 100 nuevos clientes en ese mismo periodo. El cálculo del CAC sería:
 
-CAC = $10,000 / 100 = $100
+`CAC = $10,000 / 100 = $100`
 
 Esto significa que el costo de adquisición de cada nuevo cliente es de $100.
 

@@ -31,7 +31,7 @@ Roas is one of the most commonly used metrics in paid campaigns or ads and indic
 
 ### **Roas formula**
 
-**Roas= Direct income obtained from ads/ Total ads expenditure**
+**`Roas= Direct income obtained from ads/ Total ads expenditure**`
 
 ### **Roas Calculator**
 
@@ -57,7 +57,7 @@ However, there is another way to calculate marginal ROAS using historical statis
 
 With this multiplier in hand, you can now calculate the marginal ROAS:
 
-**Marginal ROAS = ROAS * n**
+**Marginal `ROAS = ROAS * n**`
 
 In case you have little data or few resources to do calculations, you can use a simple rule of thumb. In our experience, in most campaigns, n lies between ⅔ and ½.
 

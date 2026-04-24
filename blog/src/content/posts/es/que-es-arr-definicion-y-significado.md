@@ -55,7 +55,7 @@ Es importante destacar que el cálculo del ARR no tiene en cuenta las cancelacio
 
 Para calcular el ARR, se puede utilizar la siguiente fórmula:
 
-ARR = MRR x 12
+`ARR = MRR x 12`
 
 Donde MRR es el ingreso recurrente mensual promedio de los clientes.
 
@@ -137,7 +137,7 @@ El ARR es una métrica esencial para las empresas que ofrecen software como serv
 
 **¿Qué es el cálculo de ARR y cómo se realiza?**
 
-El cálculo de ARR (Ingreso Anual Recurrente) es una métrica que mide los ingresos mensuales recurrentes (MRR) multiplicados por 12 meses. Para calcular el ARR, se debe multiplicar el número de clientes por el costo de la suscripción anual. La fórmula para calcular el ARR es: ARR = MRR x 12.
+El cálculo de ARR (Ingreso Anual Recurrente) es una métrica que mide los ingresos mensuales recurrentes (MRR) multiplicados por 12 meses. Para calcular el ARR, se debe multiplicar el número de clientes por el costo de la suscripción anual. La fórmula para calcular el ARR es: `ARR = MRR x 12.`
 
 **¿Cuál es la diferencia entre MRR y ARR?**
 

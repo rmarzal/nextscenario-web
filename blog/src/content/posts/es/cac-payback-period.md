@@ -84,7 +84,7 @@ Medir el CAC es crucial para evaluar la eficacia de las estrategias de marketing
 
 **¿Cómo se calcula el CAC?**
 
-El CAC se calcula dividiendo los costos totales de marketing y ventas durante un período específico por el número de clientes adquiridos durante ese mismo período. La fórmula es CAC = (Costos de Marketing + Costos de Ventas) / Número de Clientes Adquiridos.
+El CAC se calcula dividiendo los costos totales de marketing y ventas durante un período específico por el número de clientes adquiridos durante ese mismo período. La fórmula es `CAC = (Costos de Marketing + Costos de Ventas) / Número de Clientes Adquiridos.`
 
 **¿Qué es el Payback Period?**
 
@@ -92,7 +92,7 @@ El Payback Period, o Período de Retorno, es el tiempo que tarda una empresa en 
 
 **¿Cómo se calcula el Payback Period?**
 
-El Payback Period se calcula dividiendo la inversión total para adquirir un cliente entre los ingresos mensuales generados por ese cliente. La fórmula es Payback Period = Inversión Total / Ingresos Mensuales.
+El Payback Period se calcula dividiendo la inversión total para adquirir un cliente entre los ingresos mensuales generados por ese cliente. La fórmula es Payback `Period = Inversión Total / Ingresos Mensuales.`
 
 **¿Por qué es importante el Payback Period?**
 

@@ -31,7 +31,7 @@ El **EBITDA** es valioso porque permite comparar la **rentabilidad** entre empre
 
 Un resumen rápido para recordar siempre: el **EBITDA** es una métrica que nos permite entender el desempeño **operativo puro** de una empresa, eliminando el impacto de ciertos gastos contables y financieros que pueden variar entre empresas o industrias.
 
-* * *
+* *
 
 ### 2\. ¿Qué es el EBIT?
 
@@ -47,7 +47,7 @@ Aunque tanto el **EBIT** como el **EBITDA** miden el rendimiento operativo, el E
 
 El **EBIT** es crucial para entender la **rentabilidad** operativa real de una empresa, ya que muestra cuánto gana una compañía después de todos los gastos operativos (incluyendo depreciación y amortización), pero **antes de tener en cuenta los intereses sobre la deuda y los impuestos **. A menudo, se utiliza para calcular el margen operativo, que es un indicador clave de la eficiencia operativa de una empresa.
 
-* * *
+* *
 
 ### 3\. Diferencias entre EBITDA y EBIT
 
@@ -55,21 +55,21 @@ Aunque ambos términos están diseñados para evaluar el rendimiento financiero 
 
 #### a. Inclusión de Depreciación y Amortización
 
-  * **EBITDA** : Excluye la depreciación y amortización.
-  * **EBIT** : Incluye la depreciación y amortización.
+ * **EBITDA** : Excluye la depreciación y amortización.
+ * **EBIT** : Incluye la depreciación y amortización.
 
 Esta es la principal diferencia entre ambos indicadores. La depreciación se refiere al desgaste de los activos tangibles (como maquinaria o edificios), mientras que la amortización se refiere a la depreciación de activos intangibles (como patentes o derechos de autor).
 
 #### b. Análisis de la Rentabilidad Operativa
 
-  * **EBITDA** : Ofrece una visión clara de la capacidad operativa sin la influencia de factores no operativos.
-  * **EBIT** : Proporciona una imagen más completa de los costos de operación de una empresa.
+ * **EBITDA** : Ofrece una visión clara de la capacidad operativa sin la influencia de factores no operativos.
+ * **EBIT** : Proporciona una imagen más completa de los costos de operación de una empresa.
 
 #### c. Impacto en Empresas con Altos Activos Fijos
 
 Las empresas con **altos costos de depreciación** , como las empresas industriales o tecnológicas, suelen preferir el EBITDA porque elimina esos costos de la ecuación. Sin embargo, el EBIT puede ser más útil para evaluar la rentabilidad a largo plazo, ya que tiene en cuenta el deterioro de los activos con el tiempo.
 
-* * *
+* *
 
 ### 4\. Cómo se calcula el EBITDA
 
@@ -85,19 +85,21 @@ Veamos cómo funciona con un ejemplo simple.
 
 Imaginemos que una empresa tiene los siguientes resultados financieros:
 
-  * **Ingresos netos** : $100,000
-  * **Intereses** : $10,000
-  * **Impuestos** : $20,000
-  * **Depreciación** : $5,000
-  * **Amortización** : $3,000
+ * **Ingresos netos** : $100,000
+ * **Intereses** : $10,000
+ * **Impuestos** : $20,000
+ * **Depreciación** : $5,000
+ * **Amortización** : $3,000
 
-El cálculo del EBITDA sería:EBITDA=100,000+10,000+20,000+5,000+3,000=138,000EBITDA = 100,000 + 10,000 + 20,000 + 5,000 + 3,000 = 138,000EBITDA=100,000+10,000+20,000+5,000+3,000=138,000
+El cálculo del EBITDA sería:
+
+`EBITDA = 100,000 + 10,000 + 20,000 + 5,000 + 3,000 = 138,000`
 
 Este resultado muestra que, después de eliminar los intereses, impuestos, depreciación y amortización, la empresa tiene un EBITDA de $138,000, lo que proporciona una imagen más clara de su rendimiento operativo puro.
 
 Como puedes ver, calcular el **EBITDA** es un proceso relativamente simple y útil cuando se quiere entender cómo de rentable es una empresa sin que se vean afectadas las cifras por costos financieros o decisiones contables.
 
-* * *
+* *
 
 ### 5\. Cómo se calcula el EBIT
 
@@ -111,11 +113,13 @@ El cálculo del **EBIT** es similar al del EBITDA, con la diferencia de que no e
 
 Si usamos el mismo ejemplo anterior:
 
-  * **Ingresos netos** : $100,000
-  * **Intereses** : $10,000
-  * **Impuestos** : $20,000
+ * **Ingresos netos** : $100,000
+ * **Intereses** : $10,000
+ * **Impuestos** : $20,000
 
-El cálculo del EBIT sería:EBIT=100,000+10,000+20,000=130,000EBIT = 100,000 + 10,000 + 20,000 = 130,000EBIT=100,000+10,000+20,000=130,000
+El cálculo del EBIT sería:
+
+`EBIT = 100,000 + 10,000 + 20,000 = 130,000`
 
 El EBIT de la empresa es $130,000, lo que refleja las ganancias operativas después de descontar los costos relacionados con la depreciación y amortización.
 
@@ -123,7 +127,7 @@ El EBIT de la empresa es $130,000, lo que refleja las ganancias operativas despu
 
 Al calcular el **EBIT** , tenemos una visión más fiel de las ganancias que reflejan el desgaste de los activos, algo que es importante considerar en industrias donde los activos fijos juegan un papel crucial.
 
-* * *
+* *
 
 ### 6\. Aplicaciones y Limitaciones de EBITDA y EBIT
 
@@ -131,24 +135,24 @@ Ambos indicadores tienen aplicaciones valiosas, pero también ciertas limitacion
 
 #### a. Aplicaciones del EBITDA:
 
-  * **Comparar empresas** : Especialmente útil cuando se comparan empresas con diferentes estructuras de capital o niveles de depreciación.
-  * **Análisis de flujo de caja** : Al no incluir la depreciación, ofrece una idea más cercana a los flujos de caja operativos.
+ * **Comparar empresas** : Especialmente útil cuando se comparan empresas con diferentes estructuras de capital o niveles de depreciación.
+ * **Análisis de flujo de caja** : Al no incluir la depreciación, ofrece una idea más cercana a los flujos de caja operativos.
 
 #### b. Limitaciones del EBITDA:
 
-  * **Ignora costos reales** : Al excluir depreciación y amortización, puede dar una visión demasiado optimista de las ganancias.
-  * **No tiene en cuenta la deuda** : Puede ocultar problemas financieros en empresas altamente endeudadas.
+ * **Ignora costos reales** : Al excluir depreciación y amortización, puede dar una visión demasiado optimista de las ganancias.
+ * **No tiene en cuenta la deuda** : Puede ocultar problemas financieros en empresas altamente endeudadas.
 
 #### c. Aplicaciones del EBIT:
 
-  * **Rentabilidad real** : Ofrece una imagen más precisa de la rentabilidad operativa total de la empresa.
-  * **Cálculo de márgenes operativos** : Es esencial para calcular el margen operativo y medir la eficiencia de una empresa.
+ * **Rentabilidad real** : Ofrece una imagen más precisa de la rentabilidad operativa total de la empresa.
+ * **Cálculo de márgenes operativos** : Es esencial para calcular el margen operativo y medir la eficiencia de una empresa.
 
 #### d. Limitaciones del EBIT:
 
-  * **Menos útil para comparar** : Puede ser menos útil al comparar empresas de diferentes industrias debido a las variaciones en los costos de depreciación y amortización.
+ * **Menos útil para comparar** : Puede ser menos útil al comparar empresas de diferentes industrias debido a las variaciones en los costos de depreciación y amortización.
 
-* * *
+* *
 
 ### 7\. Conclusión
 

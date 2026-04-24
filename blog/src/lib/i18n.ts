@@ -35,8 +35,9 @@ export const UI = {
     relatedPosts: 'Artículos relacionados',
     backToBlog: 'Volver al blog',
     tableOfContents: 'Índice',
-    switchToEn: 'Read in English',
     allTags: 'Todas las etiquetas',
+    switchToOther: 'English',
+    switchToOtherShort: 'EN',
   },
   en: {
     blogTitle: 'Blog',
@@ -47,8 +48,9 @@ export const UI = {
     relatedPosts: 'Related posts',
     backToBlog: 'Back to blog',
     tableOfContents: 'Contents',
-    switchToEn: 'Leer en español',
     allTags: 'All tags',
+    switchToOther: 'Español',
+    switchToOtherShort: 'ES',
   },
 } as const;
 
