@@ -23,11 +23,11 @@ In this post, we’ll break down what gross margin and net margin are, how each 
 
 * *
 
-### What’s Gross Margin?
+## What’s Gross Margin?
 
 **Gross margin** is a measure of profitability that looks at revenue after subtracting the direct costs of products or services sold. Put simply, it shows how efficiently a business produces or acquires goods relative to the revenue they generate. Gross margin focuses on **direct costs** (also called Cost of Goods Sold or COGS), such as production, acquisition, and storage of products.
 
-#### Gross Margin Formula
+### Gross Margin Formula
 
 Gross margin is calculated like this:Gross Margin=Total Revenue−Cost of Goods SoldTotal Revenue×100Gross Margin = {{Total Revenue} - {Cost of Goods Sold}}{{Total Revenue}} 100Gross Margin=Total RevenueTotal Revenue−Cost of Goods Sold​×100
 
@@ -35,7 +35,7 @@ So, if an ecommerce company makes $100,000 in revenue in a month and has a cost 
 
 This result shows that 40% of the revenue turns into gross profit, while 60% covers the direct costs of the products sold.
 
-#### What Goes into Cost of Goods Sold?
+### What Goes into Cost of Goods Sold?
 
 In a retail or ecommerce business, COGS includes things like:
 
@@ -45,17 +45,17 @@ In a retail or ecommerce business, COGS includes things like:
 
 Gross margin doesn’t include other costs like admin, marketing, or financing expenses—it only covers costs directly tied to getting the product to the customer.
 
-#### Why Gross Margin Matters
+### Why Gross Margin Matters
 
 A healthy gross margin means a company can sell its products at a high enough price relative to its cost of acquiring or producing them. In retail and ecommerce, where margins can be tight, a low gross margin might hint at pricing issues, inventory costs, or operational inefficiency.
 
 * *
 
-### What’s Net Margin?
+## What’s Net Margin?
 
 **Net margin** shows the business’s overall profitability after subtracting all expenses—not just direct product costs but also **operating expenses** like rent, salaries, marketing, and other indirect costs. In other words, net margin is the percentage of revenue that becomes net profit after accounting for **all expenses** , including taxes and debt interest.
 
-#### Net Margin Formula
+### Net Margin Formula
 
 The formula for calculating net margin is:Net Margin=Total Revenue−Total CostsTotal Revenue×100Net Margin = {{Total Revenue} - {Total Costs}}{{Total Revenue}} 100Net Margin=Total RevenueTotal Revenue−Total Costs​×100
 
@@ -63,7 +63,7 @@ For example, if that same ecommerce company has $100,000 in revenue but, after a
 
 This 10% means the business’s total profitability after all expenses is 10% of revenue.
 
-#### What Goes into Total Costs?
+### What Goes into Total Costs?
 
 To get net margin, you need to factor in a wider range of costs, including:
 
@@ -72,13 +72,13 @@ To get net margin, you need to factor in a wider range of costs, including:
  * **Financing expenses:** debt interest, bank fees.
  * **Taxes and other fiscal costs:** local or national taxes.
 
-#### Why Net Margin Matters
+### Why Net Margin Matters
 
 Net margin gives a complete picture of profitability and financial health. In retail and ecommerce, where variable costs can be high, it’s essential to know the net margin to assess if the business model is really sustainable. A positive net margin means the company’s making money after all expenses, while a low or negative net margin might suggest cost structure issues or operational inefficiency.
 
 * *
 
-### Key Differences Between Gross and Net Margin
+## Key Differences Between Gross and Net Margin
 
 The main difference between gross margin and net margin lies in the types of costs they consider:
 
@@ -91,7 +91,7 @@ The main difference between gross margin and net margin lies in the types of cos
 
 * *
 
-### Practical Example for an Ecommerce Business
+## Practical Example for an Ecommerce Business
 
 Let’s say we have an online clothing store. For a specific month, its financials look like this:
 
@@ -117,13 +117,13 @@ In this case, the business has a net margin of 10%, meaning after all expenses, 
 
 * *
 
-### What’s Operational Gross Margin?
+## What’s Operational Gross Margin?
 
 **Operational gross margin** focuses on revenue after subtracting both direct costs and some extra operating expenses needed to produce and sell the products. Unlike gross margin, operational gross margin factors in additional operational costs but still leaves out indirect or general costs.
 
 This margin helps gauge direct operational efficiency, only considering the core expenses needed to run the business without getting into other indirect costs.
 
-#### Operational Gross Margin Formula
+### Operational Gross Margin Formula
 
 Operational Gross Margin=Total Revenue−Direct Costs−Direct Operating ExpensesTotal Revenue×100Operational Gross Margin = {{Total Revenue} - {Direct Costs} - {Direct Operating Expenses}}{{Total Revenue}} 100Operational Gross Margin=Total RevenueTotal Revenue−Direct Costs−Direct Operating Expenses​×100
 
@@ -131,17 +131,17 @@ Say our ecommerce business also has $10,000 in direct operating expenses (like s
 
 This means that after covering both direct product costs and essential operational expenses, 33.3% of revenue remains as operational gross profit.
 
-#### Why Operational Gross Margin Matters
+### Why Operational Gross Margin Matters
 
 Operational gross margin is especially helpful for understanding the efficiency of core operations without including general expenses. In ecommerce, it can highlight the profitability of operations by including costs like packaging and shipping—crucial for delivering to customers. A low operational gross margin might signal a need to review direct costs or efficiency.
 
 * *
 
-### What’s Operational Net Margin?
+## What’s Operational Net Margin?
 
 **Operational net margin** shows business profitability after all direct and indirect operating costs but excludes taxes and financing costs (like debt interest). This margin highlights core operating profitability, leaving out expenses unrelated to the main business activity, such as taxes or financing.
 
-#### Operational Net Margin Formula
+### Operational Net Margin Formula
 
 Operational Net Margin=Total Revenue−Direct Costs−Total Operating ExpensesTotal Revenue×100Operational Net Margin = {{Total Revenue} - {Direct Costs} - {Total Operating Expenses}}{{Total Revenue}} 100Operational Net Margin=Total RevenueTotal Revenue−Direct Costs−Total Operating Expenses​×100
 
@@ -155,13 +155,13 @@ Operational net margin would be:Operational Net Margin=150,000−90,000−40,000
 
 So, the business retains 13.3% of revenue as operational profit after covering all direct and operating costs but before taxes and interest.
 
-#### Why Operational Net Margin Matters
+### Why Operational Net Margin Matters
 
 This margin is crucial for assessing business profitability purely from its core activities, excluding taxes and interest. A high operational net margin suggests the company is profitable in its main activities and efficient in managing operating costs. A low operational net margin, however, might point to issues with cost management, pricing, or structure.
 
 * *
 
-### Summary of the Key Differences
+## Summary of the Key Differences
 
 **Margin Type **| **Cost Considered **| **Main Purpose** 
 ---|---|--- 
@@ -172,7 +172,7 @@ This margin is crucial for assessing business profitability purely from its core
  
 * *
 
-### Final Thoughts
+## Final Thoughts
 
 Breaking down these different margins helps retail and ecommerce companies understand profitability in detail. Gross margin and operating gross margin show initial operational profitability, while operating net margin and net margin provide a broader view of core and overall profitability.
 
