@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/free-cashflow/'
 needsReview: false
 draft: false
+businessModel: 'general'
 ---
 
 En el mundo de las finanzas, hay conceptos clave que todo empresario, ejecutivo o inversor debería comprender para evaluar la salud financiera de una empresa. Uno de los más fundamentales es el **Free Cash Flow (FCF)** o flujo de caja libre. Este indicador es esencial para valorar la capacidad de una empresa para generar efectivo después de cubrir todos sus gastos operativos y de inversión en activos. En este artículo, exploraremos qué es el Free Cash Flow, su importancia, cómo se calcula, y cómo puede ayudar a las empresas a tomar decisiones informadas.

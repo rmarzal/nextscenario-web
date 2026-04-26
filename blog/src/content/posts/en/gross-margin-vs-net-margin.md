@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/gross-margin-vs-net-margin/'
 needsReview: false
 draft: false
+businessModel: 'ecommerce'
 ---
 
 [](/?p=15736)

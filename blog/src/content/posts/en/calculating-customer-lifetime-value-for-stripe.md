@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/calculating-customer-lifetime-value-for-stripe/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 Customer lifetime value (LTV) is a crucial metric for any business, as it provides insights into the long-term value of a customer. In the context of Stripe customers, calculating LTV becomes even more important, considering the unique features and challenges of the platform. This comprehensive guide aims to help businesses understand and calculate LTV for Stripe customers, using tools and insights from Nextscenario. Understanding the Concept of LTV

@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/libro-diario-en-contabilidad/'
 needsReview: false
 draft: false
+businessModel: 'general'
 ---
 
 El **libro diario** es uno de los documentos más importantes dentro de la contabilidad de cualquier empresa, ya que es el punto de partida para el registro de todas las transacciones financieras. A lo largo de este post, exploraremos qué es el libro diario, sus características, importancia, cómo se utiliza y algunos ejemplos para entender mejor su función. Además, aplicaremos las palabras clave más relevantes en el ámbito de búsqueda, lo que ayudará a posicionar este contenido en los motores de búsqueda.

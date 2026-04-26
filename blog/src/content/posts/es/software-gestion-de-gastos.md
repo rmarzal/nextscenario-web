@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/software-gestion-de-gastos/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 En el mundo empresarial actual, el control financiero es un aspecto crucial para el éxito de cualquier organización. Entre las herramientas más útiles para mantener las finanzas en orden se encuentra el software de gestión de gastos. Este tipo de software no solo facilita el seguimiento de los gastos, sino que también ayuda en la toma de decisiones informadas.

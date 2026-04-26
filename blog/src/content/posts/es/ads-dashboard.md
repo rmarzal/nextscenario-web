@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/ads-dashboard/'
 needsReview: false
 draft: false
+businessModel: 'general'
 ---
 
 El mundo de la publicidad en línea está en constante evolución, y cada vez más empresas están invirtiendo en anuncios en Google, Facebook, Amazon y muchas otras plataformas populares. Con tantos canales para administrar, es crucial contar con un panel de control de anuncios efectivo que te proporcione una visión clara de tus campañas publicitarias en todas estas plataformas. Es aquí donde entra en juego el Ads Dashboard. En este artículo, exploraremos todo lo relacionado con el Ads Dashboard, desde su importancia hasta cómo maximizar tu retorno de inversión utilizando información de tu panel de control de anuncios.

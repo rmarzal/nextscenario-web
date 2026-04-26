@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/cmrr-como-calcularlo-y-por-que-es-importante-para-tu-negocio-saas/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 Si estás involucrado en un negocio SaaS, seguramente ya sabes que el ingreso recurrente mensual (MRR) es uno de los indicadores más importantes para medir la salud de tu empresa. Pero, ¿sabías que el MRR puede ser engañoso si no se tiene en cuenta el Committed Monthly Recurring Revenue (CMRR)? A lo largo de este post, te explicaremos qué es el CMRR, cómo calcularlo y por qué es importante para tu negocio SaaS.

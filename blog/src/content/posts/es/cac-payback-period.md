@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/cac-payback-period/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 Cuando se trata de marketing digital y negocios en línea, es crucial comprender el periodo de amortización del[ coste de adquisición de clientes ](/es?p=14123)(CAC). Es una métrica clave que puede ayudarle a evaluar la eficacia de sus estrategias de marketing y, en última instancia, la rentabilidad de su negocio. Pero, ¿qué es exactamente el periodo de recuperación del CAC y por qué es tan importante? 

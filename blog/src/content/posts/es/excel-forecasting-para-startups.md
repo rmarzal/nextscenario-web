@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/excel-forecasting-para-startups/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 Hacer un forecast en excel para las métricas en una startup no es fácil, aquí te contamos cómo. ¿Te gustaría tener una idea clara de cuanto tienes que vender para ser rentable?¿Quieres planificar tu presupuesto y gastos futuros de manera efectiva? quieras o no, esto es clave para una startup y lo vas a tener que hacer si o si.

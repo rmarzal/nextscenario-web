@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/growth-rate/'
 needsReview: false
 draft: false
+businessModel: 'general'
 ---
 
 La tasa de crecimiento empresarial es un indicador clave que mide el progreso de una empresa. Es un reflejo de cómo una empresa está creciendo en términos de ingresos, ganancias y tamaño del mercado. Pero, ¿qué significa realmente y cómo se calcula? Vamos a explorarlo.

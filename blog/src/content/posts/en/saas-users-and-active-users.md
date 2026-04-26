@@ -13,6 +13,7 @@ author: 'nextscenario'
 migratedFrom: 'https://nextscenario.com/saas-users-and-active-users/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 I am going to talk about the most important B2b saas metrics and objectives, that will help you measure your success and make decisions based on the right data.

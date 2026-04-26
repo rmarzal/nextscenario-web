@@ -13,6 +13,7 @@ author: 'nextscenario'
 migratedFrom: 'https://nextscenario.com/metrics-retention-saas/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 If you are in a SaaS business, you know that the success of your business depends heavily on the engagement and retention of your users, and paying attention to this is of great importance. After all, it's not just about acquiring customers, it's about retaining them for the long term.

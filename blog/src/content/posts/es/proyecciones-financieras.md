@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/proyecciones-financieras/'
 needsReview: false
 draft: false
+businessModel: 'general'
 ---
 
 ![image31.png](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdvxY5sVLWS8SNrTKUKAo_wLwLMs__MMWzb5bOEXswBhFPdlB0jt0OFMGpYKmDfm1I3iOhEeAZxitagvSZMU5m0FxRBym4zUIMK1qc9WSVXifUkbH0lfpRv2VotCuelsSy7FvK8YwmGTdIaPv_0SjqZRd65R95OJc63g47PHZ-3Qy6Nsn_Tcto?key=Is0sAW51iLkj6Fmya8qMSg)

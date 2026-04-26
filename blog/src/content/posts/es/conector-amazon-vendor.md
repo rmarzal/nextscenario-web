@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/conector-amazon-vendor/'
 needsReview: false
 draft: false
+businessModel: 'ecommerce'
 ---
 
 Integrar tu negocio de comercio electrónico con Amazon es una excelente forma de aumentar tus ventas y llegar a una amplia base de clientes. Con millones de usuarios activos en todo el mundo, Amazon se ha convertido en uno de los mercados en línea más populares y exitosos. Y para ayudarte a aprovechar al máximo esta plataforma, existen los **conectores de vendedores de Amazon **. 

@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/gross-dollar-retention/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 When it comes to measuring the financial health of a subscription-based business, the Gross Dollar Retention (GDR) formula stands out as a crucial tool. It provides a clear picture of the [revenue generated from existing customers](/?p=8724) over a specific period. But what exactly is the Gross Dollar Retention formula, and how is it calculated? Let's delve into the details.

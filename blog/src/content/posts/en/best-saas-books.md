@@ -13,6 +13,7 @@ author: 'nextscenario'
 migratedFrom: 'https://nextscenario.com/best-saas-books/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 There are many different startups and the best SaaS books will depend on the type of state your startup is in. For example, if you are looking for a book on how to build a SaaS in 2023, you need a different book than if you are looking for a book on how to use a specific SaaS product.

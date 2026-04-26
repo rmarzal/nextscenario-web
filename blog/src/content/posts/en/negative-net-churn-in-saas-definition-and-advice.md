@@ -13,6 +13,7 @@ author: 'nextscenario'
 migratedFrom: 'https://nextscenario.com/negative-net-churn-in-saas-definition-and-advice/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 Churn, the enemy of any Saas business, the opposite of retention. It is a silent business killer. But is churn always a bad thing? Well, there are cases where negative Net churn, churn's much friendlier sister metric, is synonymous with business validation.** If you want positive growth, you need negative churn.**

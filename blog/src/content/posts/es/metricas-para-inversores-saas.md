@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/metricas-para-inversores-saas/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 Si formas parte de una startup SaaS, probablemente estés buscando formas de asegurar el éxito de tu empresa a largo plazo, y una de las mejores maneras de hacerlo es atrayendo inversores expertos en el sector. Sin embargo, los inversores no van a poner su dinero en cualquier negocio, necesitan ver ciertas métricas y señales de que tu empresa tiene un potencial real de crecimiento y éxito.

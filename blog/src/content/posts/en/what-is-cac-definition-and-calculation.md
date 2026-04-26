@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/what-is-cac-definition-and-calculation/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 CAC, or Cost of Customer Acquisition, is a fundamental metric for any company wishing to evaluate its performance in acquiring new customers. This metric allows companies to determine how much it costs to acquire a new customer, which is essential to evaluate the profitability of their marketing and advertising strategies.

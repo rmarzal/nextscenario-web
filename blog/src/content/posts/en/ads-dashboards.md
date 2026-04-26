@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/ads-dashboards/'
 needsReview: false
 draft: false
+businessModel: 'both'
 ---
 
 In today's digital age, online advertising has become an essential strategy for businesses looking to reach their target audience. With countless platforms to choose from, managing and optimizing ad campaigns can quickly become overwhelming. That's where ads dashboards come into play. These powerful tools provide marketers with the ability to monitor and analyze ad performance data in a centralized and easy-to-understand format.

@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/cuenta-de-perdidas-y-ganancias/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 Entender los estados financieros, puede parecer aburrido, pero recordemos que las empresas no solo mueren por no vender, sino porque no les salen los números. Así que una cuenta de perdidas y ganancias es clave para la salud y viabilidad de cualquier negocio. 

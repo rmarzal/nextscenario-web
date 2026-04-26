@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/arpu-saas/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 En pasado artículos ya vimos la importancia de métricas cómo el Cac en el roi de un cliente saas. Hoy hablamos de una métrica muy relacionada con el retorno, El Arpu. El ARPU SaaS es uno de los indicadores que funcionan como protagonistas de esta dinámica para conocer el estatus de la empresa, su salud financiera y la rentabilidad por cada cliente, ya que no es lo mismo captar un cliente que nos deja 1000 euros, que uno que nos deja 500. 

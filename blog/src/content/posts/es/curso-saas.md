@@ -13,6 +13,7 @@ author: 'NextScenario'
 migratedFrom: 'https://nextscenario.com/es/curso-saas/'
 draft: true
 needsReview: true
+businessModel: 'saas'
 ---
 
 {/* content could not be auto-extracted from https://nextscenario.com/es/curso-saas/ — paste manually */}

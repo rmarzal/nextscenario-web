@@ -13,6 +13,7 @@ author: 'nextscenario'
 migratedFrom: 'https://nextscenario.com/life-time-value-saas/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 SaaS companies must maintain rigorous monitoring of metrics that give them an overview of the financial status of their products. In particular, Lifetime Value SaaS is a key indicator to evaluate our Saas, from acquisition to retention of a customer.

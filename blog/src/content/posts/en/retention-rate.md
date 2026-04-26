@@ -13,6 +13,7 @@ author: 'nextscenario'
 migratedFrom: 'https://nextscenario.com/retention-rate/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 Growth and analytics metrics are key for SaaS companies seeking a broad picture of their financial health. The SaaS Retention Rate is an indicator that provides an accurate quantification of the feedback customers are looking to express, it is an essential metric for understanding the value of products to customers.

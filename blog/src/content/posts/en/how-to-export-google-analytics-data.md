@@ -13,6 +13,7 @@ author: 'nextscenario'
 migratedFrom: 'https://nextscenario.com/how-to-export-google-analytics-data/'
 needsReview: false
 draft: false
+businessModel: 'general'
 ---
 
 As a C-level, you know how important it is to have accurate data about your customers and product in order to make strategic decisions and identify insights for improvement, whether in marketing, product or business. However, you probably use many tools that generate large amounts of data, without unifying and each platform has its own reports. That's why migrating your Google Universal Analytics data to your database, can be interesting to became a data decisions maker, but it can be a complicated process, and if it´s not done correctly, you could lose valuable information about your customers.

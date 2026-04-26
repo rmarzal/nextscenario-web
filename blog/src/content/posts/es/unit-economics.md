@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/unit-economics/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 **Las Unit Economics se refieren a la forma de medir ingresos y costes de una empresa basados en un modelo por unidad.** Por lo general, **este sistema busca medir cómo cada unidad afecta a los ingresos y a las otras métricas del negocio.** En este post te contamos muchos detalles sobre cómo calcularlas según tu modelo de negocio.

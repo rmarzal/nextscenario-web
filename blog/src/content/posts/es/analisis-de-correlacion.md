@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/analisis-de-correlacion/'
 needsReview: false
 draft: false
+businessModel: 'general'
 ---
 
 En este artículo nos centraremos en el análisis de correlación y cómo puede ayudar a tu empresa a tomar decisiones informadas basadas en datos. Hablaremos del análisis de correlación positiva y negativa, y cómo puedes utilizar estas herramientas para identificar patrones y tendencias en tus datos.

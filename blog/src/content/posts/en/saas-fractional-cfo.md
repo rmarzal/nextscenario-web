@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/saas-fractional-cfo/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 When it comes to [financial management in the SaaS industry](/?p=8901), a new trend is emerging - the SaaS fractional CFO. This [innovative approach to financial leadership](/?p=13534) offers a cost-effective solution for SaaS companies looking for expert financial guidance without the full-time commitment. But what exactly is a SaaS fractional CFO, and how can it benefit your business? Let's dive in. 

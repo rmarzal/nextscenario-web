@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/best-reporting-dashboard-software/'
 needsReview: false
 draft: false
+businessModel: 'general'
 ---
 
 Are you looking to take your business to the next level? Do you want to have a comprehensive overview of your company's performance, all in one place? Look no further than reporting dashboard software. In this ultimate guide, we will explore everything you need to know about this powerful tool and how it can transform the way you analyze and make decisions for your business.

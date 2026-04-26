@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/plantilla-business-plan-saas/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 Llevo más 10 años creando empresas y mentorizando startup. Más del 50% de los founders fracasan, sobre todo porque no han gestionado bien el cashflow. Las empresas mueren por falta de caja no por no vender. Incluida la mía.Por eso hemos creado esta plantilla business plan para negocios de recurrencia,. 

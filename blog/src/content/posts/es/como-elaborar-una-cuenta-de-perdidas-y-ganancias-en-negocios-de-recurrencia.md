@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/como-elaborar-una-cuenta-de-perdidas-y-ganancias-en-negocios-de-recurrencia/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 La cuenta de Pérdidas y Ganancias es una herramienta esencial para el análisis financiero de cualquier negocio. También conocida como estado de resultados o estado de pérdidas y ganancias, esta cuenta muestra a los propietarios, inversionistas y gerentes cómo se ha desempeñado la empresa en un período determinado. En este artículo, te enseñaré cómo elaborar una cuenta de Pérdidas y Ganancias de manera efectiva, evitando errores comunes y brindándote consejos para su interpretación. 

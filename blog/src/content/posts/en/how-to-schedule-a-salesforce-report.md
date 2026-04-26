@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/how-to-schedule-a-salesforce-report/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 Scheduling reports in Salesforce can be a real game-changer for your business. It not only saves you time and effort but also ensures that you have the most up-to-date data at your fingertips. In this article, we will take a deep dive into the process of scheduling a Salesforce report, step by step.

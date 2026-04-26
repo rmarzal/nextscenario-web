@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/cfo-externo-cuando-contratar-y-porque/'
 needsReview: false
 draft: false
+businessModel: 'general'
 ---
 
 Para comprender completamente el papel de un **CFO externo** , es útil primero aclarar el **significado de CFO **. Las siglas CFO significan _Chief Financial Officer_ o **Director Financiero** en español. Tradicionalmente, el CFO de una empresa se encarga de la gestión y planificación financiera, la supervisión de los informes financieros, la estrategia de financiación, y el análisis de riesgos.

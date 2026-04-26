@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/herramientas-de-planificacion-financiera/'
 needsReview: false
 draft: false
+businessModel: 'general'
 ---
 
 Entender las herramientas de planificación financiera puede parecer un desafío, pero es fundamental para la salud y sostenibilidad de cualquier negocio. No se trata solo de tener un flujo de caja positivo, sino de gestionar adecuadamente los recursos y prever el futuro financiero de la empresa. En este artículo, exploraremos diversas herramientas que pueden facilitar este proceso, desde software especializado hasta metodologías de análisis financiero. 

@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/ingresos-recurrentes-mensuales/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 Los ingresos recurrentes mensuales, también conocidos como MRR por sus siglas en inglés (Monthly Recurring Revenue), son una métrica crucial para cualquier negocio basado en suscripciones. Pero, ¿qué es exactamente y cómo se calcula? Acompáñanos en este viaje para descubrirlo. 

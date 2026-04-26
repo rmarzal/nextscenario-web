@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/nps-saas-como-calcularlo/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 Hay muchas métrica que influyen en la retención del usuario y cliente, pero hay que centrar esfuerzos, cuando es posible anticiparse. Evaluar el NPS, nos puede ayudar a ello. El Net Promoter Score, NPS por sus siglas en inglés, es un indicador que se encarga de evaluar la experiencia al cliente.

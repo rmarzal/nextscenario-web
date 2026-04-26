@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/gross-churn-vs-net-churn/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 En las [empresas de SaaS y de suscripción, el churn ](/es?page_id=12788)es una de las métricas más importantes para el éxito empresarial. La pérdida de clientes tiene un enorme impacto en el principal KPI de las empresas basadas en suscripciones: los ingresos recurrentes mensuales (MRR).

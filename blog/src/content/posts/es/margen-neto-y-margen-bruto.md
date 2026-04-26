@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/margen-neto-y-margen-bruto/'
 needsReview: false
 draft: false
+businessModel: 'ecommerce'
 ---
 
 El margen bruto y el margen neto son dos métricas financieras fundamentales para cualquier empresa, especialmente en sectores como el retail o el ecommerce, donde la estructura de costos puede variar significativamente. Estos indicadores ayudan a evaluar la rentabilidad y eficiencia de las operaciones y a tomar decisiones estratégicas para optimizar los recursos y mejorar el desempeño financiero.

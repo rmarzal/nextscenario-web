@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/churn-rate-saas/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 Las startups SaaS se caracterizan por ser modelos de ingresos recurrentes, con especial importancia en la retención. Fundamentan su crecimiento en diferentes métricas, como el cac, mrr o el churn rate. Todos estas kpi´s son claves en el momento de tomar decisiones claves para el desarrollo de la compañía.

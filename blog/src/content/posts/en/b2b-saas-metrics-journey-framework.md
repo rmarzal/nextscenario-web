@@ -13,6 +13,7 @@ author: 'nextscenario'
 migratedFrom: 'https://nextscenario.com/b2b-saas-metrics-journey-framework/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 There are many models to explain the customer life, but until now I had´t found one that applied completely to a SaaS business model, covering all its peculiarities and phases.

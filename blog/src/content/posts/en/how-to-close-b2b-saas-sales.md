@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/how-to-close-b2b-saas-sales/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 **An "easy" Saas sale in b2b** is not impossible, it is a matter of method and today we will see how.

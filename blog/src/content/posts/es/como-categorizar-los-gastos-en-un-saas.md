@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/como-categorizar-los-gastos-en-un-saas/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 Las principales ventajas de categorizar los gastos de su empresa SaaS son unas métricas y previsiones más precisas y una mejor comprensión del gasto global de su empresa.

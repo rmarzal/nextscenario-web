@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/planificacion-de-ingresos-y-gastos/'
 needsReview: false
 draft: false
+businessModel: 'general'
 ---
 
 Entender la planificación de ingresos y gastos puede parecer una tarea tediosa, pero es fundamental para la salud financiera de cualquier negocio. No se trata solo de generar ventas, sino de asegurarse de que los números cierren. En este artículo, exploraremos la importancia de una planificación adecuada, los componentes esenciales de un plan financiero y cómo implementarlo de manera efectiva en tu empresa.

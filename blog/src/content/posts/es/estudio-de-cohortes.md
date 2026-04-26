@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/estudio-de-cohortes/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 Cuando hablamos de captación de clientes en empresas o startups, existen tres métricas clave que definen el éxito de una estrategia y con ello la del negocio: el CAC (Customer Acquisition Cost o Coste de Adquisición de Cliente), el LTV (Customer Lifetime Value o Valor de Vida del Cliente) y la retención de clientes. 

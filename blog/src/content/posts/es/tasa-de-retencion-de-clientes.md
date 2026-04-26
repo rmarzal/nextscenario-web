@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/tasa-de-retencion-de-clientes/'
 needsReview: false
 draft: false
+businessModel: 'general'
 ---
 
 La tasa de retención de clientes es un indicador clave de rendimiento que todas las empresas deben tener en cuenta. No sólo mide la lealtad de los clientes, sino que también indica la eficacia de las estrategias de marketing y ventas. En este artículo, exploraremos en profundidad la tasa de retención de clientes, cómo calcularla y cómo mejorarla. 

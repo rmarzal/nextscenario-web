@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/informes-financieros-una-guia-completa/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 Los informes financieros son una parte integral de cualquier negocio. Proporcionan una visión detallada de la salud financiera de una empresa, permitiendo a los propietarios tomar decisiones informadas. En este artículo, exploraremos diferentes muestras de informes financieros y cómo pueden ayudarte en tu negocio. 

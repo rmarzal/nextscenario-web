@@ -13,6 +13,7 @@ author: 'nextscenario'
 migratedFrom: 'https://nextscenario.com/arpu-saas-what-is/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 SaaS metrics are important for a company with clear goals and strategic growth objectives for its evaluation periods. SaaS ARPU is one of the metrics that function as key players in this dynamic to know the status of the company, its financial health and profitability on a per-customer basis.

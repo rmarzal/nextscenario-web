@@ -13,6 +13,7 @@ author: 'nextscenario'
 migratedFrom: 'https://nextscenario.com/google-analytics-4-saas/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 Google Analytics 4 (GA4) is a completely new version of the tool that has been built on three services that Google has been working on for the past few years: Firebase Analytics, Google Signals and Google Tag.

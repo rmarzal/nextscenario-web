@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/kpi-de-ventas/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 En el mundo de las ventas, el rendimiento no consiste sólo en cerrar deals, sino en comprender los mecanismos que conducen a cerrarlos. En esta guía avanzada sobre kpis de ventas b2b, te contaremos cómo.Estas kpis ofrecen una ciencia al arte de vender, proporcionando a los equipos de ventas los datos que necesitan para optimizar el rendimiento y aumentar los ingresos. En este artículo, analizaremos estas métricas esenciales, explicaremos cómo se calculan y debatiremos cómo aprovecharlas para lograr el éxito en las ventas.

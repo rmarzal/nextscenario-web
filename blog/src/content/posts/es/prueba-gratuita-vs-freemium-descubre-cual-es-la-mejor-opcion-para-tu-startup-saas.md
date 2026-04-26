@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/prueba-gratuita-vs-freemium-descubre-cual-es-la-mejor-opcion-para-tu-startup-saas/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 En la nueva era de Product-Led Growth (PLG), los modelos basados en las ventas están dejando paso a enfoques más centrados en el producto. Dos conceptos clave que han emergido en este panorama son las pruebas gratuitas y el modelo freemium. Estas estrategias se están convirtiendo en la base del crecimiento y la estrategia empresarial, y están transformando la forma en que las empresas SaaS alcanzan el éxito.

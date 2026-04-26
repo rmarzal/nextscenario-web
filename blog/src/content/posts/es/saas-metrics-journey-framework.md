@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/saas-metrics-journey-framework/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 Existen muchos modelos para explicar el ciclo de vida de un cliente, pero hasta ahora no había encontrado ninguno que aplicara completamente a un **modelo Saas** , abarcando todas sus peculiaridades y fases.

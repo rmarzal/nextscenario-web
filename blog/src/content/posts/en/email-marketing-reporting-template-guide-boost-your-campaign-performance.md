@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/email-marketing-reporting-template-guide-boost-your-campaign-performance/'
 needsReview: false
 draft: false
+businessModel: 'general'
 ---
 
 Do you want to take your email marketing campaigns to the next level? Are you looking for a way to boost your campaign performance and achieve better results? Look no further than the ultimate email marketing reporting template. Understanding the importance of email marketing reporting is crucial to your success. In this article, we will explore why email marketing is essential for business growth and how a solid reporting template can help you optimize your campaigns.

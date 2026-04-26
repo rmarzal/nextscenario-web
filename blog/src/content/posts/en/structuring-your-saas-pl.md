@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/structuring-your-saas-pl/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 Understanding how to structure your SaaS P&L is a key aspect of managing a successful Software as a Service (SaaS) business. A well-structured Profit and Loss (P&L) statement can provide valuable insights into your company's financial health, helping you make informed decisions that drive growth and profitability.

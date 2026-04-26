@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/libro-mayor/'
 needsReview: false
 draft: false
+businessModel: 'general'
 ---
 
 El **libro mayor** es una herramienta fundamental en la contabilidad de cualquier empresa. En este post, exploraremos qué es el libro mayor, sus características, su importancia en el registro contable y ejemplos prácticos de cómo funciona. Además, utilizaremos las palabras clave relacionadas con este tema, optimizando el contenido para mejorar su posicionamiento en motores de búsqueda.

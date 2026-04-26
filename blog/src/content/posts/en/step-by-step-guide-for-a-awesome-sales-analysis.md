@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/step-by-step-guide-for-a-awesome-sales-analysis/'
 needsReview: false
 draft: false
+businessModel: 'general'
 ---
 
 Sales analysis is a vital component of any successful business. By delving into the data and uncovering insights, companies can make informed decisions that drive growth and improve their bottom line. In this ultimate guide, we will explore the importance of sales analysis, the fundamental concepts behind it, the steps to conducting a comprehensive analysis, and advanced techniques that can take your analysis to the next level.

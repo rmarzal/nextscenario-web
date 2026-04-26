@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/understanding-cash-ebitda-vs-ebitda/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 When it comes to financial analysis, the terms EBITDA and Cash EBITDA often come up. Both are important metrics used to [evaluate a company's financial performance](/?p=8901). But what exactly do they mean, and how do they differ? Let's dive in and find out.

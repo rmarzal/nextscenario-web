@@ -13,6 +13,7 @@ author: 'nextscenario'
 migratedFrom: 'https://nextscenario.com/saas-cogs-calculation/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 If you are working in a SaaS you have surely heard the term COS(cost of services), or more commonly COGS(Cost of good services). The COGS (Cost of Goods Sold) is a term that refers to the direct costs associated with the sale of a product or service, and is essential to calculate the profit margin of your company. In this post, we will tell you everything you need to know about what to include in the COGS of a SaaS business and how to calculate it correctly.

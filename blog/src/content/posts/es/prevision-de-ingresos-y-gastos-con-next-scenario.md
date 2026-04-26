@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/prevision-de-ingresos-y-gastos-con-next-scenario/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 He aquí los pasos básicos para prever las ventas de SaaS y Retail utilizando Next Scenario.

@@ -13,6 +13,7 @@ author: 'nextscenario'
 migratedFrom: 'https://nextscenario.com/nps-what-is-it/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 There are many metrics that influence user and customer retention, but efforts should be focused when it is possible to anticipate. Evaluating the NPS can help us to do so. The Net Promoter Score (NPS) is an indicator that evaluates the customer experience.

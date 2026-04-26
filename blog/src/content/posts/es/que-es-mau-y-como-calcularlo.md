@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/que-es-mau-y-como-calcularlo/'
 needsReview: false
 draft: false
+businessModel: 'general'
 ---
 
 El MAU o Usuarios Activos Mensuales es una métrica importante que indica la cantidad de usuarios únicos que interactúan con el producto o servicio de una compañía durante un mes determinado. Esta métrica esencial proporciona una visión sobre lo que ocurre con los usuarios en una aplicación y se relaciona estrechamente con el nivel de engagement que revelan los clientes. Contar con la perspectiva que esta métrica ofrece permite predecir potenciales pérdidas de usuarios y mejorar la salud general del negocio.

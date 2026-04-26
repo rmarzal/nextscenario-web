@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/saas-marketing-funnel/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 Trabajar para adquirir, calificar y convertir clientes potenciales es una parte fundamental del éxito empresarial de cualquier negocio SaaS (software como servicio). Sin embargo, tratar de equilibrar los  

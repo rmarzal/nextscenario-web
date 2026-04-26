@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/step-by-step-guide-to-stripe-reporting/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 In this ultimate guide, we'll take you through everything you need to know about Stripe Reporting. From understanding the basics to setting up your reports and navigating through the data, we've got you covered. Plus, we'll even delve into some advanced techniques and troubleshooting tips. So, let's get started and unlock the full potential of Stripe Reporting!

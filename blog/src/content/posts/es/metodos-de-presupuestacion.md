@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/metodos-de-presupuestacion/'
 needsReview: false
 draft: false
+businessModel: 'general'
 ---
 
 Entender los métodos de presupuestación puede parecer un tema árido, pero es fundamental para la supervivencia y el crecimiento de cualquier empresa. No se trata solo de números, sino de cómo esos números pueden guiar nuestras decisiones estratégicas. En este artículo, exploraremos los diferentes métodos de presupuestación, su importancia y cómo implementarlos eficazmente en tu organización.

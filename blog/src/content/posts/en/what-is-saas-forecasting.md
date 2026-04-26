@@ -13,6 +13,7 @@ author: 'nextscenario'
 migratedFrom: 'https://nextscenario.com/what-is-saas-forecasting/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 SaaS (Software as a Service) forecasting is a process of predicting future business outcomes based on historical data. It is a crucial aspect of any SaaS business as it helps companies to plan their resources, set realistic goals, and make informed decisions. SaaS forecasting models are designed to process data and build forecasts based on it. There are several traditional forecast models, such as moving average or linear regression, which can be used for SaaS sales forecasting.

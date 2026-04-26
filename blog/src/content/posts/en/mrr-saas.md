@@ -13,6 +13,7 @@ author: 'nextscenario'
 migratedFrom: 'https://nextscenario.com/mrr-saas/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 **MRR is a SaaS metric** that plays a key role in the study of a SaaS company. Undoubtedly, it is another of the kpis that offers an approximation of the current status of the company, providing a useful tool for analysis and decision making.

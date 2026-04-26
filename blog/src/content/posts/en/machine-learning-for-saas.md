@@ -13,6 +13,7 @@ author: 'nextscenario'
 migratedFrom: 'https://nextscenario.com/machine-learning-for-saas/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 In an information-driven world where information is power, Machine Learning (ML) has become an indispensable and invaluable tool for startups of all sizes. However, with more than 50 algorithms available, making the right choice can be difficult. Today we will talk about Machine Learning for SaaS business.

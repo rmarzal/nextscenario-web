@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/cac-saas-como-calcularlo/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 Las empresas SaaS tienen algunas métricas únicas en su modelo de negocio que son útiles para evaluar el nivel de performance que está teniendo la empresa en la actualidad, pero hoy venimos a hablar con una que es común con otros modelos de negocio, cómo el Cac, pero si analizaremos sus particularidades. El CAC es una de las métricas esenciales para cualquier empresa SaaS y conocer todos sus detalles es un requisito clave.

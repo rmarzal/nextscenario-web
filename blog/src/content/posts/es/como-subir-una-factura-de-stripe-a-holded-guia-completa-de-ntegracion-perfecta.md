@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/como-subir-una-factura-de-stripe-a-holded-guia-completa-de-ntegracion-perfecta/'
 needsReview: false
 draft: false
+businessModel: 'general'
 ---
 
 La gestión financiera moderna requiere la integración eficiente entre diferentes plataformas de pago y sistemas de contabilidad. Stripe, como una de las pasarelas de pago más populares del mundo, y Holded, como una potente plataforma de gestión empresarial española, forman una combinación ideal para empresas que buscan automatizar y optimizar sus procesos contables. En este artículo, exploraremos de manera exhaustiva cómo transferir facturas desde Stripe hacia Holded, garantizando una sincronización perfecta de datos financieros.

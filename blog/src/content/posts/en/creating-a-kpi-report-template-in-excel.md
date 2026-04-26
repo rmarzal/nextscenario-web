@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/creating-a-kpi-report-template-in-excel/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 Excel is a powerful tool that can help you [track and measure your Key Performance Indicators](/?p=14397) (KPIs). With the right KPI report template, you can easily monitor your business performance, identify areas of improvement, and make data-driven decisions. In this guide, we will walk you through the process of creating a KPI report template in Excel.

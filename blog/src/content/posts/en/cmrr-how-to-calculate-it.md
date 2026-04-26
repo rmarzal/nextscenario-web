@@ -13,6 +13,7 @@ author: 'nextscenario'
 migratedFrom: 'https://nextscenario.com/cmrr-how-to-calculate-it/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 If you are involved in a SaaS business, you probably already know that Monthly Recurring Revenue (MRR) is one of the most important metrics to measure the health of your business. But did you know that MRR can be misleading if you don't take into account Committed Monthly Recurring Revenue (CMRR)? Throughout this post, we will explain what CMRR is, how to calculate it and why it is important for your SaaS business.

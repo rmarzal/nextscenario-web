@@ -8,13 +8,19 @@ interface Props {
 }
 
 const { post, featured = false } = Astro.props;
-const { title, description, pubDate, lang, heroImage, heroAlt, tags } = post.data;
+const { title, description, pubDate, lang, heroImage, heroAlt, tags, businessModel } = post.data;
 const href = postUrl(lang as Lang, post.data.slug);
 const ui = UI[lang as Lang];
 
 // Rough reading-time estimate (200 wpm) — body isn't readily available at list
 // time, so approximate from description length as a floor for social proof.
 const minRead = Math.max(3, Math.round((description.length / 5) / 200 * 60));
+
+const modelLabels = {
+  es: { saas: 'SaaS', ecommerce: 'Ecommerce', both: 'SaaS + Ecommerce', general: 'Finanzas' },
+  en: { saas: 'SaaS', ecommerce: 'Ecommerce', both: 'SaaS + Ecommerce', general: 'Finance' },
+} as const;
+const modelLabel = modelLabels[lang as Lang][businessModel];
 ---
 
 <a href={href} class={`post-card${featured ? ' post-card--featured' : ''}`} aria-label={title}>
@@ -26,7 +32,7 @@ const minRead = Math.max(3, Math.round((description.length / 5) / 200 * 60));
         <span class="post-card__cover-mark"></span>
       </div>
     )}
-    {tags?.[0] && <span class="post-card__tag">{tags[0]}</span>}
+    <span class={`post-card__model post-card__model--${businessModel}`}>{modelLabel}</span>
   </div>
 
   <div class="post-card__body">

@@ -12,6 +12,7 @@ translationOf: ""
 author: 'NextScenario'
 migratedFrom: 'https://nextscenario.com/cfos-dashboard-and-report-templates-excel/'
 needsReview: false
+businessModel: 'general'
 ---
 In the complex and dynamic world of business, financial management stands as a cornerstone of success. For Chief Financial Officers (CFOs) and finance professionals, the tools used to analyze, report, and forecast financial data are vital. This is where CFO dashboard Excel templates, CFO monthly report templates, and comprehensive CFO report templates come into play. These tools are not just facilitators of data presentation; they are the lenses through which financial health is assessed and future strategies are shaped.
 

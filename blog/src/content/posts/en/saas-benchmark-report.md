@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/saas-benchmark-report/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 Welcome to the SaaS Benchmark Report! In this article, we'll dive into various aspects of the SaaS industry and explore key metrics, growth trends, and retention benchmarks. So, let's kick-start this journey by looking at SaaS Metrics Benchmark.

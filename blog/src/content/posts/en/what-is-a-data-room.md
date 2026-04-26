@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/what-is-a-data-room/'
 needsReview: false
 draft: false
+businessModel: 'ecommerce'
 ---
 
 A **startup data room** for startups is a storage space, mostly digital, where startups store relevant information about their business, for internal use or other stakeholders. The most common use case is to use a **virtual data room saas** for an investment round, as it allows to streamline the processes of professionalized investment rounds.

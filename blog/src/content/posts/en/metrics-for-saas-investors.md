@@ -13,6 +13,7 @@ author: 'nextscenario'
 migratedFrom: 'https://nextscenario.com/metrics-for-saas-investors/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 If you’re part of a SaaS startup, you’re probably looking for ways to ensure your company’s long-term success, and one of the best ways to do that is to attract industry-savvy investors. However, investors aren’t going to put their money into just any business, they need to see certain metrics and signs that your company has real potential for growth and success.

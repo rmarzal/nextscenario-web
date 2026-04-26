@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/how-to-create-a-google-sheets-dashboard-a-step-by-step-guide/'
 needsReview: false
 draft: false
+businessModel: 'general'
 ---
 
 Creating a Google Sheets dashboard is a great way to [visualize and analyze data](/?p=14376) in a convenient and customizable format. Whether you want to track personal expenses, monitor marketing campaigns, or keep tabs on project progress, a Google Sheets dashboard can provide valuable insights and make data analysis a breeze. In this step-by-step guide, we will walk you through the process of creating your very own Google Sheets dashboard.

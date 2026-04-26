@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/dashboard-de-perdidas-y-ganancias/'
 needsReview: false
 draft: false
+businessModel: 'general'
 ---
 
 Un dashbaord de perdidas y ganamcias es una herramienta financiera vital para cualquier negocio o empresa. Se utiliza para evaluar el rendimiento financiero y determinar si una empresa está obteniendo ganancias o enfrentando pérdidas. En este artículo, exploraremos el concepto de un dashboard de pérdidas y ganancias, sus componentes clave, cómo interpretarlo y cómo crear uno efectivo.

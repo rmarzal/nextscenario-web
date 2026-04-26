@@ -12,6 +12,7 @@ translationOf: 'regla-de-40-saas'
 author: 'NextScenario'
 needsReview: false
 draft: false
+businessModel: 'both'
 ---
 
 The **Rule of 40** is the fastest single check on SaaS health. Add your **growth rate** and your **profit margin**: if it clears 40 %, you're in good shape. If it doesn't, you're burning cash without a proportional return.

@@ -13,6 +13,7 @@ author: 'nextscenario'
 migratedFrom: 'https://nextscenario.com/cac-saas-what-is/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 SaaS companies have some unique metrics in their business model that are useful to evaluate the level of performance that the company is currently having, but today we come to talk with one that is common with other business models, how the CAC, but we will analyze its particularities. The CAC is one of the essential metrics for any SaaS company and knowing all its details is a key requirement.

@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/ecommerce-profit-and-loss/'
 needsReview: false
 draft: false
+businessModel: 'both'
 ---
 
 In the world of ecommerce, staying on top of your finances is crucial. One important aspect of managing your online business is understanding your profit and loss statement, also known as the P&L statement. This report provides valuable insights into your company's financial performance, helping you make informed decisions and identify areas for improvement. In this article, we will explore different aspects of ecommerce P&L and provide practical examples to illustrate its importance.

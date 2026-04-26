@@ -13,6 +13,7 @@ author: 'nextscenario'
 migratedFrom: 'https://nextscenario.com/cohort-study-saas/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 There are three key metrics that define the success of a acqusition strategy of a business: CAC (Customer Acquisition Cost), LTV (Customer Lifetime Value) and customer retention.

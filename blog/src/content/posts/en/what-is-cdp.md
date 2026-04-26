@@ -13,6 +13,7 @@ author: 'nextscenario'
 migratedFrom: 'https://nextscenario.com/what-is-cdp/'
 needsReview: false
 draft: false
+businessModel: 'ecommerce'
 ---
 
 Nowadays, companies have access to a large amount of consumer data, but in many cases, the volume of information is so large that it becomes difficult to handle, leading to missed opportunities and failure to draw valuable insights.

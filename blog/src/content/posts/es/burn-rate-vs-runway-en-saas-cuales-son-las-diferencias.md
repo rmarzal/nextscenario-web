@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/burn-rate-vs-runway-en-saas-cuales-son-las-diferencias/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 **La financiación y la caja de un SaaS** es un tema abrumador para muchos fundadores, pero es clave para su éxito. Al final todos los founders se enfrentan a la dura realidad financiera. En el artículo de hoy, hablaremos sobre **cómo calcular el burn rate y runway, sus fórmulas** , discutiendo cómo se relacionan, y por qué son esenciales para una startup en crecimiento.

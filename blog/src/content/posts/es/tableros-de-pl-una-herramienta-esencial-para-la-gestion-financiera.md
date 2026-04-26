@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/tableros-de-pl-una-herramienta-esencial-para-la-gestion-financiera/'
 needsReview: false
 draft: false
+businessModel: 'general'
 ---
 
 Los tableros de P&L, también conocidos como cuadros de mando de pérdidas y ganancias, son una [h](/?p=13308)erramienta esencial para la gestión financiera. Permiten a las empresas seguir de cerca sus ingresos y gastos, y tomar decisiones informadas basadas en datos reales. Pero, ¿qué son exactamente los tableros de P&L y cómo pueden ayudar a tu empresa? Vamos a descubrirlo. 

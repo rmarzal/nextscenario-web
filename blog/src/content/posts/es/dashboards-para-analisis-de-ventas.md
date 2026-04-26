@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/dashboards-para-analisis-de-ventas/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 _Descubre cómo crear un panel de análisis de ventas efectivo y visualmente atractivo con nuestro artículo sobre el sales analysis dashboard._

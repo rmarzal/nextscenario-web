@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/roas-marginal-vs-roas-como-calcular/'
 needsReview: false
 draft: false
+businessModel: 'general'
 ---
 
 Para evaluar la eficacia de los esfuerzos de marketing y las campañas de ads, la mayoría de los marketeros utilizan **el ROAS **(retorno de la inversión), que se calcula dividiendo los ingresos obtenidos como resultado directo de la campaña por la inversión en el canal determinado.En este artículo hablamos sobre las [diferencias entre el Roas y el Roi](/es?p=14839). Sin embargo, muy pocos de ellos tienen en cuenta algo tan importante como la incrementalidad, que, según la ley de Pareto, por cada euro adicional invertido, se producen menos ingresos que el anterior.

@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/que-es-el-ebitda-y-ebit/'
 needsReview: false
 draft: false
+businessModel: 'general'
 ---
 
 En el mundo de las finanzas, dos de los términos más importantes para evaluar la rentabilidad de una empresa son el **EBITDA** y **EBIT **. Aunque estos dos conceptos son fundamentales para el análisis financiero, muchas veces pueden confundirse o malinterpretarse. En este artículo de **información 100% detallada** , profundizaremos en qué es el EBITDA, qué es el EBIT, cómo se calculan y cuáles son sus diferencias. A través de ejemplos, también veremos cómo aplicarlos correctamente en la evaluación de un negocio.

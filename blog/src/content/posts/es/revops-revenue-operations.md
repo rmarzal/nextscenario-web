@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/revops-revenue-operations/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 Si trabajas en B2B, SaaS o startups, casi podemos garantizar que has oído el término "Revenue Operations" o "RevOps" con ferviente frecuencia en los últimos años. 

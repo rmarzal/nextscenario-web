@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/modelado-de-cohortes-un-analisis-detallado/'
 needsReview: false
 draft: false
+businessModel: 'general'
 ---
 
 El modelado de cohortes es una técnica poderosa y versátil utilizada en diversas disciplinas, desde la investigación médica hasta el análisis de marketing. Pero, ¿qué es exactamente el modelado de cohortes y cómo puede ayudarte en tu trabajo o investigación? En este artículo, exploraremos en profundidad el concepto de modelado de cohortes, sus aplicaciones y cómo puedes implementarlo.

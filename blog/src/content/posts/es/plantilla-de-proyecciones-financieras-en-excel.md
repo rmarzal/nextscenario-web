@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/plantilla-de-proyecciones-financieras-en-excel/'
 needsReview: false
 draft: false
+businessModel: 'general'
 ---
 
 ¿Estás buscando una forma eficiente de hacer proyecciones financieras para tu negocio o proyecto? No busques más, porque tenemos la solución perfecta para ti: una plantilla de proyecciones financieras en Excel. En este artículo, te mostraremos cómo entender y utilizar esta herramienta invaluable para tomar decisiones informadas y estratégicas para tu futuro financiero. ¡Vamos a sumergirnos en el fascinante mundo de las proyecciones financieras!

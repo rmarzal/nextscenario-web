@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/mejores-herramientas-product-analytics/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 La **instrumentación de producto digital** es el proceso para recopilar datos sobre el uso de los productos digitales para tomar las decisiones en la optimización o diseño de producto, el core de un SaaS. En el post anterior, hablamos sobre cómo implementar una estrategia de medición de producto, y hoy presentamos un análisis de las mejores herramientas de analítica de producto para llevar a cabo tu estrategia de medición con éxito gracias a las **product analytics tools** que os mostramos.

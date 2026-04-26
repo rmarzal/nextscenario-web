@@ -13,6 +13,7 @@ author: 'nextscenario'
 migratedFrom: 'https://nextscenario.com/free-trial-vs-freemium/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 In the new era of Product-Led Growth (PLG), sales-based models are giving way to more product-centric approaches. We need to look at two key concepts that have emerged in this landscape: free trials and the freemium model. These strategies are transforming the way SaaS companies achieve success, as they are becoming the foundation of business growth and strategy.

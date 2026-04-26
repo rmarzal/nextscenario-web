@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/how-to-automate-a-sales-pipeline-report-boosting-your-revenue-growth/'
 needsReview: false
 draft: false
+businessModel: 'general'
 ---
 
 Sales pipeline management is a critical aspect of any successful sales strategy. A well-structured and monitored sales pipeline can significantly impact your revenue growth. This article will explore the importance of a sales pipeline report and provide valuable insights on how to optimize it to maximize your sales potential.

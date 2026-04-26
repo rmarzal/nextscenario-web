@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/creating-a-facebook-ads-report-template/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 Facebook advertising is a powerful tool for businesses of all sizes. It offers a unique opportunity to reach a targeted audience and [measure the effectiveness of your campaigns](/?p=14397). One of the key aspects of successful Facebook advertising is [understanding and analyzing your ad performance](/?p=14376). This is where a Facebook Ads report template comes into play.

@@ -13,6 +13,7 @@ author: 'nextscenario'
 migratedFrom: 'https://nextscenario.com/ltv-saas/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 First of all let's remember that LTV is a metric that shows the total revenue, which our customers leave us, during their entire life cycle.

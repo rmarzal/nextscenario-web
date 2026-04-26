@@ -13,6 +13,7 @@ author: 'nextscenario'
 migratedFrom: 'https://nextscenario.com/saas-market-fit-4-phases-to-achieve-it/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 There is a disconnection between the traction in sales and recurring revenue that a saas startup will be able to generate, and the actual traction that many founders and venture capitalists expect.

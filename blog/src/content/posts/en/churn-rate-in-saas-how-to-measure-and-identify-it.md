@@ -13,6 +13,7 @@ author: 'nextscenario'
 migratedFrom: 'https://nextscenario.com/churn-rate-in-saas-how-to-measure-and-identify-it/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 SaaS companies base their growth and performance evaluation on different metrics, such as cac, mrr or churn rate. All these kpi’s are key when making key decisions for the development of the company.

@@ -12,6 +12,7 @@ translationOf: 'rule-of-40-saas'
 author: 'NextScenario'
 needsReview: false
 draft: false
+businessModel: 'both'
 ---
 
 La **regla del 40** es la métrica más rápida para saber si un SaaS está sano. Suma tu **tasa de crecimiento** y tu **margen de beneficio**: si pasa de 40 %, vas bien. Si no, estás quemando caja sin retorno proporcional.

@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/understanding-saas-pricing-templates/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 When it comes to Software as a Service (SaaS), pricing can be a complex issue. It's not just about determining the cost of your product, but also about understanding the value it brings to your customers. That's where a SaaS pricing template comes into play. It helps you to [structure your pricing in a way](/?p=8901) that's clear, fair, and profitable. 

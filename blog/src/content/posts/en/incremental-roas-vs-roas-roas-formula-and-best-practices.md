@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/incremental-roas-vs-roas-roas-formula-and-best-practices/'
 needsReview: false
 draft: false
+businessModel: 'general'
 ---
 
 To evaluate the effectiveness of marketing efforts and advertising campaigns, most marketers use **ROAS **(return on advertising investment), which is calculated by dividing the revenue obtained as a result of the campaign by the investment in the given channel. However, very few of them take into account something as important as incrementality, which, according to Pareto's law, for each additional euro invested, less revenue is produced than the previous one.

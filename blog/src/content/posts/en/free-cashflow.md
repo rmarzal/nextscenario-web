@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/free-cashflow/'
 needsReview: false
 draft: false
+businessModel: 'general'
 ---
 
 In the world of finance, there are key concepts that every entrepreneur, executive, or investor should understand to assess the financial health of a company. One of the most fundamental is **Free Cash Flow (FCF)**. This metric is essential for evaluating a company’s ability to generate cash after covering its operating expenses and investments in assets. In this article, we will explore what Free Cash Flow is, why it matters, how to calculate it, and how it can help companies make informed decisions.

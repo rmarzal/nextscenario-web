@@ -13,6 +13,7 @@ author: 'nextscenario'
 migratedFrom: 'https://nextscenario.com/sales-kpis/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 In the world of sales, performance isn't just about closing deals; it's about understanding the mechanics that lead to those closed deals. The heart of this understanding lies in Sales KPIs and Outbound Sales Metrics. These critical numbers offer a science to the art of selling, giving sales teams the data they need to optimize performance and drive revenue. In this comprehensive post, we'll dissect these essential metrics, explain how they're calculated, and discuss how to leverage them for sales success.

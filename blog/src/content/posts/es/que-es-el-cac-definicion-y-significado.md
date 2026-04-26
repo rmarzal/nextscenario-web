@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/que-es-el-cac-definicion-y-significado/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 El CAC, o Costo de Adquisición de Clientes, es una métrica fundamental para cualquier empresa que desee evaluar su rendimiento en adquisición de nuevos clientes. Esta métrica permite a las empresas determinar cuánto cuesta conseguir un nuevo cliente, lo que es esencial para evaluar la rentabilidad de sus estrategias de marketing y publicidad.

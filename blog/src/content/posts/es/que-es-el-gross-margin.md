@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/que-es-el-gross-margin/'
 needsReview: false
 draft: false
+businessModel: 'general'
 ---
 
 El Gross Margin, también conocido como margen bruto, es un indicador financiero que mide la eficiencia de una empresa en la producción y distribución de sus productos y servicios. Pero, ¿qué significa realmente y cómo se calcula? Vamos a explorarlo. 

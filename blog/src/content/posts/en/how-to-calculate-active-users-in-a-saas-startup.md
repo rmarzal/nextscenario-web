@@ -13,6 +13,7 @@ author: 'nextscenario'
 migratedFrom: 'https://nextscenario.com/how-to-calculate-active-users-in-a-saas-startup/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 ![](https://nextscenario.com/wp-content/uploads/2023/11/Active-users-1024x528-1-1.jpg)

@@ -13,6 +13,7 @@ author: 'nextscenario'
 migratedFrom: 'https://nextscenario.com/saas-marketing-funnel/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 Working to acquire, qualify and convert leads is a critical part of the business success of any SaaS (Software as a Service) business. However, trying to balance your company’s  

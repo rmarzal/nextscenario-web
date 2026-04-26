@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/profit-and-loss-statement/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 Understanding financial statements may seem boring, but let's remember that companies don't just die because they don't sell, they die because they don't make the numbers. So a profit and loss statement is key to the health and viability of any business.

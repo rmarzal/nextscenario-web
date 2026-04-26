@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/ecommerce-dashboard/'
 needsReview: false
 draft: false
+businessModel: 'both'
 ---
 
 Are you ready to take your online store to the next level? The key to success lies in data analysis and performance tracking. That's where the ecommerce dashboard comes into play. In this article, we'll explore everything you need to know about creating an effective ecommerce dashboard. From key metrics to track, to design tips and real-time data visualization techniques, we've got you covered. So, let's dive in and supercharge your online business!

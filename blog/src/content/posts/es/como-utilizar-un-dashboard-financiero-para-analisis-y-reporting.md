@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/como-utilizar-un-dashboard-financiero-para-analisis-y-reporting/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 Un Dashboard Financiero es una herramienta poderosa para tomar el control de tus finanzas y optimizar tus decisiones económicas. En este artículo, exploraremos cómo puedes utilizar un Dashboard Financiero de manera efectiva para mejorar tu situación financiera. 

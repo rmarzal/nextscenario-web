@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/understanding-the-cac-payback-period/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 When it comes to digital marketing and online businesses, understanding your Customer Acquisition Cost (CAC) payback period is crucial. It's a key metric that can help you [evaluate the effectiveness of your marketing strategies](/?p=14136), and ultimately, the profitability of your business. But what exactly is the CAC payback period, and why is it so important? Let's dive in and find out.

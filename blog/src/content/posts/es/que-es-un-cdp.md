@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/que-es-un-cdp/'
 needsReview: false
 draft: false
+businessModel: 'general'
 ---
 
 Las empresas de hoy en día tienen a su disposición una gran cantidad de datos sobre los consumidores, pero en muchos casos, la cantidad de información es tan grande que resulta difícil de manejar, lo que lleva a perder oportunidades y no sacar conclusiones valiosas.

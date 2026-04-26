@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/data-room-saas/'
 needsReview: false
 draft: false
+businessModel: 'both'
 ---
 
 Un **startup data room** para startups es un espacio de almacenamiento, sobre todo digital, donde las startups guardan información relevante sobre su negocio, para su uso interno u otros stakeholders. El caso de uso más común, suele ser utilizar un **virtual data room** **saas** para una ronda de inversión, ya que permite agilizar los procesos de las rondas de inversión profesionalizadas.

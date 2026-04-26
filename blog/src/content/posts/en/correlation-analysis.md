@@ -13,6 +13,7 @@ author: 'nextscenario'
 migratedFrom: 'https://nextscenario.com/correlation-analysis/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 Have you ever wondered if there is a causal relationship between two variables just because they are correlated? Or perhaps you are trying to figure out if there is a correlation between two features in your dataset? If so, keep reading to learn about the best approach to tackle these questions.

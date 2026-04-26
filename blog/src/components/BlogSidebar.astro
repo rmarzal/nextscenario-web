@@ -1,0 +1,113 @@
+---
+import type { Lang } from '../lib/i18n';
+
+interface Props {
+  lang: Lang;
+  modelCounts: Record<string, number>;
+}
+
+const { lang, modelCounts } = Astro.props;
+
+const copy = {
+  es: {
+    siteEyebrow: 'NextScenario',
+    siteTitle: 'Visita la web',
+    siteBody:
+      'Aplicación financiera en vivo: caja, ingresos, márgenes y unit economics actualizados con datos reales.',
+    siteEN: 'Web en inglés',
+    siteES: 'Web en español',
+    courseEyebrow: 'Curso',
+    courseTitle: 'Métricas y modelos financieros para SaaS',
+    courseBody:
+      'Aprende a construir el modelo financiero, las métricas y los dashboards que VCs y CFOs quieren ver. Curso autogestionado de Rubén Marzal.',
+    courseCTA: 'Ver el curso',
+    modelsEyebrow: 'Modelos de negocio',
+    modelsBody: 'Filtra por el tipo de negocio que aplica:',
+    models: { saas: 'SaaS', ecommerce: 'Ecommerce', both: 'SaaS + Ecommerce', general: 'Finanzas (general)' },
+  },
+  en: {
+    siteEyebrow: 'NextScenario',
+    siteTitle: 'Visit the main site',
+    siteBody:
+      'Live financial app: cash, revenue, margins and unit economics updated from your real data.',
+    siteEN: 'English site',
+    siteES: 'Spanish site',
+    courseEyebrow: 'Course',
+    courseTitle: 'B2B SaaS metrics & financial modelling',
+    courseBody:
+      'Learn to build the financial model, metrics and dashboards VCs and CFOs want to see. Self-paced course by Rubén Marzal.',
+    courseCTA: 'View the course',
+    modelsEyebrow: 'Business models',
+    modelsBody: 'Filter posts by business type:',
+    models: { saas: 'SaaS', ecommerce: 'Ecommerce', both: 'SaaS + Ecommerce', general: 'Finance (general)' },
+  },
+} as const;
+
+const c = copy[lang];
+
+const courseUrl =
+  lang === 'es'
+    ? 'https://b2bsaasmetrics.com/?utm_source=nextscenario&utm_medium=blog_sidebar&utm_campaign=course&utm_content=spanish'
+    : 'https://b2bsaasmetrics.com/?utm_source=nextscenario&utm_medium=blog_sidebar&utm_campaign=course&utm_content=english';
+
+// Order models by count desc, dropping zero buckets
+const orderedModels = (['saas', 'both', 'ecommerce', 'general'] as const).filter(
+  (m) => (modelCounts[m] ?? 0) > 0
+);
+---
+
+<aside class="blog-sidebar">
+  {/* Site links */}
+  <div class="sidebar-card">
+    <p class="sidebar-card__eyebrow">{c.siteEyebrow}</p>
+    <h3 class="sidebar-card__title">{c.siteTitle}</h3>
+    <p class="sidebar-card__body">{c.siteBody}</p>
+    <ul class="sidebar-card__links">
+      <li>
+        <a href="/" hreflang="en">
+          <span aria-hidden="true">🇬🇧</span>
+          <span>{c.siteEN}</span>
+          <svg width="12" height="12" viewBox="0 0 14 14" fill="none">
+            <path d="M2 7h10m0 0L7 2m5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="/es/" hreflang="es">
+          <span aria-hidden="true">🇪🇸</span>
+          <span>{c.siteES}</span>
+          <svg width="12" height="12" viewBox="0 0 14 14" fill="none">
+            <path d="M2 7h10m0 0L7 2m5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  {/* Course CTA */}
+  <div class="sidebar-card sidebar-card--course">
+    <p class="sidebar-card__eyebrow">{c.courseEyebrow}</p>
+    <h3 class="sidebar-card__title sidebar-card__title--course">{c.courseTitle}</h3>
+    <p class="sidebar-card__body">{c.courseBody}</p>
+    <a class="btn btn--primary" href={courseUrl} rel="noopener" target="_blank">
+      {c.courseCTA}
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+        <path d="M2 7h10m0 0L7 2m5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+  </div>
+
+  {/* Business model index */}
+  <div class="sidebar-card">
+    <p class="sidebar-card__eyebrow">{c.modelsEyebrow}</p>
+    <p class="sidebar-card__body" style="margin-bottom:14px;">{c.modelsBody}</p>
+    <ul class="sidebar-card__models">
+      {orderedModels.map((m) => (
+        <li>
+          <span class={`post-card__model post-card__model--${m}`}>{c.models[m]}</span>
+          <span class="sidebar-card__model-count">{modelCounts[m] ?? 0}</span>
+        </li>
+      ))}
+    </ul>
+  </div>
+</aside>

@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/las-metricas-de-ecommerce-mas-importantes-en-2025/'
 needsReview: false
 draft: false
+businessModel: 'both'
 ---
 
 El mundo del comercio electrónico evoluciona a un ritmo vertiginoso. Lo que funcionaba hace apenas un par de años puede resultar obsoleto hoy, y las estrategias que implementamos actualmente podrían quedar desfasadas en cuestión de meses. En este contexto tan dinámico, mantenerse al día con las métricas adecuadas no es solo una ventaja competitiva, sino una necesidad absoluta para la supervivencia de cualquier negocio online.

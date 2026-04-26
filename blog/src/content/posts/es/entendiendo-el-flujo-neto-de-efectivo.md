@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/entendiendo-el-flujo-neto-de-efectivo/'
 needsReview: false
 draft: false
+businessModel: 'general'
 ---
 
 El Net Cash Flow es un indicador financiero que mide la cantidad de dinero que una empresa genera o consume durante un período determinado. Este concepto es fundamental para entender la salud financiera de una empresa y su capacidad para crecer y expandirse. Pero, ¿qué es exactamente el flujo neto de efectivo y cómo se calcula?

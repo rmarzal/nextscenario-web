@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/unit-economics/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 **Unit economics refers to a way of measuring a company’s revenues and costs based on a per-unit model.** Generally, **this system seeks to measure how each unit affects revenue and other business metrics.**

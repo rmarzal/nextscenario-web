@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/gastos-fijos-vs-gastos-variables/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 ¿Te has preguntado alguna vez por qué algunas empresas, especialmente las nuevas y las que se basan en suscripciones, tienen problemas de liquidez? Resulta que gestionar como afrontamos los gastos y los ingresos, el llamado cashflow. 

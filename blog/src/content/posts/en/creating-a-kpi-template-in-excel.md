@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/creating-a-kpi-template-in-excel/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 Key Performance Indicators (KPIs) are crucial for [measuring the success of any business strategy](/?p=14397). They help you track progress towards your goals and make informed decisions. One of the most popular tools for managing KPIs is Microsoft Excel, thanks to its flexibility and powerful features. In this guide, we'll walk you through the process of creating a KPI template in Excel.

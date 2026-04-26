@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/proyecciones-financieras-para-saas/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 La previsión en SaaS (Software como Servicio) es un proceso para predecir las métricas futuras basándose en datos históricos. Es un aspecto crucial para cualquier negocio de SaaS, ya que ayuda a las empresas a planificar sus recursos, establecer objetivos realistas y tomar decisiones informadas. Los modelos de previsión en SaaS están diseñados para procesar datos y construir pronósticos basados en ellos. Existen varios modelos de previsión tradicionales, como la media móvil o la regresión lineal, que se pueden utilizar para la previsión de ventas en SaaS.

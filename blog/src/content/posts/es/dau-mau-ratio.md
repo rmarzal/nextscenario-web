@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/dau-mau-ratio/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 Las empresas Saas tienen ciertas métricas qué monitorizar para mantenerse al día con la evolución de su producto Saas. Actualmente, hay formas eficientes de medir incluso la relación y el nivel de interacción que tienen los usuarios con los productos o servicios, esto resulta útil para entender el impacto conseguido. El DAU vs. MAU es la clave en este aspecto. 

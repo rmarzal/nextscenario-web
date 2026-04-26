@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/plantilla-de-informe-de-google-ads-una-guia-completa/'
 needsReview: false
 draft: false
+businessModel: 'general'
 ---
 
 Google Ads es una potente herramienta para empresas de todos los tamaños. Te permite llegar a un público muy amplio, dirigirte a grupos demográficos específicos y realizar un seguimiento de los resultados de tus campañas. Pero para aprovechar realmente el poder de Google Ads, necesitas comprender cómo analizar los datos que te proporciona. Ahí es donde entra en juego una plantilla de informe de Google Ads.

@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/que-incluir-en-cogs-de-tu-negocio-saas/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 En cualquier negocio es importante conocer cuales son los costes asociados a una venta y al servicio, para ello entra en juego el cálculo de los COGS. Pero, ¿sabías que partidas debes incluir?

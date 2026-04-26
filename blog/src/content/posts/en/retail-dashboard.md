@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/retail-dashboard/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 In the fast-paced world of retail, staying on top of key performance indicators (KPIs) and business trends is crucial for driving growth and making informed decisions. That's where a retail dashboard comes in handy. Whether you're a retailer, a store owner, or a business executive, a well-designed retail dashboard can provide real-time insights into your operations, sales data, and customer behavior, helping you make strategic decisions to stay ahead of the competition. 

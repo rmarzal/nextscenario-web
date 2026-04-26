@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/best-product-analytics-tools/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 **Product analytics** is the process of collecting data on the use of digital products to make decisions on product optimization, the core of a SaaS. In the previous post, we talked about how to implement a product measurement strategy, and today we present an analysis of the **best product analytics tools** for C-Level to carry out your measurement strategy successfully thanks to the **best product analytics tools** that we show you.

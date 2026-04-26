@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/matching-and-revenue-recognition-principles-in-accounting/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 In the world of accounting, understanding the principles and concepts that govern financial reporting is essential. One such principle that plays a crucial role in ensuring accurate financial statements is the matching principle. In addition to the matching principle, another important aspect of accounting is revenue recognition. In this comprehensive guide, we will delve into these principles, exploring key concepts, methods, and their impact on financial statements.

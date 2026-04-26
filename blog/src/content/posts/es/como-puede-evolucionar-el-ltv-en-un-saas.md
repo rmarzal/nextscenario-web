@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/como-puede-evolucionar-el-ltv-en-un-saas/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 Antes que nada vamos a recordar que el LTV es una métrica que muestra la pasta total, que nos dejan nuestros clientes, durante todo su ciclo de vida.

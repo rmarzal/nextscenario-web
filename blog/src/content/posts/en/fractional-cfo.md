@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/fractional-cfo/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 In the world of startups and small businesses, founders and executives constantly face financial and strategic challenges that can determine the success or failure of the business. One of the critical roles that can make a significant difference in a company’s financial direction is that of a **fractional CFO **. This article will explore in detail what a fractional CFO is, what they do, and how they can help startups and small businesses make strategic financial decisions and optimize their financial performance without the need to bring on a full-time CFO.

@@ -39,6 +39,9 @@ const post = defineCollection({
       migratedFrom: z.string().url().optional(),
       // Confidence of automated conversion (review flag).
       needsReview: z.boolean().default(false),
+      // Business model the post applies to. Drives the badge on the card
+      // and (future) filtering on the listing.
+      businessModel: z.enum(['saas', 'ecommerce', 'both', 'general']).default('general'),
     }),
 });
 

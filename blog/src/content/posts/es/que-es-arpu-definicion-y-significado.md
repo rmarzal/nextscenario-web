@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/que-es-arpu-definicion-y-significado/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 El ARPU, o Ingreso Promedio por Usuario, es una métrica utilizada por empresas de telecomunicaciones, servicios y medios digitales para medir los factores que contribuyen al éxito de una empresa, como sus patrones de crecimiento y sus competidores. En términos simples, el ARPU mide la cantidad de dinero que una empresa espera generar de un usuario promedio.

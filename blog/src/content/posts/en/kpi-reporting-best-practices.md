@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/kpi-reporting-best-practices/'
 needsReview: false
 draft: false
+businessModel: 'general'
 ---
 
 Are you looking to take your business to the next level? In today's data-driven world, measuring and analyzing key performance indicators (KPIs) is crucial for success. In this ultimate guide, we will explore the best practices and strategies for effective KPI reporting. So, let's dive right in!

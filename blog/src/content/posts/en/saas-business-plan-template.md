@@ -13,6 +13,7 @@ author: 'nextscenario'
 migratedFrom: 'https://nextscenario.com/saas-business-plan-template/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 I've been consulting startups for 5 years now. I've realized that more than 50% of founders fail - mostly because they didn't manage cashflow properly.

@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/formula-del-porcentaje-de-crecimiento-un-analisis-detallado/'
 needsReview: false
 draft: false
+businessModel: 'general'
 ---
 
 El porcentaje de crecimiento es un concepto fundamental en el mundo de los negocios, la economía y las finanzas. Pero, ¿sabes cómo se calcula? En este blog, te enseñaremos cómo hacerlo. 

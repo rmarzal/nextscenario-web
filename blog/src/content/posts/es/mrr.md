@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/mrr/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 El MRR o monthly recurrent revenue es el núcleo de los ingresos en un negocio Saas, ya que representa el ingreso recurrente mensual de las suscripciones activas. Donde se incluye: 

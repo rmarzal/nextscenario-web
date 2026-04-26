@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/software-pl/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 ## Entendiendo el software P&L

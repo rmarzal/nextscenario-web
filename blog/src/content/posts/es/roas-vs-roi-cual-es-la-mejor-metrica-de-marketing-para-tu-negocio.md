@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/roas-vs-roi-cual-es-la-mejor-metrica-de-marketing-para-tu-negocio/'
 needsReview: false
 draft: false
+businessModel: 'general'
 ---
 
 El marketing es una parte fundamental de cualquier negocio. La forma en que medimos la eficacia de nuestras estrategias y tácticas de marketing es mediante el uso de métricas. Dos de las métricas más importantes y utilizadas en el mundo del marketing son el ROAS y el ROI. ¿Pero cuál es la mejor métrica para tu negocio? En este artículo, profundizaremos en los conceptos de ROAS y ROI, analizaremos sus diferencias clave y discutiremos cómo elegir la métrica correcta para tu negocio. También te ofreceremos algunas estrategias para mejorar tus métricas de marketing. Continúa leyendo para descubrir más. 

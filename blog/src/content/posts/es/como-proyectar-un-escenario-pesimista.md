@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/como-proyectar-un-escenario-pesimista/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 Como empresa de modelos financieros, hemos ayudado a nuestros clientes a atravesar tiempos difíciles [en el pasado](https://baremetrics.com/blog/how-we-went-from-weeks-of-cash-left-in-the-bank-to-profitable-in-8-months). Lo que es diferente esta vez es que estamos teniendo estas conversaciones con casi todo el mundo, y los cambios pueden ser muy repentinos. Queremos ayudar, y creo que mi experiencia con otras empresas de SaaS puede serle útil a la hora de planificar el nuevo futuro de su empresa. 

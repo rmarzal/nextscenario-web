@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/metricas-retencion-saas/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 Si perteneces a un negocio SaaS, sabrás que el éxito de tu empresa depende en gran medida del compromiso y la retención de tus usuarios. Después de todo, no se trata solo de adquirir clientes, sino de retenerlos a largo plazo.

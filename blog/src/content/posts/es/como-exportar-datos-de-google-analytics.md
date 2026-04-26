@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/como-exportar-datos-de-google-analytics/'
 needsReview: false
 draft: false
+businessModel: 'general'
 ---
 
 Si eres un C-level de una startups sabes lo importante que es tener datos precisos sobre tus clientes y producto para poder tomar decisiones estratégicas e identificar tus insights de mejora, ya sea en marketing, producto o negocio. Sin embargo, seguro que utilizas muchas herramientas que generan grandes cantidades de datos, sin unificar y cada plataforma tiene sus propios reports. Por eso migrar tus datos de Google Universal Analytics a tu base de datos puede ser interesante para tomar decisiones, pero puede resultar un proceso complicado, y si no se realiza correctamente, podrías perder información valiosa sobre tus clientes.

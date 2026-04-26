@@ -3,10 +3,16 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PostCard from '../../components/PostCard.astro';
 import CTABlock from '../../components/CTABlock.astro';
+import BlogSidebar from '../../components/BlogSidebar.astro';
 import { listAbsUrl } from '../../lib/i18n';
 
 const posts = (await getCollection('post', ({ data }) => data.lang === 'en' && !data.draft)).sort(
   (a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime()
+);
+
+const counts = posts.reduce(
+  (acc, p) => ({ ...acc, [p.data.businessModel]: (acc[p.data.businessModel] ?? 0) + 1 }),
+  {} as Record<string, number>
 );
 
 const title = 'Blog — NextScenario';
@@ -27,15 +33,20 @@ const description =
   </section>
 
   <section class="container">
-    <div class="post-grid">
-      {posts.map((post) => <PostCard post={post} />)}
+    <div class="blog-layout">
+      <div>
+        <div class="post-grid">
+          {posts.map((post) => <PostCard post={post} />)}
+        </div>
+        <CTABlock
+          lang="en"
+          variant="compact"
+          campaign="blog_listing"
+          title="Stop wrangling spreadsheets — start running on real numbers."
+          body="A 20-minute demo is enough to see your cash, MRR and unit economics live. No CSV imports, no week-end closes."
+        />
+      </div>
+      <BlogSidebar lang="en" modelCounts={counts} />
     </div>
-    <CTABlock
-      lang="en"
-      variant="compact"
-      campaign="blog_listing"
-      title="Stop wrangling spreadsheets — start running on real numbers."
-      body="A 20-minute demo is enough to see your cash, MRR and unit economics live. No CSV imports, no week-end closes."
-    />
   </section>
 </BaseLayout>

@@ -13,6 +13,7 @@ author: 'nextscenario'
 migratedFrom: 'https://nextscenario.com/product-analytics-a-complete-guide/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 The concept of **product analytics** refers to the measurement of digital products, and refers to the process of understanding how users interact with a digital product and using this data to improve our software.

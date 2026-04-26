@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/margen-bruto-vs-margen-neto/'
 needsReview: false
 draft: false
+businessModel: 'general'
 ---
 
 El margen bruto y el margen neto son dos conceptos clave en el mundo de los negocios que nos ayudan a comprender la salud financiera de una empresa. Ambos términos nos brindan información valiosa sobre la rentabilidad de un negocio y son utilizados para evaluar su rendimiento y tomar decisiones financieras estratégicas. En este artículo, exploraremos en detalle la diferencia entre el margen bruto y el margen neto, cómo calcularlos y su importancia en el éxito empresarial. ¡Acompáñanos en este viaje para descubrir más! 

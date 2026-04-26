@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/analitica-de-producto/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 El concepto de **análisis de productos** se refiere a la medición de productos digitales y se refiere al proceso de comprender cómo los usuarios interactúan con un producto digital y utilizar estos datos para mejorar nuestro software.

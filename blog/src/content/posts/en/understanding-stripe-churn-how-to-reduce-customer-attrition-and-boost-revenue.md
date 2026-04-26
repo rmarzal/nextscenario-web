@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/understanding-stripe-churn-how-to-reduce-customer-attrition-and-boost-revenue/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 Attention all business owners and entrepreneurs! Are you familiar with the term "Stripe Churn"? If not, don't worry. This article will delve into the world of Stripe Churn: what it is, why it matters to your business, and most importantly, how you can reduce it to boost your revenue. So let's jump right in!

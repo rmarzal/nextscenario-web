@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/one-pager-para-saas/'
 needsReview: false
 draft: false
+businessModel: 'both'
 ---
 
 Si eres una startup con algo de experiencia seguro sabrás lo que es un One Pager, pero sino, no te preocupes, a todos se nos quedó cara de tonto la primera vez que un inversor nos pidió un One Pager. Hoy te vengo a contar que es un One Pager y cómo crear un buen One Pager para buscar inversión, con ejemplos de One Pager Saas reales. 

@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/que-es-arr-definicion-y-significado/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 El Annual Recurring Revenue (ARR) es una métrica financiera que se utiliza para medir el flujo de ingresos recurrentes de una empresa. En español, se traduce como Ingresos Recurrentes Anuales. Esta fórmula permite a las empresas proyectar sus ingresos futuros y planificar su crecimiento.

@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/de-cfo-moderno-a-coo/'
 needsReview: false
 draft: false
+businessModel: 'general'
 ---
 
 En una startup en cambio de posiciones es bastante común, al principio, son necesarios perfiles generalistas para después convertirse en más especialistas, y no es un trabajo fácil. Hoy te contamos sobre

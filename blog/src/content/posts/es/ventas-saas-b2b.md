@@ -13,6 +13,7 @@ author: 'Ruben'
 migratedFrom: 'https://nextscenario.com/es/ventas-saas-b2b/'
 needsReview: false
 draft: false
+businessModel: 'saas'
 ---
 
 Una **venta de Saas "fácil" en b2b** , no es algo imposible, es cuestión de método y hoy veremos cómo.
