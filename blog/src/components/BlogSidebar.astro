@@ -1,12 +1,16 @@
 ---
 import type { Lang } from '../lib/i18n';
 
+type Model = 'saas' | 'ecommerce' | 'both' | 'general';
+
 interface Props {
   lang: Lang;
   modelCounts: Record<string, number>;
+  /** Active filter — `undefined` means we're on the unfiltered listing. */
+  currentModel?: Model;
 }
 
-const { lang, modelCounts } = Astro.props;
+const { lang, modelCounts, currentModel } = Astro.props;
 
 const copy = {
   es: {
@@ -23,6 +27,7 @@ const copy = {
     courseCTA: 'Ver el curso',
     modelsEyebrow: 'Modelos de negocio',
     modelsBody: 'Filtra por el tipo de negocio que aplica:',
+    allLabel: 'Ver todos',
     models: { saas: 'SaaS', ecommerce: 'Ecommerce', both: 'SaaS + Ecommerce', general: 'Finanzas (general)' },
   },
   en: {
@@ -39,6 +44,7 @@ const copy = {
     courseCTA: 'View the course',
     modelsEyebrow: 'Business models',
     modelsBody: 'Filter posts by business type:',
+    allLabel: 'View all',
     models: { saas: 'SaaS', ecommerce: 'Ecommerce', both: 'SaaS + Ecommerce', general: 'Finance (general)' },
   },
 } as const;
@@ -50,8 +56,13 @@ const courseUrl =
     ? 'https://b2bsaasmetrics.com/?utm_source=nextscenario&utm_medium=blog_sidebar&utm_campaign=course&utm_content=spanish'
     : 'https://b2bsaasmetrics.com/?utm_source=nextscenario&utm_medium=blog_sidebar&utm_campaign=course&utm_content=english';
 
-// Order models by count desc, dropping zero buckets
-const orderedModels = (['saas', 'both', 'ecommerce', 'general'] as const).filter(
+const listingBase = lang === 'es' ? '/es/blog-es' : '/blog';
+const filterUrl = (m: Model) => `${listingBase}/${m}/`;
+const allUrl = `${listingBase}/`;
+
+const totalPosts = Object.values(modelCounts).reduce((a, b) => a + b, 0);
+
+const orderedModels: Model[] = (['saas', 'both', 'ecommerce', 'general'] as const).filter(
   (m) => (modelCounts[m] ?? 0) > 0
 );
 ---
@@ -97,15 +108,31 @@ const orderedModels = (['saas', 'both', 'ecommerce', 'general'] as const).filter
     </a>
   </div>
 
-  {/* Business model index */}
+  {/* Business model filter */}
   <div class="sidebar-card">
     <p class="sidebar-card__eyebrow">{c.modelsEyebrow}</p>
     <p class="sidebar-card__body" style="margin-bottom:14px;">{c.modelsBody}</p>
     <ul class="sidebar-card__models">
+      <li>
+        <a
+          href={allUrl}
+          class={`sidebar-card__model-link${currentModel === undefined ? ' sidebar-card__model-link--active' : ''}`}
+          aria-current={currentModel === undefined ? 'page' : undefined}
+        >
+          <span class="post-card__model post-card__model--all">{c.allLabel}</span>
+          <span class="sidebar-card__model-count">{totalPosts}</span>
+        </a>
+      </li>
       {orderedModels.map((m) => (
         <li>
-          <span class={`post-card__model post-card__model--${m}`}>{c.models[m]}</span>
-          <span class="sidebar-card__model-count">{modelCounts[m] ?? 0}</span>
+          <a
+            href={filterUrl(m)}
+            class={`sidebar-card__model-link${currentModel === m ? ' sidebar-card__model-link--active' : ''}`}
+            aria-current={currentModel === m ? 'page' : undefined}
+          >
+            <span class={`post-card__model post-card__model--${m}`}>{c.models[m]}</span>
+            <span class="sidebar-card__model-count">{modelCounts[m] ?? 0}</span>
+          </a>
         </li>
       ))}
     </ul>
