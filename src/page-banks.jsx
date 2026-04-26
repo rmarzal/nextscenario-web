@@ -96,7 +96,7 @@ function BanksPage() {
             <a href={REGISTER_ES} className="btn btn-accent">Empieza gratis →</a>
           </div>
 
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 12, marginTop: 40 }}>
+          <div className="grid-4-kpi">
             {[{ l: "Bancos soportados", v: "30+" }, { l: "Países", v: "8" }, { l: "Frecuencia sync", v: "15 min" }, { l: "Cumplimiento", v: "PSD2" }].map((m, i) =>
             <div key={i} className="bigmetric"><div className="l">{m.l}</div><div className="v num">{m.v}</div></div>
             )}
@@ -143,7 +143,7 @@ function BanksPage() {
           <div className="section-head">
             <div><div className="eyebrow">Seguridad</div><h2>Tus datos bancarios, <em>protegidos</em>.</h2></div>
           </div>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 14 }}>
+          <div className="grid-3-cards">
             {[
             { t: "Solo lectura", d: "Nunca podemos mover dinero ni modificar nada. Leemos cuentas y movimientos con tu consentimiento." },
             { t: "PSD2 / AISP", d: "Somos Agentes de Información de Cuentas regulados. Cumplimos la directiva europea PSD2." },

@@ -96,7 +96,7 @@ function BanksPageEN() {
             <a href={REGISTER_EN} className="btn btn-accent">Start free →</a>
           </div>
 
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 12, marginTop: 40 }}>
+          <div className="grid-4-kpi">
             {[{ l: "Supported banks", v: "30+" }, { l: "Countries", v: "8" }, { l: "Sync frequency", v: "15 min" }, { l: "Compliance", v: "PSD2" }].map((m, i) =>
             <div key={i} className="bigmetric"><div className="l">{m.l}</div><div className="v num">{m.v}</div></div>
             )}
@@ -143,7 +143,7 @@ function BanksPageEN() {
           <div className="section-head">
             <div><div className="eyebrow">Security</div><h2>Your banking data, <em>protected</em>.</h2></div>
           </div>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 14 }}>
+          <div className="grid-3-cards">
             {[
             { t: "Read only", d: "We can never move money or modify anything. We read accounts and movements with your consent." },
             { t: "PSD2 / AISP", d: "We are regulated Account Information Service Providers. We comply with the European PSD2 directive." },

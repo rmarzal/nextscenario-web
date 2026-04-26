@@ -81,7 +81,7 @@ function Dashboard({ t, tweaks }) {
             </div>
           </div>
 
-          <div style={{ marginTop: 16, display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 16 }}>
+          <div className="grid-3-dash" style={{ marginTop: 16 }}>
             <div className="dash-panel">
               <div className="dp-label" style={{ marginBottom: 10 }}>{t._lang === "en" ? "Retention cohort" : "Cohorte de retención"}</div>
               <div style={{ height: 140 }}><CohortGrid /></div>

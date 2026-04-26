@@ -88,7 +88,7 @@ function IntegrationsPage() {
             <a href={REGISTER_ES} className="btn btn-accent">Empieza gratis →</a>
           </div>
 
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 12, marginTop: 48 }}>
+          <div className="grid-4-kpi" style={{ marginTop: 48 }}>
             {[{l:"Integraciones",v:"40+"},{l:"Bancos PSD2",v:"20+"},{l:"Sync",v:"Tiempo real"},{l:"Cumplimiento",v:"ISO 27001"}].map((m,i)=>(
               <div key={i} className="bigmetric"><div className="l">{m.l}</div><div className="v num">{m.v}</div></div>
             ))}

@@ -46,7 +46,7 @@ function CashflowPage() {
             <a href={REGISTER_ES} className="btn btn-accent">Empieza gratis →</a>
           </div>
 
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 12, marginTop: 40 }}>
+          <div className="grid-4-kpi">
             {[{l:"Caja actual",v:"€1.24M"},{l:"Cash in (30d)",v:"€478k"},{l:"Cash out (30d)",v:"€312k"},{l:"Runway",v:"18m"}].map((m,i)=>(
               <div key={i} className="bigmetric"><div className="l">{m.l}</div><div className="v num">{m.v}</div></div>
             ))}

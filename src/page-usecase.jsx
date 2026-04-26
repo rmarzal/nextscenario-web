@@ -24,7 +24,7 @@ function UseCasePage({ cfg }) {
             <a href={getRegisterUrl(lang)} className="btn btn-accent">{L ? "Start free →" : "Empieza gratis →"}</a>
             <a href="index.html#pricing" className="btn btn-ghost">{L ? "See pricing" : "Ver precios"}</a>
           </div>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 12, marginTop: 40 }}>
+          <div className="grid-4-kpi">
             {cfg.kpis.map((m, i) => (
               <div key={i} className="bigmetric"><div className="l">{m.l}</div><div className="v num">{m.v}</div><div className="sub">{m.s}</div></div>
             ))}
@@ -41,7 +41,7 @@ function UseCasePage({ cfg }) {
                 <div style={{ fontSize: 32, fontWeight: 500, letterSpacing: "-0.02em", marginTop: 4 }}>{cfg.dashTitle}</div>
               </div>
             </div>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 14 }}>
+            <div className="grid-3-dash">
               {cfg.dashKpis.map((k, i) => (
                 <div key={i} style={{ border: "1px solid color-mix(in oklab, var(--paper) 12%, transparent)", borderRadius: 12, padding: 16, background: i === 0 ? "var(--accent)" : "color-mix(in oklab, var(--ink) 55%, black)", color: i === 0 ? "var(--ink)" : "var(--paper)" }}>
                   <div style={{ fontFamily: "var(--font-mono)", fontSize: 10, letterSpacing: "0.08em", textTransform: "uppercase", opacity: 0.7 }}>{k.l}</div>
@@ -117,7 +117,7 @@ function UseCasePage({ cfg }) {
             </div>
             <p>{L ? "No development needed. 30+ integrations for" : "Sin desarrollos. 30+ integraciones específicas para"} {cfg.name.toLowerCase()}.</p>
           </div>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(6, 1fr)", gap: 12 }}>
+          <div className="grid-6-tools">
             {cfg.tools.map((t, i) => (
               <div key={i} style={{ padding: "20px 10px", border: "1px solid var(--line)", borderRadius: 12, background: "white", display: "flex", flexDirection: "column", alignItems: "center", gap: 10 }}>
                 <BrandLogo name={t} size={32} />

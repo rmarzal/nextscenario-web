@@ -23,7 +23,7 @@ function CasosHubEN() {
       </section>
       <section>
         <div className="container">
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
+          <div className="grid-2-cases">
             {cases.map((x, i) =>
             <a key={i} href={x.h} style={{ display: "block", borderRadius: 24, padding: 40, background: x.c, color: x.i, minHeight: 240, textDecoration: "none", boxShadow: "0 20px 40px -20px rgba(10,18,48,0.2)", transition: "transform 0.2s" }}
             onMouseEnter={(e) => e.currentTarget.style.transform = "translateY(-4px)"}

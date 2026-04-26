@@ -88,7 +88,7 @@ function IntegrationsPageEN() {
             <a href={REGISTER_EN} className="btn btn-accent">Start free →</a>
           </div>
 
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 12, marginTop: 48 }}>
+          <div className="grid-4-kpi" style={{ marginTop: 48 }}>
             {[{l:"Integrations",v:"40+"},{l:"PSD2 Banks",v:"20+"},{l:"Sync",v:"Real time"},{l:"Compliance",v:"ISO 27001"}].map((m,i)=>(
               <div key={i} className="bigmetric"><div className="l">{m.l}</div><div className="v num">{m.v}</div></div>
             ))}
