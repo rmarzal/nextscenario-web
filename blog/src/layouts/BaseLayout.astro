@@ -83,8 +83,12 @@ const ui = UI[lang];
         </a>
         <nav class="site-nav">
           <a href={listUrl(lang)}>{ui.blogTitle}</a>
-          <a href={lang === 'es' ? '/es/reservar-demo.html' : '/book-demo.html'}>
+          <a class="nav-cta" href={lang === 'es' ? '/es/reservar-demo.html' : '/book-demo.html'}>
+            <span class="nav-cta-dot" aria-hidden="true"></span>
             {lang === 'es' ? 'Solicitar demo' : 'Book a demo'}
+            <svg width="12" height="12" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+              <path d="M2 7h10m0 0L7 2m5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
           </a>
           {alternates.length > 0 ? (
             <a

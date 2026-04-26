@@ -1,6 +1,7 @@
 ---
 import { getCollection, render } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import CTABlock from '../../components/CTABlock.astro';
 import { formatDate, postAbsUrl, UI } from '../../lib/i18n';
 
 export async function getStaticPaths() {
@@ -97,11 +98,15 @@ const jsonLd = {
         <Content />
       </div>
 
-      <aside class="cta-block">
-        <h3>See your own numbers like this — in real time.</h3>
-        <p>NextScenario plugs into your banks, Stripe and ad platforms. Cash, revenue and margins update live.</p>
-        <a class="btn" href="/book-demo.html">Book a demo →</a>
-      </aside>
+      <CTABlock lang="en" />
     </div>
   </article>
+
+  <a class="sticky-cta" href="/book-demo.html" aria-label="Book a demo">
+    <span class="sticky-cta__dot" aria-hidden="true"></span>
+    Book a demo
+    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+      <path d="M2 7h10m0 0L7 2m5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </a>
 </BaseLayout>

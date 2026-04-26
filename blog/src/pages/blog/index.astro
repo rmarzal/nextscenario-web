@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PostCard from '../../components/PostCard.astro';
+import CTABlock from '../../components/CTABlock.astro';
 import { listAbsUrl } from '../../lib/i18n';
 
 const posts = (await getCollection('post', ({ data }) => data.lang === 'en' && !data.draft)).sort(
@@ -29,5 +30,11 @@ const description =
     <div class="post-grid">
       {posts.map((post) => <PostCard post={post} />)}
     </div>
+    <CTABlock
+      lang="en"
+      variant="compact"
+      title="Stop wrangling spreadsheets — start running on real numbers."
+      body="A 20-minute demo is enough to see your cash, MRR and unit economics live. No CSV imports, no week-end closes."
+    />
   </section>
 </BaseLayout>

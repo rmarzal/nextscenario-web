@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import PostCard from '../../../components/PostCard.astro';
+import CTABlock from '../../../components/CTABlock.astro';
 import { listAbsUrl } from '../../../lib/i18n';
 
 const posts = (await getCollection('post', ({ data }) => data.lang === 'es' && !data.draft)).sort(
@@ -29,5 +30,11 @@ const description =
     <div class="post-grid">
       {posts.map((post) => <PostCard post={post} />)}
     </div>
+    <CTABlock
+      lang="es"
+      variant="compact"
+      title="Deja Excel — empieza a operar con números reales."
+      body="Una demo de 20 minutos es suficiente para ver tu caja, MRR y unit economics en vivo. Sin importar CSVs, sin cierres a final de mes."
+    />
   </section>
 </BaseLayout>

@@ -179,6 +179,58 @@ a:hover { color: var(--accent-2); }
   font-weight: 500;
 }
 
+/* Header demo CTA — pulsing dot per brand book */
+.nav-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--ink);
+  color: var(--paper) !important;
+  padding: 10px 16px;
+  border-radius: var(--radius-pill);
+  font-size: 13px !important;
+  font-weight: 500;
+  letter-spacing: -0.005em;
+  transition: background 0.2s, color 0.2s;
+}
+
+.nav-cta::after { display: none !important; }
+
+.nav-cta:hover {
+  background: var(--accent);
+  color: var(--ink) !important;
+}
+
+.nav-cta:hover svg path { stroke: var(--ink); }
+
+.nav-cta svg {
+  transition: transform 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.nav-cta:hover svg { transform: translateX(2px); }
+
+.nav-cta-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  animation: btnPulse 1.6s ease-in-out infinite;
+}
+
+@keyframes btnPulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(0.8); }
+}
+
+@media (max-width: 720px) {
+  .nav-cta { padding: 8px 12px; font-size: 12px !important; }
+  .nav-cta svg { display: none; }
+}
+
+@media (max-width: 420px) {
+  .nav-cta-dot { display: none; }
+}
+
 .site-footer {
   border-top: 1px solid var(--line);
   padding: 56px 0 40px;
@@ -780,11 +832,11 @@ a:hover { color: var(--accent-2); }
 
 .tag-pill:hover { background: var(--accent); border-color: var(--ink); }
 
-/* CTA block at article end */
+/* CTA block — used end-of-article and pre-footer of listings */
 
 .cta-block {
   margin-top: 64px;
-  padding: 40px;
+  padding: 48px 40px;
   background: var(--ink);
   color: var(--paper);
   border-radius: 24px;
@@ -799,34 +851,185 @@ a:hover { color: var(--accent-2); }
   right: -20%;
   width: 60%;
   height: 140%;
-  background: radial-gradient(ellipse at center, rgba(212, 255, 63, 0.18), transparent 60%);
+  background:
+    radial-gradient(ellipse at center, rgba(212, 255, 63, 0.22), transparent 60%),
+    radial-gradient(ellipse at 30% 90%, rgba(91, 140, 255, 0.18), transparent 50%);
   pointer-events: none;
 }
 
-.cta-block h3 {
-  font-size: 28px;
-  font-weight: 500;
-  letter-spacing: -0.02em;
-  margin: 0 0 12px;
+.cta-block::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(246, 244, 238, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(246, 244, 238, 0.04) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: radial-gradient(ellipse at 50% 50%, #000 30%, transparent 80%);
+  pointer-events: none;
 }
 
-.cta-block p { color: rgba(246, 244, 238, 0.7); margin: 0 0 24px; font-size: 15px; }
+.cta-block__content {
+  position: relative;
+  z-index: 1;
+  max-width: 560px;
+}
 
-.cta-block .btn {
+.cta-block h3 {
+  font-family: var(--font-sans);
+  font-size: clamp(22px, 2.4vw, 30px);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  margin: 0 0 14px;
+}
+
+.cta-block p {
+  color: rgba(246, 244, 238, 0.72);
+  margin: 0 0 28px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.cta-block__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+/* Buttons */
+
+.btn {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  padding: 14px 22px;
-  background: var(--accent);
-  color: var(--ink);
+  padding: 13px 20px;
   border-radius: var(--radius-pill);
+  font-family: var(--font-sans);
   font-weight: 500;
   font-size: 14px;
-  position: relative;
-  z-index: 1;
+  letter-spacing: -0.005em;
+  text-decoration: none;
+  transition:
+    background 0.2s,
+    color 0.2s,
+    border-color 0.2s,
+    transform 0.15s;
+  border: 1px solid transparent;
 }
 
-.cta-block .btn:hover { color: var(--ink); background: var(--paper); }
+.btn svg { transition: transform 0.2s cubic-bezier(0.2, 0.8, 0.2, 1); }
+.btn:hover svg { transform: translateX(3px); }
+
+.btn--primary {
+  background: var(--accent);
+  color: var(--ink);
+}
+
+.btn--primary:hover {
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.btn--secondary {
+  background: transparent;
+  color: var(--paper);
+  border-color: rgba(246, 244, 238, 0.4);
+}
+
+.btn--secondary:hover {
+  background: rgba(246, 244, 238, 0.08);
+  color: var(--paper);
+  border-color: var(--paper);
+}
+
+.btn-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--ink);
+  animation: btnPulse 1.6s ease-in-out infinite;
+}
+
+/* Compact variant for listing pre-footer */
+.cta-block--compact { padding: 36px 32px; margin-top: 32px; }
+
+@media (max-width: 640px) {
+  .cta-block { padding: 32px 24px; }
+  .cta-block__buttons { flex-direction: column; align-items: stretch; }
+  .btn { justify-content: center; }
+}
+
+/* Sticky mobile CTA — only on article pages, only when scrolled past hero */
+
+.sticky-cta {
+  position: fixed;
+  bottom: 16px;
+  left: 50%;
+  transform: translate(-50%, 16px);
+  z-index: 9;
+  display: none;
+  align-items: center;
+  gap: 8px;
+  background: var(--ink);
+  color: var(--paper);
+  padding: 12px 20px;
+  border-radius: var(--radius-pill);
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: none;
+  box-shadow: 0 14px 32px -10px rgba(10, 18, 48, 0.4);
+  opacity: 0;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+@media (max-width: 720px) {
+  .sticky-cta { display: inline-flex; }
+}
+
+.sticky-cta:hover { color: var(--ink); background: var(--accent); }
+.sticky-cta:hover svg path { stroke: var(--ink); }
+
+.sticky-cta__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  animation: btnPulse 1.6s ease-in-out infinite;
+}
+
+/* Reveal sticky CTA after scrolling past initial viewport — pure CSS */
+@supports (animation-timeline: scroll()) {
+  .sticky-cta {
+    animation: stickyReveal linear both;
+    animation-timeline: scroll();
+    animation-range: 600px 800px;
+  }
+  @keyframes stickyReveal {
+    to {
+      opacity: 1;
+      transform: translate(-50%, 0);
+    }
+  }
+}
+
+/* Fallback for browsers without scroll-driven animations: always visible on mobile */
+@supports not (animation-timeline: scroll()) {
+  @media (max-width: 720px) {
+    .sticky-cta {
+      opacity: 1;
+      transform: translate(-50%, 0);
+    }
+  }
+}
+
+/* Keep sticky CTA from overlapping the bottom edge content of articles */
+@media (max-width: 720px) {
+  .article { padding-bottom: 100px; }
+  .site-footer { padding-bottom: 88px; }
+}
 
 /* Related posts */
 
