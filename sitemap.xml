@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://nextscenario.com/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextscenario.com/index.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nextscenario.com/es/index.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nextscenario.com/es/index.html"/>
+    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://nextscenario.com/es/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextscenario.com/index.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nextscenario.com/es/index.html"/>
+    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://nextscenario.com/integrations.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextscenario.com/integrations.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nextscenario.com/es/integraciones.html"/>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://nextscenario.com/es/integraciones.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextscenario.com/integrations.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nextscenario.com/es/integraciones.html"/>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://nextscenario.com/banks.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextscenario.com/banks.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nextscenario.com/es/bancos.html"/>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://nextscenario.com/es/bancos.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextscenario.com/banks.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nextscenario.com/es/bancos.html"/>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://nextscenario.com/use-cases.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextscenario.com/use-cases.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nextscenario.com/es/casos-de-uso.html"/>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://nextscenario.com/es/casos-de-uso.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextscenario.com/use-cases.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nextscenario.com/es/casos-de-uso.html"/>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://nextscenario.com/use-case-ecommerce.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextscenario.com/use-case-ecommerce.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nextscenario.com/es/caso-ecommerce.html"/>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://nextscenario.com/es/caso-ecommerce.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextscenario.com/use-case-ecommerce.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nextscenario.com/es/caso-ecommerce.html"/>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://nextscenario.com/use-case-retail.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextscenario.com/use-case-retail.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nextscenario.com/es/caso-retail.html"/>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://nextscenario.com/es/caso-retail.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextscenario.com/use-case-retail.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nextscenario.com/es/caso-retail.html"/>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://nextscenario.com/use-case-saas.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextscenario.com/use-case-saas.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nextscenario.com/es/caso-saas.html"/>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://nextscenario.com/es/caso-saas.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextscenario.com/use-case-saas.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nextscenario.com/es/caso-saas.html"/>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://nextscenario.com/use-case-marketplace.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextscenario.com/use-case-marketplace.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nextscenario.com/es/caso-marketplace.html"/>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://nextscenario.com/es/caso-marketplace.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextscenario.com/use-case-marketplace.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nextscenario.com/es/caso-marketplace.html"/>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://nextscenario.com/financial-models.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextscenario.com/financial-models.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nextscenario.com/es/modelos-financieros.html"/>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://nextscenario.com/es/modelos-financieros.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextscenario.com/financial-models.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nextscenario.com/es/modelos-financieros.html"/>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://nextscenario.com/sales-forecast.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextscenario.com/sales-forecast.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nextscenario.com/es/forecast-ventas.html"/>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://nextscenario.com/es/forecast-ventas.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextscenario.com/sales-forecast.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nextscenario.com/es/forecast-ventas.html"/>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://nextscenario.com/cashflow.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextscenario.com/cashflow.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nextscenario.com/es/cashflow.html"/>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://nextscenario.com/es/cashflow.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextscenario.com/cashflow.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nextscenario.com/es/cashflow.html"/>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://nextscenario.com/book-demo.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextscenario.com/book-demo.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nextscenario.com/es/reservar-demo.html"/>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://nextscenario.com/es/reservar-demo.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextscenario.com/book-demo.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nextscenario.com/es/reservar-demo.html"/>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://nextscenario.com/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextscenario.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nextscenario.com/es/privacidad.html"/>
+    <priority>0.3</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://nextscenario.com/es/privacidad.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextscenario.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nextscenario.com/es/privacidad.html"/>
+    <priority>0.3</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://nextscenario.com/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextscenario.com/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nextscenario.com/es/terminos.html"/>
+    <priority>0.3</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://nextscenario.com/es/terminos.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextscenario.com/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nextscenario.com/es/terminos.html"/>
+    <priority>0.3</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://nextscenario.com/cookies.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextscenario.com/cookies.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nextscenario.com/es/cookies.html"/>
+    <priority>0.3</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://nextscenario.com/es/cookies.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextscenario.com/cookies.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nextscenario.com/es/cookies.html"/>
+    <priority>0.3</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+</urlset>

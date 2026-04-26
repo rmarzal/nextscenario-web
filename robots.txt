@@ -24,3 +24,6 @@ Disallow: /
 
 User-agent: cohere-ai
 Disallow: /
+
+# Sitemap (will be enabled when site goes live)
+# Sitemap: https://nextscenario.com/sitemap.xml

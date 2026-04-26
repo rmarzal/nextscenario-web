@@ -1,0 +1,17 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+<rect width="1200" height="630" fill="#0A1230"/>
+<rect x="60" y="60" width="1080" height="510" rx="24" fill="#111B42"/>
+<text x="120" y="220" font-family="sans-serif" font-weight="600" font-size="72" fill="#F6F4EE" letter-spacing="-2">NextScenario</text>
+<text x="120" y="310" font-family="sans-serif" font-weight="400" font-size="36" fill="#D4FF3F">Business analytics in real time</text>
+<text x="120" y="370" font-family="sans-serif" font-size="24" fill="rgba(246,244,238,0.6)">P&amp;L · Cashflow · Forecast · Metrics · No Excel</text>
+<rect x="120" y="420" width="200" height="60" rx="30" fill="#D4FF3F"/>
+<text x="160" y="458" font-family="sans-serif" font-weight="600" font-size="18" fill="#0A1230">Book a demo</text>
+<g transform="translate(900,160)">
+<rect width="200" height="300" rx="16" fill="#1B2657"/>
+<rect x="16" y="16" width="168" height="30" rx="4" fill="#D4FF3F" opacity="0.8"/>
+<rect x="16" y="60" width="80" height="14" rx="2" fill="rgba(246,244,238,0.3)"/>
+<text x="16" y="110" font-family="monospace" font-size="36" fill="#F6F4EE">€412k</text>
+<rect x="16" y="130" width="168" height="1" fill="rgba(246,244,238,0.1)"/>
+<rect x="16" y="150" width="168" height="100" rx="4" fill="rgba(212,255,63,0.15)"/>
+</g>
+</svg>
