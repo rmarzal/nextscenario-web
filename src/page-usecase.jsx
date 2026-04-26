@@ -21,7 +21,8 @@ function UseCasePage({ cfg }) {
               <span className="btn-demo-label">{L ? "Request demo for" : "Solicitar demo adaptada a"} {cfg.name}</span>
               <span className="btn-demo-arrow">→</span>
             </a>
-            <button className="btn btn-ghost">{L ? "See pricing" : "Ver precios"}</button>
+            <a href={getRegisterUrl(lang)} className="btn btn-accent">{L ? "Start free →" : "Empieza gratis →"}</a>
+            <a href="index.html#pricing" className="btn btn-ghost">{L ? "See pricing" : "Ver precios"}</a>
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 12, marginTop: 40 }}>
             {cfg.kpis.map((m, i) => (
@@ -77,6 +78,15 @@ function UseCasePage({ cfg }) {
           </div>
         </div>
       </section>
+
+      {/* CTA band */}
+      <div className="cta-band">
+        <div className="container">
+          <span className="cta-band-text">{L ? "Ready to see it in action?" : "¿Quieres verlo en acción?"}</span>
+          <a href={demoUrl} className="btn btn-accent">{L ? "Book a demo" : "Solicitar demo"}</a>
+          <a href={getRegisterUrl(lang)} className="btn btn-ghost" style={{ borderColor: "rgba(246,244,238,0.28)", color: "var(--paper)" }}>{L ? "Start free" : "Empieza gratis"}</a>
+        </div>
+      </div>
 
       <section style={{ background: "var(--paper-2)" }}>
         <div className="container">

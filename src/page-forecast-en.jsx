@@ -25,6 +25,10 @@ function ForecastPageEN() {
           <div className="sub-kicker">Sales forecast</div>
           <h1 className="sub-h1">Project your sales with <em>scenarios</em> — <span className="hl">not intuition</span>.</h1>
           <p className="sub-lede">Use historical data, pipeline and seasonality to forecast the next 12 months. Optimistic, base and conservative scenarios with one click.</p>
+          <div className="sub-ctas" style={{ marginTop: 28 }}>
+            <a href="book-demo.html" className="btn btn-primary">Book a demo →</a>
+            <a href={REGISTER_EN} className="btn btn-accent">Start free →</a>
+          </div>
         </div>
       </section>
 

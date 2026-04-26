@@ -91,6 +91,10 @@ function BanksPage() {
           <div className="sub-kicker">Integraciones bancarias</div>
           <h1 className="sub-h1">Conecta <em>cualquier banco</em> vía <span className="hl">en 2 clicks</span>.</h1>
           <p className="sub-lede">Lectura segura de cuentas y tarjetas con Open Banking. Conciliación automática, saldos y movimientos en tiempo real — nunca modificamos nada en tu banco.</p>
+          <div className="sub-ctas" style={{ marginTop: 28 }}>
+            <a href="reservar-demo.html" className="btn btn-primary">Solicitar demo →</a>
+            <a href={REGISTER_ES} className="btn btn-accent">Empieza gratis →</a>
+          </div>
 
           <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 12, marginTop: 40 }}>
             {[{ l: "Bancos soportados", v: "30+" }, { l: "Países", v: "8" }, { l: "Frecuencia sync", v: "15 min" }, { l: "Cumplimiento", v: "PSD2" }].map((m, i) =>

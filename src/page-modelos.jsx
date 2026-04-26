@@ -32,7 +32,7 @@ function ModelosPage() {
           <p className="sub-lede">Cuenta de pérdidas y ganancias, balance y estructura de costes que se actualizan solos con los datos reales de tu negocio. Cierra el mes el día 1.</p>
           <div className="sub-ctas">
             <a href="reservar-demo.html" className="btn btn-primary">Ver demo del modelo →</a>
-            <a href="reservar-demo.html" className="btn btn-ghost">Descargar plantilla</a>
+            <a href={REGISTER_ES} className="btn btn-accent">Empieza gratis →</a>
           </div>
         </div>
       </section>

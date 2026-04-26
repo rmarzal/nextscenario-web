@@ -41,6 +41,10 @@ function CashflowPage() {
           <div className="sub-kicker">Cashflow</div>
           <h1 className="sub-h1">Tu <em>caja</em> en tiempo real. <span className="hl">Runway</span> sin sorpresas.</h1>
           <p className="sub-lede">Cash in, cash out y proyección de tesorería a 12 meses. Conciliación bancaria automática y alertas antes de que falte caja.</p>
+          <div className="sub-ctas" style={{ marginTop: 28 }}>
+            <a href="reservar-demo.html" className="btn btn-primary">Solicitar demo →</a>
+            <a href={REGISTER_ES} className="btn btn-accent">Empieza gratis →</a>
+          </div>
 
           <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 12, marginTop: 40 }}>
             {[{l:"Caja actual",v:"€1.24M"},{l:"Cash in (30d)",v:"€478k"},{l:"Cash out (30d)",v:"€312k"},{l:"Runway",v:"18m"}].map((m,i)=>(

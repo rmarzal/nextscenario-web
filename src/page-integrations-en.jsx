@@ -84,8 +84,8 @@ function IntegrationsPageEN() {
           <h1 className="sub-h1">Connect your stack. <em>Unify your data</em> in <span className="hl">minutes</span>.</h1>
           <p className="sub-lede">40+ native integrations with banks, payment gateways, ERPs, ecommerce, marketplaces and marketing tools. Secure read access, continuous sync.</p>
           <div className="sub-ctas">
-            <a href="#catalogo" className="btn btn-primary">View all integrations →</a>
-            <a href="book-demo.html" className="btn btn-ghost">Request an integration</a>
+            <a href="book-demo.html" className="btn btn-primary">Book a demo →</a>
+            <a href={REGISTER_EN} className="btn btn-accent">Start free →</a>
           </div>
 
           <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 12, marginTop: 48 }}>

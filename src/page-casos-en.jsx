@@ -15,6 +15,10 @@ function CasosHubEN() {
           <div className="sub-kicker">Use cases</div>
           <h1 className="sub-h1">Metrics <em>adapted</em> to your business <span className="hl">model</span>.</h1>
           <p className="sub-lede">Every business has its own financial models. NextScenario adapts to each one: ecommerce, retail, SaaS or marketplace.</p>
+          <div className="sub-ctas" style={{ marginTop: 28 }}>
+            <a href="book-demo.html" className="btn btn-primary">Book a demo →</a>
+            <a href={REGISTER_EN} className="btn btn-accent">Start free →</a>
+          </div>
         </div>
       </section>
       <section>

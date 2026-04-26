@@ -32,7 +32,7 @@ function ModelosPageEN() {
           <p className="sub-lede">Profit and loss statement, balance sheet and cost structure that update automatically with your real business data. Close the month on day 1.</p>
           <div className="sub-ctas">
             <a href="book-demo.html" className="btn btn-primary">See model demo →</a>
-            <a href="book-demo.html" className="btn btn-ghost">Download template</a>
+            <a href={REGISTER_EN} className="btn btn-accent">Start free →</a>
           </div>
         </div>
       </section>

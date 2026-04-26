@@ -14,6 +14,10 @@ function CasosHub() {
           <div className="sub-kicker">Casos de uso</div>
           <h1 className="sub-h1">Métricas <em>adaptadas</em> a tu modelo de <span className="hl">negocio</span>.</h1>
           <p className="sub-lede">Cada negocio tiene sus propios modelos financieros. NextScenario se adapta a cada particulariedad: ecommerce, retail, SaaS o marketplace.</p>
+          <div className="sub-ctas" style={{ marginTop: 28 }}>
+            <a href="reservar-demo.html" className="btn btn-primary">Solicitar demo →</a>
+            <a href={REGISTER_ES} className="btn btn-accent">Empieza gratis →</a>
+          </div>
         </div>
       </section>
       <section>

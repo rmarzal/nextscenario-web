@@ -91,6 +91,10 @@ function BanksPageEN() {
           <div className="sub-kicker">Bank integrations</div>
           <h1 className="sub-h1">Connect <em>any bank</em> in <span className="hl">2 clicks</span>.</h1>
           <p className="sub-lede">Secure account and card read access with Open Banking. Automatic reconciliation, balances and movements in real time — we never modify anything in your bank.</p>
+          <div className="sub-ctas" style={{ marginTop: 28 }}>
+            <a href="book-demo.html" className="btn btn-primary">Book a demo →</a>
+            <a href={REGISTER_EN} className="btn btn-accent">Start free →</a>
+          </div>
 
           <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 12, marginTop: 40 }}>
             {[{ l: "Supported banks", v: "30+" }, { l: "Countries", v: "8" }, { l: "Sync frequency", v: "15 min" }, { l: "Compliance", v: "PSD2" }].map((m, i) =>

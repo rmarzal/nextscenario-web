@@ -6,7 +6,7 @@ function BookDemoPageEN() {
       <section className="sub-hero" style={{ borderTop: "none", paddingBottom: 40 }}>
         <div className="container">
           <div className="sub-crumb"><a href="index.html">Home</a> · <span>Book a demo</span></div>
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 56, alignItems: "start" }}>
+          <div className="booking-grid">
             <div>
               <div className="sub-kicker">Personalized demo</div>
               <h1 className="sub-h1" style={{ fontSize: "clamp(36px, 4.8vw, 64px)" }}>Book a <em>demo</em> with our team.</h1>
