@@ -3,14 +3,25 @@ import { getCollection, render } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import CTABlock from '../../components/CTABlock.astro';
 import BlogSidebar from '../../components/BlogSidebar.astro';
+import PostNav from '../../components/PostNav.astro';
 import { formatDate, postAbsUrl, UI } from '../../lib/i18n';
 
 export async function getStaticPaths() {
   const posts = await getCollection('post', ({ data }) => data.lang === 'en' && !data.draft);
-  return posts.map((post) => ({ params: { slug: post.data.slug }, props: { post } }));
+  // Sort newest → oldest. "prev" is the newer post (one above in the
+  // listing), "next" is the older post (one below).
+  const sorted = posts.slice().sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
+  return sorted.map((post, i) => ({
+    params: { slug: post.data.slug },
+    props: {
+      post,
+      prev: sorted[i - 1] ? { slug: sorted[i - 1].data.slug, title: sorted[i - 1].data.title } : null,
+      next: sorted[i + 1] ? { slug: sorted[i + 1].data.slug, title: sorted[i + 1].data.title } : null,
+    },
+  }));
 }
 
-const { post } = Astro.props;
+const { post, prev, next } = Astro.props;
 const { Content } = await render(post);
 const {
   title,
@@ -77,10 +88,8 @@ const jsonLd = {
   <div class="container">
     <div class="article-layout">
       <article class="article">
+        <PostNav lang="en" prev={prev} next={next} variant="top" />
         <header>
-          <p class="eyebrow">
-            <a href="/blog/" style="color:inherit;">← {ui.backToBlog}</a>
-          </p>
           <h1>{title}</h1>
           <p class="lede">{description}</p>
           <div class="meta">
@@ -117,6 +126,8 @@ const jsonLd = {
         </div>
 
         <CTABlock lang="en" campaign="blog_post" />
+
+        <PostNav lang="en" prev={prev} next={next} variant="bottom" />
       </article>
 
       <BlogSidebar lang="en" modelCounts={counts} />
