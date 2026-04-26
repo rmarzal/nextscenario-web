@@ -8,7 +8,7 @@ lang: 'es'
 tags: ['saas', 'metricas', 'unit-economics']
 heroImage: ""
 heroAlt: 'Regla del 40 en SaaS — gráfico de crecimiento más margen'
-translationOf: ""
+translationOf: 'rule-of-40-saas'
 author: 'NextScenario'
 needsReview: false
 draft: false
