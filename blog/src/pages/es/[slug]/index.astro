@@ -91,12 +91,8 @@ const jsonLd = {
             >
               {modelLabels[businessModel]}
             </a>
+            {tags.map((t: string) => <span class="tag-pill">{t}</span>)}
           </div>
-          {tags.length > 0 && (
-            <div class="tag-row">
-              {tags.map((t: string) => <span class="tag-pill">{t}</span>)}
-            </div>
-          )}
         </header>
 
         {heroImage ? (
