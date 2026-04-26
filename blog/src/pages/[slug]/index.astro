@@ -84,8 +84,6 @@ const jsonLd = {
           <h1>{title}</h1>
           <p class="lede">{description}</p>
           <div class="meta">
-            <span>{ui.publishedOn} {formatDate(pubDate, 'en')}</span>
-            {updatedDate && <span>{ui.updatedOn} {formatDate(updatedDate, 'en')}</span>}
             <span>{author}</span>
             <a
               href={`/blog/${businessModel}/`}
