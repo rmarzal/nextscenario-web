@@ -82,7 +82,25 @@ const ui = UI[lang];
           <span>NextScenario</span>
         </a>
         <nav class="site-nav">
-          <a href={listUrl(lang)}>{ui.blogTitle}</a>
+          <a href={lang === 'es' ? '/es/' : '/'} class="site-nav__link">
+            {lang === 'es' ? 'Inicio' : 'Home'}
+          </a>
+          <a href={listUrl(lang)} class="site-nav__link">{ui.blogTitle}</a>
+          <a
+            href={
+              lang === 'es'
+                ? 'https://b2bsaasmetrics.com/?utm_source=nextscenario&utm_medium=blog_nav&utm_campaign=course&utm_content=spanish'
+                : 'https://b2bsaasmetrics.com/?utm_source=nextscenario&utm_medium=blog_nav&utm_campaign=course&utm_content=english'
+            }
+            class="site-nav__link site-nav__link--external"
+            rel="noopener"
+            target="_blank"
+          >
+            {lang === 'es' ? 'Curso SaaS' : 'SaaS course'}
+            <svg width="11" height="11" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+              <path d="M5 3h6v6m0-6L3 11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
           <a class="nav-cta" href={lang === 'es' ? '/es/reservar-demo.html' : '/book-demo.html'}>
             <span class="nav-cta-dot" aria-hidden="true"></span>
             {lang === 'es' ? 'Solicitar demo' : 'Book a demo'}

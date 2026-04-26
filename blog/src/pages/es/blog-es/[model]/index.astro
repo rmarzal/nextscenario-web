@@ -4,6 +4,7 @@ import BaseLayout from '../../../../layouts/BaseLayout.astro';
 import PostCard from '../../../../components/PostCard.astro';
 import CTABlock from '../../../../components/CTABlock.astro';
 import BlogSidebar from '../../../../components/BlogSidebar.astro';
+import CategoryTabs from '../../../../components/CategoryTabs.astro';
 import { SITE_URL } from '../../../../lib/i18n';
 
 const VALID_MODELS = ['saas', 'ecommerce', 'both', 'general'] as const;
@@ -68,6 +69,10 @@ const canonical = `${SITE_URL}/es/blog-es/${model}/`;
       <p class="lede">{ledeByModel[model]}</p>
     </div>
   </section>
+
+  <div class="container">
+    <CategoryTabs lang="es" modelCounts={counts} currentModel={model} />
+  </div>
 
   <section class="container">
     <div class="blog-layout">

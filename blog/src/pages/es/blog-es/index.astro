@@ -4,6 +4,7 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 import PostCard from '../../../components/PostCard.astro';
 import CTABlock from '../../../components/CTABlock.astro';
 import BlogSidebar from '../../../components/BlogSidebar.astro';
+import CategoryTabs from '../../../components/CategoryTabs.astro';
 import { listAbsUrl } from '../../../lib/i18n';
 
 const posts = (await getCollection('post', ({ data }) => data.lang === 'es' && !data.draft)).sort(
@@ -31,6 +32,10 @@ const description =
       </p>
     </div>
   </section>
+
+  <div class="container">
+    <CategoryTabs lang="es" modelCounts={counts} />
+  </div>
 
   <section class="container">
     <div class="blog-layout">
