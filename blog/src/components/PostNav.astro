@@ -1,5 +1,5 @@
 ---
-import { listUrl, postUrl, type Lang } from '../lib/i18n';
+import { postUrl, type Lang } from '../lib/i18n';
 
 interface NavTarget {
   slug: string;
@@ -8,117 +8,29 @@ interface NavTarget {
 
 interface Props {
   lang: Lang;
-  prev?: NavTarget | null;
-  next?: NavTarget | null;
-  variant?: 'top' | 'bottom';
+  next: NavTarget;
 }
 
-const { lang, prev, next, variant = 'bottom' } = Astro.props;
+const { lang, next } = Astro.props;
 
 const copy = {
-  es: {
-    prev: 'Anterior',
-    next: 'Siguiente',
-    home: 'Inicio del blog',
-    homeShort: 'Blog',
-    backToBlog: '← Volver al blog',
-    prevPost: 'Artículo anterior',
-    nextPost: 'Artículo siguiente',
-  },
-  en: {
-    prev: 'Previous',
-    next: 'Next',
-    home: 'Blog home',
-    homeShort: 'Blog',
-    backToBlog: '← Back to blog',
-    prevPost: 'Previous article',
-    nextPost: 'Next article',
-  },
+  es: { eyebrow: 'Siguiente artículo' },
+  en: { eyebrow: 'Next article' },
 } as const;
 
 const c = copy[lang];
-const homeHref = listUrl(lang);
 ---
 
-{variant === 'top' ? (
-  <nav class="post-nav post-nav--top" aria-label={lang === 'es' ? 'Navegación entre artículos' : 'Article navigation'}>
-    <a href={homeHref} class="post-nav__home">
-      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-        <path d="M12 7H2m0 0l5-5m-5 5l5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-      <span>{c.backToBlog.replace('← ', '')}</span>
-    </a>
-    <div class="post-nav__pair">
-      {prev ? (
-        <a href={postUrl(lang, prev.slug)} class="post-nav__btn post-nav__btn--prev" aria-label={`${c.prevPost}: ${prev.title}`}>
-          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-            <path d="M12 7H2m0 0l5-5m-5 5l5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-          <span>{c.prev}</span>
-        </a>
-      ) : (
-        <span class="post-nav__btn post-nav__btn--prev post-nav__btn--disabled" aria-hidden="true">
-          <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-            <path d="M12 7H2m0 0l5-5m-5 5l5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-          <span>{c.prev}</span>
-        </span>
-      )}
-      {next ? (
-        <a href={postUrl(lang, next.slug)} class="post-nav__btn post-nav__btn--next" aria-label={`${c.nextPost}: ${next.title}`}>
-          <span>{c.next}</span>
-          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-            <path d="M2 7h10m0 0L7 2m5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </a>
-      ) : (
-        <span class="post-nav__btn post-nav__btn--next post-nav__btn--disabled" aria-hidden="true">
-          <span>{c.next}</span>
-          <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-            <path d="M2 7h10m0 0L7 2m5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </span>
-      )}
-    </div>
-  </nav>
-) : (
-  <nav class="post-nav post-nav--bottom" aria-label={lang === 'es' ? 'Navegación entre artículos' : 'Article navigation'}>
-    {prev ? (
-      <a href={postUrl(lang, prev.slug)} class="post-nav__card post-nav__card--prev">
-        <span class="post-nav__direction">
-          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-            <path d="M12 7H2m0 0l5-5m-5 5l5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-          {c.prev}
-        </span>
-        <span class="post-nav__title">{prev.title}</span>
-      </a>
-    ) : (
-      <span class="post-nav__card post-nav__card--placeholder" aria-hidden="true"></span>
-    )}
-
-    <a href={homeHref} class="post-nav__card post-nav__card--home">
-      <span class="post-nav__direction">
-        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-          <path d="M2 6.5L7 2l5 4.5V12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6.5z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        {c.home}
-      </span>
-      <span class="post-nav__title">{c.homeShort}</span>
-    </a>
-
-    {next ? (
-      <a href={postUrl(lang, next.slug)} class="post-nav__card post-nav__card--next">
-        <span class="post-nav__direction">
-          {c.next}
-          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-            <path d="M2 7h10m0 0L7 2m5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </span>
-        <span class="post-nav__title">{next.title}</span>
-      </a>
-    ) : (
-      <span class="post-nav__card post-nav__card--placeholder" aria-hidden="true"></span>
-    )}
-  </nav>
-)}
+<a
+  href={postUrl(lang, next.slug)}
+  class="post-nav-next"
+  aria-label={`${c.eyebrow}: ${next.title}`}
+>
+  <span class="post-nav-next__eyebrow">{c.eyebrow}</span>
+  <span class="post-nav-next__title">
+    {next.title}
+    <svg width="16" height="16" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+      <path d="M2 7h10m0 0L7 2m5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </span>
+</a>

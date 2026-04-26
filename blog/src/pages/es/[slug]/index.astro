@@ -85,7 +85,6 @@ const jsonLd = {
   <div class="container">
     <div class="article-layout">
       <article class="article">
-        <PostNav lang="es" prev={prev} next={next} variant="top" />
         <header>
           <h1>{title}</h1>
           <p class="lede">{description}</p>
@@ -124,7 +123,7 @@ const jsonLd = {
 
         <CTABlock lang="es" campaign="blog_post" />
 
-        <PostNav lang="es" prev={prev} next={next} variant="bottom" />
+        {next && <PostNav lang="es" next={next} />}
       </article>
 
       <BlogSidebar lang="es" modelCounts={counts} />
