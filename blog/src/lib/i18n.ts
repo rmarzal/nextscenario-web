@@ -25,6 +25,29 @@ export function listAbsUrl(lang: Lang): string {
   return `${SITE_URL}${listUrl(lang)}`;
 }
 
+/** Demo booking page on the marketing site (.com). */
+export function demoUrl(lang: Lang): string {
+  return lang === 'es' ? '/es/reservar-demo.html' : '/book-demo.html';
+}
+
+/** Free-trial signup on the product app (.es). UTM-tagged so leads
+ * from the blog can be distinguished from home / paid traffic.
+ * URL shape mirrors the format already in use on the marketing home:
+ *   ES → /register?es&utm_source=...&utm_content=spanish
+ *   EN → /register?&utm_source=...&utm_content=english   (no lang flag)
+ */
+export function trialUrl(lang: Lang, campaign = 'blog'): string {
+  const utmContent = lang === 'es' ? 'spanish' : 'english';
+  const params = new URLSearchParams({
+    utm_source: 'landingweb',
+    utm_medium: 'button',
+    utm_campaign: campaign,
+    utm_content: utmContent,
+  });
+  const prefix = lang === 'es' ? 'es&' : '&';
+  return `https://nextscenario.es/register?${prefix}${params.toString()}`;
+}
+
 export const UI = {
   es: {
     blogTitle: 'Blog',

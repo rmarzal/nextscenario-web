@@ -1,14 +1,16 @@
 ---
-import type { Lang } from '../lib/i18n';
+import { trialUrl, demoUrl, type Lang } from '../lib/i18n';
 
 interface Props {
   lang: Lang;
   variant?: 'standard' | 'compact';
   title?: string;
   body?: string;
+  /** UTM campaign value for tracking. Defaults to "blog". */
+  campaign?: string;
 }
 
-const { lang, variant = 'standard', title, body } = Astro.props;
+const { lang, variant = 'standard', title, body, campaign = 'blog' } = Astro.props;
 
 const copy = {
   es: {
@@ -30,8 +32,8 @@ const copy = {
 } as const;
 
 const c = copy[lang];
-const demoHref = lang === 'es' ? '/es/reservar-demo.html' : '/book-demo.html';
-const trialHref = lang === 'es' ? '/es/reservar-demo.html?intent=trial' : '/book-demo.html?intent=trial';
+const demoHref = demoUrl(lang);
+const trialHref = trialUrl(lang, campaign);
 ---
 
 <aside class={`cta-block cta-block--${variant}`}>
@@ -46,7 +48,7 @@ const trialHref = lang === 'es' ? '/es/reservar-demo.html?intent=trial' : '/book
           <path d="M2 7h10m0 0L7 2m5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
       </a>
-      <a class="btn btn--secondary" href={trialHref}>
+      <a class="btn btn--secondary" href={trialHref} rel="noopener">
         {c.secondary}
         <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
           <path d="M2 7h10m0 0L7 2m5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
