@@ -95,9 +95,19 @@ const jsonLd = {
           </div>
         </header>
 
-        {heroImage && (
+        {heroImage ? (
           <div class="hero-image">
             <img src={heroImage} alt={heroAlt ?? title} loading="eager" />
+          </div>
+        ) : (
+          <div class="hero-image hero-image--fallback" aria-hidden="true">
+            <div class="hero-fallback-mark">
+              <span class="logo-mark"></span>
+            </div>
+            <div class="hero-fallback-meta">
+              {tags[0] && <span class="hero-fallback-tag">{tags[0]}</span>}
+              <span class="hero-fallback-brand">NextScenario</span>
+            </div>
           </div>
         )}
 
