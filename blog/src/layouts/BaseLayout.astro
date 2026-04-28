@@ -1,0 +1,155 @@
+---
+import '../styles/blog.css';
+import { UI, type Lang, listUrl, postUrl, postAbsUrl } from '../lib/i18n';
+
+interface Props {
+  title: string;
+  description: string;
+  lang: Lang;
+  canonical?: string;
+  ogImage?: string;
+  alternates?: Array<{ lang: Lang; slug: string }>;
+  noIndex?: boolean;
+  jsonLd?: Record<string, any>;
+}
+
+const {
+  title,
+  description,
+  lang,
+  canonical,
+  ogImage = 'https://nextscenario.com/og-default.png',
+  alternates = [],
+  noIndex = false,
+  jsonLd,
+} = Astro.props;
+
+const canonicalHref = canonical ?? new URL(Astro.url.pathname, Astro.site).toString();
+const ui = UI[lang];
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light" />
+
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalHref} />
+
+    {noIndex && <meta name="robots" content="noindex, nofollow" />}
+
+    {/* hreflang pair + x-default → Spanish (per brand book default) */}
+    {alternates.map((a) => (
+      <link rel="alternate" hreflang={a.lang} href={postAbsUrl(a.lang, a.slug)} />
+    ))}
+    {alternates.find((a) => a.lang === 'es') && (
+      <link
+        rel="alternate"
+        hreflang="x-default"
+        href={postAbsUrl('es', alternates.find((a) => a.lang === 'es')!.slug)}
+      />
+    )}
+
+    {/* Open Graph */}
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalHref} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:locale" content={lang === 'es' ? 'es_ES' : 'en_US'} />
+    <meta property="og:site_name" content="NextScenario" />
+
+    {/* Twitter */}
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="alternate" type="application/rss+xml" title="NextScenario Blog (ES)" href="/es/blog-es/rss.xml" />
+    <link rel="alternate" type="application/rss+xml" title="NextScenario Blog (EN)" href="/blog/rss.xml" />
+
+    {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container site-header-inner">
+        <a href={lang === 'es' ? '/es/' : '/'} class="logo" aria-label="NextScenario">
+          <span class="logo-mark" aria-hidden="true"></span>
+          <span>NextScenario</span>
+        </a>
+        <nav class="site-nav">
+          <a href={lang === 'es' ? '/es/' : '/'} class="site-nav__link">
+            {lang === 'es' ? 'Inicio' : 'Home'}
+          </a>
+          <a href={listUrl(lang)} class="site-nav__link">{ui.blogTitle}</a>
+          <a
+            href={
+              lang === 'es'
+                ? 'https://b2bsaasmetrics.com/?utm_source=nextscenario&utm_medium=blog_nav&utm_campaign=course&utm_content=spanish'
+                : 'https://b2bsaasmetrics.com/?utm_source=nextscenario&utm_medium=blog_nav&utm_campaign=course&utm_content=english'
+            }
+            class="site-nav__link site-nav__link--external"
+            rel="noopener"
+            target="_blank"
+          >
+            {lang === 'es' ? 'Curso SaaS' : 'SaaS course'}
+            <svg width="11" height="11" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+              <path d="M5 3h6v6m0-6L3 11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <a class="nav-cta" href={lang === 'es' ? '/es/reservar-demo.html' : '/book-demo.html'}>
+            <span class="nav-cta-dot" aria-hidden="true"></span>
+            {lang === 'es' ? 'Solicitar demo' : 'Book a demo'}
+            <svg width="12" height="12" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+              <path d="M2 7h10m0 0L7 2m5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          {alternates.length > 0 ? (
+            <a
+              class="lang-switch"
+              href={postUrl(alternates[0].lang, alternates[0].slug)}
+              hreflang={alternates[0].lang}
+              aria-label={`Switch to ${ui.switchToOther}`}
+            >
+              <span class="lang-switch-flag" aria-hidden="true">{lang === 'es' ? '🇬🇧' : '🇪🇸'}</span>
+              <span class="lang-switch-label">{ui.switchToOtherShort}</span>
+            </a>
+          ) : (
+            <a
+              class="lang-switch"
+              href={listUrl(lang === 'es' ? 'en' : 'es')}
+              hreflang={lang === 'es' ? 'en' : 'es'}
+              aria-label={`Switch to ${ui.switchToOther}`}
+            >
+              <span class="lang-switch-flag" aria-hidden="true">{lang === 'es' ? '🇬🇧' : '🇪🇸'}</span>
+              <span class="lang-switch-label">{ui.switchToOtherShort}</span>
+            </a>
+          )}
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer-inner">
+        <span>© {new Date().getFullYear()} NextScenario — Financial Data</span>
+        <nav style="display:flex;gap:20px;">
+          <a href={listUrl(lang)}>{ui.blogTitle}</a>
+          <a href={lang === 'es' ? '/es/terminos.html' : '/terms.html'}>
+            {lang === 'es' ? 'Términos' : 'Terms'}
+          </a>
+          <a href={lang === 'es' ? '/es/privacidad.html' : '/privacy.html'}>
+            {lang === 'es' ? 'Privacidad' : 'Privacy'}
+          </a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

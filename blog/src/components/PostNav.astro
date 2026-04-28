@@ -1,0 +1,36 @@
+---
+import { postUrl, type Lang } from '../lib/i18n';
+
+interface NavTarget {
+  slug: string;
+  title: string;
+}
+
+interface Props {
+  lang: Lang;
+  next: NavTarget;
+}
+
+const { lang, next } = Astro.props;
+
+const copy = {
+  es: { eyebrow: 'Siguiente artículo' },
+  en: { eyebrow: 'Next article' },
+} as const;
+
+const c = copy[lang];
+---
+
+<a
+  href={postUrl(lang, next.slug)}
+  class="post-nav-next"
+  aria-label={`${c.eyebrow}: ${next.title}`}
+>
+  <span class="post-nav-next__eyebrow">{c.eyebrow}</span>
+  <span class="post-nav-next__title">
+    {next.title}
+    <svg width="16" height="16" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+      <path d="M2 7h10m0 0L7 2m5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </span>
+</a>

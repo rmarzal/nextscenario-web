@@ -1,0 +1,143 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import CTABlock from '../../../components/CTABlock.astro';
+import BlogSidebar from '../../../components/BlogSidebar.astro';
+import PostNav from '../../../components/PostNav.astro';
+import { formatDate, postAbsUrl, UI } from '../../../lib/i18n';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('post', ({ data }) => data.lang === 'en' && !data.draft);
+  // Sort newest → oldest. "prev" is the newer post (one above in the
+  // listing), "next" is the older post (one below).
+  const sorted = posts.slice().sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
+  return sorted.map((post, i) => ({
+    params: { slug: post.data.slug },
+    props: {
+      post,
+      prev: sorted[i - 1] ? { slug: sorted[i - 1].data.slug, title: sorted[i - 1].data.title } : null,
+      next: sorted[i + 1] ? { slug: sorted[i + 1].data.slug, title: sorted[i + 1].data.title } : null,
+    },
+  }));
+}
+
+const { post, prev, next } = Astro.props;
+const { Content } = await render(post);
+const {
+  title,
+  description,
+  pubDate,
+  updatedDate,
+  heroImage,
+  heroAlt,
+  tags,
+  translationOf,
+  canonical,
+  author,
+  businessModel,
+} = post.data;
+
+const alternates = translationOf ? [{ lang: 'es' as const, slug: translationOf }] : [];
+const ui = UI.en;
+
+// Counts of posts per business model — for the sidebar filter index
+const allEnPosts = await getCollection('post', ({ data }) => data.lang === 'en' && !data.draft);
+const counts = allEnPosts.reduce(
+  (acc, p) => ({ ...acc, [p.data.businessModel]: (acc[p.data.businessModel] ?? 0) + 1 }),
+  {} as Record<string, number>
+);
+
+const modelLabels = {
+  saas: 'SaaS',
+  ecommerce: 'Ecommerce',
+  both: 'SaaS + Ecommerce',
+  general: 'Finance',
+} as const;
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: title,
+  description,
+  image: heroImage,
+  datePublished: pubDate.toISOString(),
+  dateModified: (updatedDate ?? pubDate).toISOString(),
+  author: { '@type': 'Organization', name: author, url: 'https://nextscenario.com' },
+  publisher: {
+    '@type': 'Organization',
+    name: 'NextScenario',
+    logo: {
+      '@type': 'ImageObject',
+      url: 'https://nextscenario.com/og-default.png',
+    },
+  },
+  mainEntityOfPage: postAbsUrl('en', post.data.slug),
+  inLanguage: 'en',
+};
+---
+
+<BaseLayout
+  title={`${title} — NextScenario`}
+  description={description}
+  lang="en"
+  canonical={canonical ?? postAbsUrl('en', post.data.slug)}
+  ogImage={heroImage}
+  alternates={alternates}
+  jsonLd={jsonLd}
+>
+  <div class="container">
+    <div class="article-layout">
+      <article class="article">
+        <header>
+          <h1>{title}</h1>
+          <p class="lede">{description}</p>
+          <div class="meta">
+            <span>{author}</span>
+            <a
+              href={`/blog/category/${businessModel}/`}
+              class={`post-card__model post-card__model--${businessModel} article__model-link`}
+              aria-label={`See more ${modelLabels[businessModel]} articles`}
+            >
+              {modelLabels[businessModel]}
+            </a>
+            {tags.map((t: string) => <span class="tag-pill">{t}</span>)}
+          </div>
+        </header>
+
+        {heroImage ? (
+          <div class="hero-image">
+            <img src={heroImage} alt={heroAlt ?? title} loading="eager" />
+          </div>
+        ) : (
+          <div class="hero-image hero-image--fallback" aria-hidden="true">
+            <div class="hero-fallback-mark">
+              <span class="logo-mark"></span>
+            </div>
+            <div class="hero-fallback-meta">
+              {tags[0] && <span class="hero-fallback-tag">{tags[0]}</span>}
+              <span class="hero-fallback-brand">NextScenario</span>
+            </div>
+          </div>
+        )}
+
+        <div class="prose">
+          <Content />
+        </div>
+
+        <CTABlock lang="en" campaign="blog_post" />
+
+        {next && <PostNav lang="en" next={next} />}
+      </article>
+
+      <BlogSidebar lang="en" modelCounts={counts} />
+    </div>
+  </div>
+
+  <a class="sticky-cta" href="/book-demo.html" aria-label="Book a demo">
+    <span class="sticky-cta__dot" aria-hidden="true"></span>
+    Book a demo
+    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+      <path d="M2 7h10m0 0L7 2m5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </a>
+</BaseLayout>

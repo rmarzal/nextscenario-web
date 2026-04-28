@@ -1,12 +1,992 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "bash ./build-site.sh",
+  "outputDirectory": "__out",
+  "cleanUrls": true,
+  "trailingSlash": true,
   "headers": [
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
       ]
+    },
+    {
+      "source": "/_assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/feed/:path*",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/comments/feed/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/:slug/amp/",
+      "destination": "/:slug/",
+      "permanent": true
+    },
+    {
+      "source": "/es/:slug/amp/",
+      "destination": "/es/:slug/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-admin/:path*",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-login.php",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/author/:slug/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/es/author/:slug/",
+      "destination": "/es/blog-es/",
+      "permanent": true
+    },
+    {
+      "source": "/tag/:slug/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/category/:slug/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/es/etiqueta/:slug/",
+      "destination": "/es/blog-es/",
+      "permanent": true
+    },
+    {
+      "source": "/es/categoria/:slug/",
+      "destination": "/es/blog-es/",
+      "permanent": true
+    },
+    {
+      "source": "/ads-dashboards/",
+      "destination": "/blog/ads-dashboards/",
+      "permanent": true
+    },
+    {
+      "source": "/arpu-saas-what-is/",
+      "destination": "/blog/arpu-saas-what-is/",
+      "permanent": true
+    },
+    {
+      "source": "/b2b-saas-metrics-journey-framework/",
+      "destination": "/blog/b2b-saas-metrics-journey-framework/",
+      "permanent": true
+    },
+    {
+      "source": "/best-product-analytics-tools/",
+      "destination": "/blog/best-product-analytics-tools/",
+      "permanent": true
+    },
+    {
+      "source": "/best-reporting-dashboard-software/",
+      "destination": "/blog/best-reporting-dashboard-software/",
+      "permanent": true
+    },
+    {
+      "source": "/best-saas-books/",
+      "destination": "/blog/best-saas-books/",
+      "permanent": true
+    },
+    {
+      "source": "/business-report-example-key-insights/",
+      "destination": "/blog/business-report-example-key-insights/",
+      "permanent": true
+    },
+    {
+      "source": "/cac-saas-what-is/",
+      "destination": "/blog/cac-saas-what-is/",
+      "permanent": true
+    },
+    {
+      "source": "/calculating-customer-lifetime-value-for-stripe/",
+      "destination": "/blog/calculating-customer-lifetime-value-for-stripe/",
+      "permanent": true
+    },
+    {
+      "source": "/cfo-report-template-streamline-financial-analysis-with-this-comprehensive-guide/",
+      "destination": "/blog/cfo-report-template-streamline-financial-analysis-with-this-comprehensive-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/cfos-dashboard-and-report-templates-excel/",
+      "destination": "/blog/cfos-dashboard-and-report-templates-excel/",
+      "permanent": true
+    },
+    {
+      "source": "/churn-rate-in-saas-how-to-measure-and-identify-it/",
+      "destination": "/blog/churn-rate-in-saas-how-to-measure-and-identify-it/",
+      "permanent": true
+    },
+    {
+      "source": "/cmrr-how-to-calculate-it/",
+      "destination": "/blog/cmrr-how-to-calculate-it/",
+      "permanent": true
+    },
+    {
+      "source": "/cohort-study-saas/",
+      "destination": "/blog/cohort-study-saas/",
+      "permanent": true
+    },
+    {
+      "source": "/correlation-analysis/",
+      "destination": "/blog/correlation-analysis/",
+      "permanent": true
+    },
+    {
+      "source": "/creating-a-facebook-ads-report-template/",
+      "destination": "/blog/creating-a-facebook-ads-report-template/",
+      "permanent": true
+    },
+    {
+      "source": "/creating-a-kpi-report-template-in-excel/",
+      "destination": "/blog/creating-a-kpi-report-template-in-excel/",
+      "permanent": true
+    },
+    {
+      "source": "/creating-a-kpi-template-in-excel/",
+      "destination": "/blog/creating-a-kpi-template-in-excel/",
+      "permanent": true
+    },
+    {
+      "source": "/customer-churn-and-revenue-churn-for-saass/",
+      "destination": "/blog/customer-churn-and-revenue-churn-for-saass/",
+      "permanent": true
+    },
+    {
+      "source": "/dau-mau-ratio-saas/",
+      "destination": "/blog/dau-mau-ratio-saas/",
+      "permanent": true
+    },
+    {
+      "source": "/ecommerce-dashboard/",
+      "destination": "/blog/ecommerce-dashboard/",
+      "permanent": true
+    },
+    {
+      "source": "/ecommerce-profit-and-loss/",
+      "destination": "/blog/ecommerce-profit-and-loss/",
+      "permanent": true
+    },
+    {
+      "source": "/email-marketing-reporting-template-guide-boost-your-campaign-performance/",
+      "destination": "/blog/email-marketing-reporting-template-guide-boost-your-campaign-performance/",
+      "permanent": true
+    },
+    {
+      "source": "/excel-forecasting-for-startups/",
+      "destination": "/blog/excel-forecasting-for-startups/",
+      "permanent": true
+    },
+    {
+      "source": "/fractional-cfo/",
+      "destination": "/blog/fractional-cfo/",
+      "permanent": true
+    },
+    {
+      "source": "/free-cashflow/",
+      "destination": "/blog/free-cashflow/",
+      "permanent": true
+    },
+    {
+      "source": "/free-trial-vs-freemium/",
+      "destination": "/blog/free-trial-vs-freemium/",
+      "permanent": true
+    },
+    {
+      "source": "/google-analytics-4-saas/",
+      "destination": "/blog/google-analytics-4-saas/",
+      "permanent": true
+    },
+    {
+      "source": "/gross-dollar-retention/",
+      "destination": "/blog/gross-dollar-retention/",
+      "permanent": true
+    },
+    {
+      "source": "/gross-margin-vs-net-margin/",
+      "destination": "/blog/gross-margin-vs-net-margin/",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-automate-a-sales-pipeline-report-boosting-your-revenue-growth/",
+      "destination": "/blog/how-to-automate-a-sales-pipeline-report-boosting-your-revenue-growth/",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-calculate-active-users-in-a-saas-startup/",
+      "destination": "/blog/how-to-calculate-active-users-in-a-saas-startup/",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-close-b2b-saas-sales/",
+      "destination": "/blog/how-to-close-b2b-saas-sales/",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-create-a-google-sheets-dashboard-a-step-by-step-guide/",
+      "destination": "/blog/how-to-create-a-google-sheets-dashboard-a-step-by-step-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-create-a-one-pager-for-saas/",
+      "destination": "/blog/how-to-create-a-one-pager-for-saas/",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-export-google-analytics-data/",
+      "destination": "/blog/how-to-export-google-analytics-data/",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-make-a-kpi-report/",
+      "destination": "/blog/how-to-make-a-kpi-report/",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-reducing-stripe-churn-strategies-and-best-practices/",
+      "destination": "/blog/how-to-reducing-stripe-churn-strategies-and-best-practices/",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-schedule-a-salesforce-report/",
+      "destination": "/blog/how-to-schedule-a-salesforce-report/",
+      "permanent": true
+    },
+    {
+      "source": "/incremental-roas-vs-roas-roas-formula-and-best-practices/",
+      "destination": "/blog/incremental-roas-vs-roas-roas-formula-and-best-practices/",
+      "permanent": true
+    },
+    {
+      "source": "/kpi-reporting-best-practices/",
+      "destination": "/blog/kpi-reporting-best-practices/",
+      "permanent": true
+    },
+    {
+      "source": "/life-time-value-saas/",
+      "destination": "/blog/life-time-value-saas/",
+      "permanent": true
+    },
+    {
+      "source": "/ltv-saas/",
+      "destination": "/blog/ltv-saas/",
+      "permanent": true
+    },
+    {
+      "source": "/machine-learning-for-saas/",
+      "destination": "/blog/machine-learning-for-saas/",
+      "permanent": true
+    },
+    {
+      "source": "/matching-and-revenue-recognition-principles-in-accounting/",
+      "destination": "/blog/matching-and-revenue-recognition-principles-in-accounting/",
+      "permanent": true
+    },
+    {
+      "source": "/metrics-for-saas-investors/",
+      "destination": "/blog/metrics-for-saas-investors/",
+      "permanent": true
+    },
+    {
+      "source": "/metrics-retention-saas/",
+      "destination": "/blog/metrics-retention-saas/",
+      "permanent": true
+    },
+    {
+      "source": "/mrr-saas/",
+      "destination": "/blog/mrr-saas/",
+      "permanent": true
+    },
+    {
+      "source": "/negative-net-churn-in-saas-definition-and-advice/",
+      "destination": "/blog/negative-net-churn-in-saas-definition-and-advice/",
+      "permanent": true
+    },
+    {
+      "source": "/nps-what-is-it/",
+      "destination": "/blog/nps-what-is-it/",
+      "permanent": true
+    },
+    {
+      "source": "/product-analytics-a-complete-guide/",
+      "destination": "/blog/product-analytics-a-complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/profit-and-loss-statement/",
+      "destination": "/blog/profit-and-loss-statement/",
+      "permanent": true
+    },
+    {
+      "source": "/retail-dashboard/",
+      "destination": "/blog/retail-dashboard/",
+      "permanent": true
+    },
+    {
+      "source": "/retention-rate/",
+      "destination": "/blog/retention-rate/",
+      "permanent": true
+    },
+    {
+      "source": "/revops-revenue-operations/",
+      "destination": "/blog/revops-revenue-operations/",
+      "permanent": true
+    },
+    {
+      "source": "/rule-of-40-saas/",
+      "destination": "/blog/rule-of-40-saas/",
+      "permanent": true
+    },
+    {
+      "source": "/saas-benchmark-report/",
+      "destination": "/blog/saas-benchmark-report/",
+      "permanent": true
+    },
+    {
+      "source": "/saas-business-plan-template/",
+      "destination": "/blog/saas-business-plan-template/",
+      "permanent": true
+    },
+    {
+      "source": "/saas-cogs-calculation/",
+      "destination": "/blog/saas-cogs-calculation/",
+      "permanent": true
+    },
+    {
+      "source": "/saas-fractional-cfo/",
+      "destination": "/blog/saas-fractional-cfo/",
+      "permanent": true
+    },
+    {
+      "source": "/saas-market-fit-4-phases-to-achieve-it/",
+      "destination": "/blog/saas-market-fit-4-phases-to-achieve-it/",
+      "permanent": true
+    },
+    {
+      "source": "/saas-marketing-funnel/",
+      "destination": "/blog/saas-marketing-funnel/",
+      "permanent": true
+    },
+    {
+      "source": "/saas-users-and-active-users/",
+      "destination": "/blog/saas-users-and-active-users/",
+      "permanent": true
+    },
+    {
+      "source": "/sales-kpis/",
+      "destination": "/blog/sales-kpis/",
+      "permanent": true
+    },
+    {
+      "source": "/step-by-step-guide-for-a-awesome-sales-analysis/",
+      "destination": "/blog/step-by-step-guide-for-a-awesome-sales-analysis/",
+      "permanent": true
+    },
+    {
+      "source": "/step-by-step-guide-to-stripe-reporting/",
+      "destination": "/blog/step-by-step-guide-to-stripe-reporting/",
+      "permanent": true
+    },
+    {
+      "source": "/structuring-your-saas-pl/",
+      "destination": "/blog/structuring-your-saas-pl/",
+      "permanent": true
+    },
+    {
+      "source": "/the-best-business-intelligence-tools-for-startups/",
+      "destination": "/blog/the-best-business-intelligence-tools-for-startups/",
+      "permanent": true
+    },
+    {
+      "source": "/the-top-dashboard-reporting-tools-for-streamlined-data-analysis/",
+      "destination": "/blog/the-top-dashboard-reporting-tools-for-streamlined-data-analysis/",
+      "permanent": true
+    },
+    {
+      "source": "/the-ultimate-guide-to-dashboard-reporting-software/",
+      "destination": "/blog/the-ultimate-guide-to-dashboard-reporting-software/",
+      "permanent": true
+    },
+    {
+      "source": "/the-ultimate-guide-to-stripe-reporting/",
+      "destination": "/blog/the-ultimate-guide-to-stripe-reporting/",
+      "permanent": true
+    },
+    {
+      "source": "/top-excel-reporting-tools-for-efficient-data-analysis/",
+      "destination": "/blog/top-excel-reporting-tools-for-efficient-data-analysis/",
+      "permanent": true
+    },
+    {
+      "source": "/understanding-cash-ebitda-vs-ebitda/",
+      "destination": "/blog/understanding-cash-ebitda-vs-ebitda/",
+      "permanent": true
+    },
+    {
+      "source": "/understanding-saas-pricing-templates/",
+      "destination": "/blog/understanding-saas-pricing-templates/",
+      "permanent": true
+    },
+    {
+      "source": "/understanding-stripe-churn-how-to-reduce-customer-attrition-and-boost-revenue/",
+      "destination": "/blog/understanding-stripe-churn-how-to-reduce-customer-attrition-and-boost-revenue/",
+      "permanent": true
+    },
+    {
+      "source": "/understanding-the-cac-payback-period/",
+      "destination": "/blog/understanding-the-cac-payback-period/",
+      "permanent": true
+    },
+    {
+      "source": "/unit-economics/",
+      "destination": "/blog/unit-economics/",
+      "permanent": true
+    },
+    {
+      "source": "/what-is-a-data-room/",
+      "destination": "/blog/what-is-a-data-room/",
+      "permanent": true
+    },
+    {
+      "source": "/what-is-cac-definition-and-calculation/",
+      "destination": "/blog/what-is-cac-definition-and-calculation/",
+      "permanent": true
+    },
+    {
+      "source": "/what-is-cdp/",
+      "destination": "/blog/what-is-cdp/",
+      "permanent": true
+    },
+    {
+      "source": "/what-is-saas-forecasting/",
+      "destination": "/blog/what-is-saas-forecasting/",
+      "permanent": true
+    },
+    {
+      "source": "/es/ads-dashboard/",
+      "destination": "/es/blog-es/ads-dashboard/",
+      "permanent": true
+    },
+    {
+      "source": "/es/amplitude-product-analytics/",
+      "destination": "/es/blog-es/amplitude-product-analytics/",
+      "permanent": true
+    },
+    {
+      "source": "/es/analisis-de-correlacion/",
+      "destination": "/es/blog-es/analisis-de-correlacion/",
+      "permanent": true
+    },
+    {
+      "source": "/es/analitica-de-producto/",
+      "destination": "/es/blog-es/analitica-de-producto/",
+      "permanent": true
+    },
+    {
+      "source": "/es/arpu-saas/",
+      "destination": "/es/blog-es/arpu-saas/",
+      "permanent": true
+    },
+    {
+      "source": "/es/burn-rate-vs-runway-en-saas-cuales-son-las-diferencias/",
+      "destination": "/es/blog-es/burn-rate-vs-runway-en-saas-cuales-son-las-diferencias/",
+      "permanent": true
+    },
+    {
+      "source": "/es/cac-payback-period/",
+      "destination": "/es/blog-es/cac-payback-period/",
+      "permanent": true
+    },
+    {
+      "source": "/es/cac-saas-como-calcularlo/",
+      "destination": "/es/blog-es/cac-saas-como-calcularlo/",
+      "permanent": true
+    },
+    {
+      "source": "/es/cfo-externo-cuando-contratar-y-porque/",
+      "destination": "/es/blog-es/cfo-externo-cuando-contratar-y-porque/",
+      "permanent": true
+    },
+    {
+      "source": "/es/churn-rate-saas/",
+      "destination": "/es/blog-es/churn-rate-saas/",
+      "permanent": true
+    },
+    {
+      "source": "/es/cmrr-como-calcularlo-y-por-que-es-importante-para-tu-negocio-saas/",
+      "destination": "/es/blog-es/cmrr-como-calcularlo-y-por-que-es-importante-para-tu-negocio-saas/",
+      "permanent": true
+    },
+    {
+      "source": "/es/como-calcular-usuarios-activos-en-un-saas-2/",
+      "destination": "/es/blog-es/como-calcular-usuarios-activos-en-un-saas-2/",
+      "permanent": true
+    },
+    {
+      "source": "/es/como-categorizar-los-gastos-en-un-saas/",
+      "destination": "/es/blog-es/como-categorizar-los-gastos-en-un-saas/",
+      "permanent": true
+    },
+    {
+      "source": "/es/como-elaborar-una-cuenta-de-perdidas-y-ganancias-en-negocios-de-recurrencia/",
+      "destination": "/es/blog-es/como-elaborar-una-cuenta-de-perdidas-y-ganancias-en-negocios-de-recurrencia/",
+      "permanent": true
+    },
+    {
+      "source": "/es/como-exportar-datos-de-google-analytics/",
+      "destination": "/es/blog-es/como-exportar-datos-de-google-analytics/",
+      "permanent": true
+    },
+    {
+      "source": "/es/como-proyectar-un-escenario-pesimista/",
+      "destination": "/es/blog-es/como-proyectar-un-escenario-pesimista/",
+      "permanent": true
+    },
+    {
+      "source": "/es/como-puede-evolucionar-el-ltv-en-un-saas/",
+      "destination": "/es/blog-es/como-puede-evolucionar-el-ltv-en-un-saas/",
+      "permanent": true
+    },
+    {
+      "source": "/es/como-subir-una-factura-de-stripe-a-holded-guia-completa-de-ntegracion-perfecta/",
+      "destination": "/es/blog-es/como-subir-una-factura-de-stripe-a-holded-guia-completa-de-ntegracion-perfecta/",
+      "permanent": true
+    },
+    {
+      "source": "/es/como-utilizar-un-dashboard-financiero-para-analisis-y-reporting/",
+      "destination": "/es/blog-es/como-utilizar-un-dashboard-financiero-para-analisis-y-reporting/",
+      "permanent": true
+    },
+    {
+      "source": "/es/conector-amazon-vendor/",
+      "destination": "/es/blog-es/conector-amazon-vendor/",
+      "permanent": true
+    },
+    {
+      "source": "/es/cuenta-de-perdidas-y-ganancias/",
+      "destination": "/es/blog-es/cuenta-de-perdidas-y-ganancias/",
+      "permanent": true
+    },
+    {
+      "source": "/es/curso-saas/",
+      "destination": "/es/blog-es/curso-saas/",
+      "permanent": true
+    },
+    {
+      "source": "/es/dashboard-de-perdidas-y-ganancias/",
+      "destination": "/es/blog-es/dashboard-de-perdidas-y-ganancias/",
+      "permanent": true
+    },
+    {
+      "source": "/es/dashboards-para-analisis-de-ventas/",
+      "destination": "/es/blog-es/dashboards-para-analisis-de-ventas/",
+      "permanent": true
+    },
+    {
+      "source": "/es/data-room-saas/",
+      "destination": "/es/blog-es/data-room-saas/",
+      "permanent": true
+    },
+    {
+      "source": "/es/dau-mau-ratio/",
+      "destination": "/es/blog-es/dau-mau-ratio/",
+      "permanent": true
+    },
+    {
+      "source": "/es/de-cfo-moderno-a-coo/",
+      "destination": "/es/blog-es/de-cfo-moderno-a-coo/",
+      "permanent": true
+    },
+    {
+      "source": "/es/entendiendo-el-flujo-neto-de-efectivo/",
+      "destination": "/es/blog-es/entendiendo-el-flujo-neto-de-efectivo/",
+      "permanent": true
+    },
+    {
+      "source": "/es/estudio-de-cohortes/",
+      "destination": "/es/blog-es/estudio-de-cohortes/",
+      "permanent": true
+    },
+    {
+      "source": "/es/excel-forecasting-para-startups/",
+      "destination": "/es/blog-es/excel-forecasting-para-startups/",
+      "permanent": true
+    },
+    {
+      "source": "/es/formula-del-porcentaje-de-crecimiento-un-analisis-detallado/",
+      "destination": "/es/blog-es/formula-del-porcentaje-de-crecimiento-un-analisis-detallado/",
+      "permanent": true
+    },
+    {
+      "source": "/es/free-cashflow/",
+      "destination": "/es/blog-es/free-cashflow/",
+      "permanent": true
+    },
+    {
+      "source": "/es/gastos-fijos-vs-gastos-variables/",
+      "destination": "/es/blog-es/gastos-fijos-vs-gastos-variables/",
+      "permanent": true
+    },
+    {
+      "source": "/es/google-analytics-4-para-saas/",
+      "destination": "/es/blog-es/google-analytics-4-para-saas/",
+      "permanent": true
+    },
+    {
+      "source": "/es/gross-churn-vs-net-churn/",
+      "destination": "/es/blog-es/gross-churn-vs-net-churn/",
+      "permanent": true
+    },
+    {
+      "source": "/es/growth-rate/",
+      "destination": "/es/blog-es/growth-rate/",
+      "permanent": true
+    },
+    {
+      "source": "/es/herramientas-de-planificacion-financiera/",
+      "destination": "/es/blog-es/herramientas-de-planificacion-financiera/",
+      "permanent": true
+    },
+    {
+      "source": "/es/informes-financieros-una-guia-completa/",
+      "destination": "/es/blog-es/informes-financieros-una-guia-completa/",
+      "permanent": true
+    },
+    {
+      "source": "/es/ingresos-recurrentes-mensuales/",
+      "destination": "/es/blog-es/ingresos-recurrentes-mensuales/",
+      "permanent": true
+    },
+    {
+      "source": "/es/kpi-de-ventas/",
+      "destination": "/es/blog-es/kpi-de-ventas/",
+      "permanent": true
+    },
+    {
+      "source": "/es/las-mejores-alternativas-a-power-bi-para-el-analisis-de-datos/",
+      "destination": "/es/blog-es/las-mejores-alternativas-a-power-bi-para-el-analisis-de-datos/",
+      "permanent": true
+    },
+    {
+      "source": "/es/las-metricas-de-ecommerce-mas-importantes-en-2025/",
+      "destination": "/es/blog-es/las-metricas-de-ecommerce-mas-importantes-en-2025/",
+      "permanent": true
+    },
+    {
+      "source": "/es/libro-diario-en-contabilidad/",
+      "destination": "/es/blog-es/libro-diario-en-contabilidad/",
+      "permanent": true
+    },
+    {
+      "source": "/es/libro-mayor/",
+      "destination": "/es/blog-es/libro-mayor/",
+      "permanent": true
+    },
+    {
+      "source": "/es/lifetime-value-saas/",
+      "destination": "/es/blog-es/lifetime-value-saas/",
+      "permanent": true
+    },
+    {
+      "source": "/es/los-mejores-cursos-de-saas/",
+      "destination": "/es/blog-es/los-mejores-cursos-de-saas/",
+      "permanent": true
+    },
+    {
+      "source": "/es/machine-learning-para-saas/",
+      "destination": "/es/blog-es/machine-learning-para-saas/",
+      "permanent": true
+    },
+    {
+      "source": "/es/margen-bruto-vs-margen-neto/",
+      "destination": "/es/blog-es/margen-bruto-vs-margen-neto/",
+      "permanent": true
+    },
+    {
+      "source": "/es/margen-neto-y-margen-bruto/",
+      "destination": "/es/blog-es/margen-neto-y-margen-bruto/",
+      "permanent": true
+    },
+    {
+      "source": "/es/mejores-herramientas-product-analytics/",
+      "destination": "/es/blog-es/mejores-herramientas-product-analytics/",
+      "permanent": true
+    },
+    {
+      "source": "/es/mejores-libros-saas/",
+      "destination": "/es/blog-es/mejores-libros-saas/",
+      "permanent": true
+    },
+    {
+      "source": "/es/mejores-opciones-de-software-de-tesoreria/",
+      "destination": "/es/blog-es/mejores-opciones-de-software-de-tesoreria/",
+      "permanent": true
+    },
+    {
+      "source": "/es/metodos-de-presupuestacion/",
+      "destination": "/es/blog-es/metodos-de-presupuestacion/",
+      "permanent": true
+    },
+    {
+      "source": "/es/metricas-para-inversores-saas/",
+      "destination": "/es/blog-es/metricas-para-inversores-saas/",
+      "permanent": true
+    },
+    {
+      "source": "/es/metricas-retencion-saas/",
+      "destination": "/es/blog-es/metricas-retencion-saas/",
+      "permanent": true
+    },
+    {
+      "source": "/es/modelado-de-cohortes-un-analisis-detallado/",
+      "destination": "/es/blog-es/modelado-de-cohortes-un-analisis-detallado/",
+      "permanent": true
+    },
+    {
+      "source": "/es/mrr/",
+      "destination": "/es/blog-es/mrr/",
+      "permanent": true
+    },
+    {
+      "source": "/es/mrr-saas/",
+      "destination": "/es/blog-es/mrr-saas/",
+      "permanent": true
+    },
+    {
+      "source": "/es/net-churn-negativo-en-saas-definicion-y-consejos/",
+      "destination": "/es/blog-es/net-churn-negativo-en-saas-definicion-y-consejos/",
+      "permanent": true
+    },
+    {
+      "source": "/es/nps-saas-como-calcularlo/",
+      "destination": "/es/blog-es/nps-saas-como-calcularlo/",
+      "permanent": true
+    },
+    {
+      "source": "/es/one-pager-para-saas/",
+      "destination": "/es/blog-es/one-pager-para-saas/",
+      "permanent": true
+    },
+    {
+      "source": "/es/planificacion-de-ingresos-y-gastos/",
+      "destination": "/es/blog-es/planificacion-de-ingresos-y-gastos/",
+      "permanent": true
+    },
+    {
+      "source": "/es/plantilla-business-plan-saas/",
+      "destination": "/es/blog-es/plantilla-business-plan-saas/",
+      "permanent": true
+    },
+    {
+      "source": "/es/plantilla-de-informe-de-google-ads-una-guia-completa/",
+      "destination": "/es/blog-es/plantilla-de-informe-de-google-ads-una-guia-completa/",
+      "permanent": true
+    },
+    {
+      "source": "/es/plantilla-de-proyecciones-financieras-en-excel/",
+      "destination": "/es/blog-es/plantilla-de-proyecciones-financieras-en-excel/",
+      "permanent": true
+    },
+    {
+      "source": "/es/prevision-de-ingresos-y-gastos-con-next-scenario/",
+      "destination": "/es/blog-es/prevision-de-ingresos-y-gastos-con-next-scenario/",
+      "permanent": true
+    },
+    {
+      "source": "/es/proyecciones-financieras/",
+      "destination": "/es/blog-es/proyecciones-financieras/",
+      "permanent": true
+    },
+    {
+      "source": "/es/proyecciones-financieras-para-saas/",
+      "destination": "/es/blog-es/proyecciones-financieras-para-saas/",
+      "permanent": true
+    },
+    {
+      "source": "/es/prueba-gratuita-vs-freemium-descubre-cual-es-la-mejor-opcion-para-tu-startup-saas/",
+      "destination": "/es/blog-es/prueba-gratuita-vs-freemium-descubre-cual-es-la-mejor-opcion-para-tu-startup-saas/",
+      "permanent": true
+    },
+    {
+      "source": "/es/que-es-arpu-definicion-y-significado/",
+      "destination": "/es/blog-es/que-es-arpu-definicion-y-significado/",
+      "permanent": true
+    },
+    {
+      "source": "/es/que-es-arr-definicion-y-significado/",
+      "destination": "/es/blog-es/que-es-arr-definicion-y-significado/",
+      "permanent": true
+    },
+    {
+      "source": "/es/que-es-el-cac-definicion-y-significado/",
+      "destination": "/es/blog-es/que-es-el-cac-definicion-y-significado/",
+      "permanent": true
+    },
+    {
+      "source": "/es/que-es-el-ebitda-y-ebit/",
+      "destination": "/es/blog-es/que-es-el-ebitda-y-ebit/",
+      "permanent": true
+    },
+    {
+      "source": "/es/que-es-el-gross-margin/",
+      "destination": "/es/blog-es/que-es-el-gross-margin/",
+      "permanent": true
+    },
+    {
+      "source": "/es/que-es-mau-y-como-calcularlo/",
+      "destination": "/es/blog-es/que-es-mau-y-como-calcularlo/",
+      "permanent": true
+    },
+    {
+      "source": "/es/que-es-un-cdp/",
+      "destination": "/es/blog-es/que-es-un-cdp/",
+      "permanent": true
+    },
+    {
+      "source": "/es/que-incluir-en-cogs-de-tu-negocio-saas/",
+      "destination": "/es/blog-es/que-incluir-en-cogs-de-tu-negocio-saas/",
+      "permanent": true
+    },
+    {
+      "source": "/es/regla-de-40-saas/",
+      "destination": "/es/blog-es/regla-de-40-saas/",
+      "permanent": true
+    },
+    {
+      "source": "/es/revops-revenue-operations/",
+      "destination": "/es/blog-es/revops-revenue-operations/",
+      "permanent": true
+    },
+    {
+      "source": "/es/roas-marginal-vs-roas-como-calcular/",
+      "destination": "/es/blog-es/roas-marginal-vs-roas-como-calcular/",
+      "permanent": true
+    },
+    {
+      "source": "/es/roas-vs-roi-cual-es-la-mejor-metrica-de-marketing-para-tu-negocio/",
+      "destination": "/es/blog-es/roas-vs-roi-cual-es-la-mejor-metrica-de-marketing-para-tu-negocio/",
+      "permanent": true
+    },
+    {
+      "source": "/es/saas-marketing-funnel/",
+      "destination": "/es/blog-es/saas-marketing-funnel/",
+      "permanent": true
+    },
+    {
+      "source": "/es/saas-metrics-journey-framework/",
+      "destination": "/es/blog-es/saas-metrics-journey-framework/",
+      "permanent": true
+    },
+    {
+      "source": "/es/software-cashflow/",
+      "destination": "/es/blog-es/software-cashflow/",
+      "permanent": true
+    },
+    {
+      "source": "/es/software-de-tesoreria/",
+      "destination": "/es/blog-es/software-de-tesoreria/",
+      "permanent": true
+    },
+    {
+      "source": "/es/software-gestion-de-gastos/",
+      "destination": "/es/blog-es/software-gestion-de-gastos/",
+      "permanent": true
+    },
+    {
+      "source": "/es/software-pl/",
+      "destination": "/es/blog-es/software-pl/",
+      "permanent": true
+    },
+    {
+      "source": "/es/tableros-de-pl-una-herramienta-esencial-para-la-gestion-financiera/",
+      "destination": "/es/blog-es/tableros-de-pl-una-herramienta-esencial-para-la-gestion-financiera/",
+      "permanent": true
+    },
+    {
+      "source": "/es/tasa-de-retencion-de-clientes/",
+      "destination": "/es/blog-es/tasa-de-retencion-de-clientes/",
+      "permanent": true
+    },
+    {
+      "source": "/es/unit-economics/",
+      "destination": "/es/blog-es/unit-economics/",
+      "permanent": true
+    },
+    {
+      "source": "/es/ventajas-de-la-segmentacion-como-impulsar-el-crecimiento-de-tu-negocio-saas/",
+      "destination": "/es/blog-es/ventajas-de-la-segmentacion-como-impulsar-el-crecimiento-de-tu-negocio-saas/",
+      "permanent": true
+    },
+    {
+      "source": "/es/ventas-saas-b2b/",
+      "destination": "/es/blog-es/ventas-saas-b2b/",
+      "permanent": true
+    },
+    {
+      "source": "/margen-neto-y-margen-bruto/",
+      "destination": "/es/blog-es/margen-neto-y-margen-bruto/",
+      "permanent": true
+    },
+    {
+      "source": "/analisis-de-correlacion/",
+      "destination": "/es/blog-es/analisis-de-correlacion/",
+      "permanent": true
+    },
+    {
+      "source": "/cuenta-de-perdidas-y-ganancias/",
+      "destination": "/es/blog-es/cuenta-de-perdidas-y-ganancias/",
+      "permanent": true
+    },
+    {
+      "source": "/estudio-de-cohortes/",
+      "destination": "/es/blog-es/estudio-de-cohortes/",
+      "permanent": true
+    },
+    {
+      "source": "/software-cashflow/",
+      "destination": "/es/blog-es/software-cashflow/",
+      "permanent": true
+    },
+    {
+      "source": "/plantilla-de-dashboard-power-bi-crea-visualizaciones-impactantes-en-minutos/",
+      "destination": "/es/blog-es/plantilla-de-dashboard-power-bi-crea-visualizaciones-impactantes-en-minutos/",
+      "permanent": true
     }
   ]
 }

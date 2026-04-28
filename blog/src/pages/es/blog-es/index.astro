@@ -1,0 +1,57 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import PostCard from '../../../components/PostCard.astro';
+import CTABlock from '../../../components/CTABlock.astro';
+import BlogSidebar from '../../../components/BlogSidebar.astro';
+import CategoryTabs from '../../../components/CategoryTabs.astro';
+import { listAbsUrl } from '../../../lib/i18n';
+
+const posts = (await getCollection('post', ({ data }) => data.lang === 'es' && !data.draft)).sort(
+  (a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime()
+);
+
+const counts = posts.reduce(
+  (acc, p) => ({ ...acc, [p.data.businessModel]: (acc[p.data.businessModel] ?? 0) + 1 }),
+  {} as Record<string, number>
+);
+
+const title = 'Blog — NextScenario';
+const description =
+  'Finanzas que de verdad funcionan: deep dives sobre métricas SaaS, planificación de caja y reporting. Escrito por operadores, no por consultores.';
+---
+
+<BaseLayout title={title} description={description} lang="es" canonical={listAbsUrl('es')}>
+  <section class="blog-hero">
+    <div class="container">
+      <p class="eyebrow">Blog NextScenario</p>
+      <h1>Finanzas que <em>de verdad</em> funcionan.</h1>
+      <p class="lede">
+        Deep dives sobre métricas SaaS, planificación de caja y reporting — escrito por operadores,
+        no por consultores.
+      </p>
+    </div>
+  </section>
+
+  <div class="container">
+    <CategoryTabs lang="es" modelCounts={counts} />
+  </div>
+
+  <section class="container">
+    <div class="blog-layout">
+      <div>
+        <div class="post-grid">
+          {posts.map((post) => <PostCard post={post} />)}
+        </div>
+        <CTABlock
+          lang="es"
+          variant="compact"
+          campaign="blog_listing"
+          title="Deja Excel — empieza a operar con números reales."
+          body="Una demo de 20 minutos es suficiente para ver tu caja, MRR y unit economics en vivo. Sin importar CSVs, sin cierres a final de mes."
+        />
+      </div>
+      <BlogSidebar lang="es" modelCounts={counts} />
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,59 @@
+---
+import { trialUrl, demoUrl, type Lang } from '../lib/i18n';
+
+interface Props {
+  lang: Lang;
+  variant?: 'standard' | 'compact';
+  title?: string;
+  body?: string;
+  /** UTM campaign value for tracking. Defaults to "blog". */
+  campaign?: string;
+}
+
+const { lang, variant = 'standard', title, body, campaign = 'blog' } = Astro.props;
+
+const copy = {
+  es: {
+    title: title ?? 'Mira tus propios números así — en tiempo real.',
+    body:
+      body ??
+      'NextScenario conecta tus bancos, Stripe y plataformas de publicidad. Caja, ingresos y márgenes se actualizan en vivo.',
+    primary: 'Solicitar demo',
+    secondary: 'Empezar prueba gratis',
+  },
+  en: {
+    title: title ?? 'See your own numbers like this — in real time.',
+    body:
+      body ??
+      'NextScenario connects your banks, Stripe and ad platforms. Cash, revenue and margins update live.',
+    primary: 'Book a demo',
+    secondary: 'Start free trial',
+  },
+} as const;
+
+const c = copy[lang];
+const demoHref = demoUrl(lang);
+const trialHref = trialUrl(lang, campaign);
+---
+
+<aside class={`cta-block cta-block--${variant}`}>
+  <div class="cta-block__content">
+    <h3>{c.title}</h3>
+    <p>{c.body}</p>
+    <div class="cta-block__buttons">
+      <a class="btn btn--primary" href={demoHref}>
+        <span class="btn-dot" aria-hidden="true"></span>
+        {c.primary}
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+          <path d="M2 7h10m0 0L7 2m5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+      <a class="btn btn--secondary" href={trialHref} rel="noopener">
+        {c.secondary}
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+          <path d="M2 7h10m0 0L7 2m5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</aside>

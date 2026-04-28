@@ -1,0 +1,100 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../../../layouts/BaseLayout.astro';
+import PostCard from '../../../../../components/PostCard.astro';
+import CTABlock from '../../../../../components/CTABlock.astro';
+import BlogSidebar from '../../../../../components/BlogSidebar.astro';
+import CategoryTabs from '../../../../../components/CategoryTabs.astro';
+import { SITE_URL } from '../../../../../lib/i18n';
+
+const VALID_MODELS = ['saas', 'ecommerce', 'both', 'general'] as const;
+type Model = typeof VALID_MODELS[number];
+
+export async function getStaticPaths() {
+  return [
+    { params: { model: 'saas' } },
+    { params: { model: 'ecommerce' } },
+    { params: { model: 'both' } },
+    { params: { model: 'general' } },
+  ];
+}
+
+const { model } = Astro.params as { model: Model };
+
+const allPosts = await getCollection(
+  'post',
+  ({ data }) => data.lang === 'es' && !data.draft
+);
+const posts = allPosts
+  .filter((p) => p.data.businessModel === model)
+  .sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
+
+const counts = allPosts.reduce(
+  (acc, p) => ({ ...acc, [p.data.businessModel]: (acc[p.data.businessModel] ?? 0) + 1 }),
+  {} as Record<string, number>
+);
+
+const titleByModel = {
+  saas: 'Artículos SaaS',
+  ecommerce: 'Artículos Ecommerce',
+  both: 'Artículos para SaaS y Ecommerce',
+  general: 'Finanzas (general)',
+} as const;
+
+const ledeByModel = {
+  saas: 'Métricas de suscripción, ARR, churn, unit economics — todo lo que importa para un SaaS.',
+  ecommerce: 'Ticket medio, devoluciones, GMV, marketplaces — finanzas y métricas para comercio online.',
+  both: 'Artículos que aplican tanto a SaaS como a ecommerce — finanzas y métricas transversales.',
+  general: 'Conceptos universales: cuenta de P&L, cashflow, EBITDA, presupuestación — aplicables a cualquier negocio.',
+} as const;
+
+const title = `${titleByModel[model]} — Blog NextScenario`;
+const description = ledeByModel[model];
+const canonical = `${SITE_URL}/es/blog-es/category/${model}/`;
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  lang="es"
+  canonical={canonical}
+  noIndex={true}
+>
+  <section class="blog-hero">
+    <div class="container">
+      <p class="eyebrow">
+        <a href="/es/blog-es/" style="color:inherit;">← Todos los artículos</a>
+      </p>
+      <h1>{titleByModel[model]}</h1>
+      <p class="lede">{ledeByModel[model]}</p>
+    </div>
+  </section>
+
+  <div class="container">
+    <CategoryTabs lang="es" modelCounts={counts} currentModel={model} />
+  </div>
+
+  <section class="container">
+    <div class="blog-layout">
+      <div>
+        {posts.length > 0 ? (
+          <div class="post-grid">
+            {posts.map((post) => <PostCard post={post} />)}
+          </div>
+        ) : (
+          <p style="padding:48px 0;color:var(--mute);">
+            No hay artículos en esta categoría todavía. <a href="/es/blog-es/" style="color:var(--accent-2);">Ver todos</a>.
+          </p>
+        )}
+        <CTABlock
+          lang="es"
+          variant="compact"
+          campaign={`blog_filter_${model}`}
+          title="Deja Excel — empieza a operar con números reales."
+          body="Una demo de 20 minutos es suficiente para ver tu caja, MRR y unit economics en vivo. Sin importar CSVs, sin cierres a final de mes."
+        />
+      </div>
+      <BlogSidebar lang="es" modelCounts={counts} currentModel={model} />
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,100 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import PostCard from '../../../../components/PostCard.astro';
+import CTABlock from '../../../../components/CTABlock.astro';
+import BlogSidebar from '../../../../components/BlogSidebar.astro';
+import CategoryTabs from '../../../../components/CategoryTabs.astro';
+import { SITE_URL } from '../../../../lib/i18n';
+
+const VALID_MODELS = ['saas', 'ecommerce', 'both', 'general'] as const;
+type Model = typeof VALID_MODELS[number];
+
+export async function getStaticPaths() {
+  return [
+    { params: { model: 'saas' } },
+    { params: { model: 'ecommerce' } },
+    { params: { model: 'both' } },
+    { params: { model: 'general' } },
+  ];
+}
+
+const { model } = Astro.params as { model: Model };
+
+const allPosts = await getCollection(
+  'post',
+  ({ data }) => data.lang === 'en' && !data.draft
+);
+const posts = allPosts
+  .filter((p) => p.data.businessModel === model)
+  .sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
+
+const counts = allPosts.reduce(
+  (acc, p) => ({ ...acc, [p.data.businessModel]: (acc[p.data.businessModel] ?? 0) + 1 }),
+  {} as Record<string, number>
+);
+
+const titleByModel = {
+  saas: 'SaaS articles',
+  ecommerce: 'Ecommerce articles',
+  both: 'Articles for SaaS + Ecommerce',
+  general: 'General finance articles',
+} as const;
+
+const ledeByModel = {
+  saas: 'Subscription metrics, ARR, churn, unit economics — everything that matters for a SaaS business.',
+  ecommerce: 'AOV, return rate, GMV, marketplaces — finance and metrics for online commerce.',
+  both: 'Posts that apply to both SaaS and ecommerce — cross-cutting finance and metrics.',
+  general: 'Universal finance concepts: P&L, cash flow, EBITDA, budgeting — applicable to any business.',
+} as const;
+
+const title = `${titleByModel[model]} — NextScenario Blog`;
+const description = ledeByModel[model];
+const canonical = `${SITE_URL}/blog/category/${model}/`;
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  lang="en"
+  canonical={canonical}
+  noIndex={true}
+>
+  <section class="blog-hero">
+    <div class="container">
+      <p class="eyebrow">
+        <a href="/blog/" style="color:inherit;">← All posts</a>
+      </p>
+      <h1>{titleByModel[model]}</h1>
+      <p class="lede">{ledeByModel[model]}</p>
+    </div>
+  </section>
+
+  <div class="container">
+    <CategoryTabs lang="en" modelCounts={counts} currentModel={model} />
+  </div>
+
+  <section class="container">
+    <div class="blog-layout">
+      <div>
+        {posts.length > 0 ? (
+          <div class="post-grid">
+            {posts.map((post) => <PostCard post={post} />)}
+          </div>
+        ) : (
+          <p style="padding:48px 0;color:var(--mute);">
+            No posts in this category yet. <a href="/blog/" style="color:var(--accent-2);">View all posts</a>.
+          </p>
+        )}
+        <CTABlock
+          lang="en"
+          variant="compact"
+          campaign={`blog_filter_${model}`}
+          title="Stop wrangling spreadsheets — start running on real numbers."
+          body="A 20-minute demo is enough to see your cash, MRR and unit economics live. No CSV imports, no week-end closes."
+        />
+      </div>
+      <BlogSidebar lang="en" modelCounts={counts} currentModel={model} />
+    </div>
+  </section>
+</BaseLayout>
