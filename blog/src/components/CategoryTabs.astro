@@ -32,14 +32,15 @@ const copy = {
 const c = copy[lang];
 
 const listingBase = lang === 'es' ? '/es/blog-es' : '/blog';
+const filterBase = `${listingBase}/category`;
 const total = Object.values(modelCounts).reduce((a, b) => a + b, 0);
 
 const tabs = [
   { id: 'all' as const, label: c.all, count: total, href: `${listingBase}/` },
-  { id: 'saas' as const, label: c.saas, count: modelCounts.saas ?? 0, href: `${listingBase}/saas/` },
-  { id: 'both' as const, label: c.both, count: modelCounts.both ?? 0, href: `${listingBase}/both/` },
-  { id: 'ecommerce' as const, label: c.ecommerce, count: modelCounts.ecommerce ?? 0, href: `${listingBase}/ecommerce/` },
-  { id: 'general' as const, label: c.general, count: modelCounts.general ?? 0, href: `${listingBase}/general/` },
+  { id: 'saas' as const, label: c.saas, count: modelCounts.saas ?? 0, href: `${filterBase}/saas/` },
+  { id: 'both' as const, label: c.both, count: modelCounts.both ?? 0, href: `${filterBase}/both/` },
+  { id: 'ecommerce' as const, label: c.ecommerce, count: modelCounts.ecommerce ?? 0, href: `${filterBase}/ecommerce/` },
+  { id: 'general' as const, label: c.general, count: modelCounts.general ?? 0, href: `${filterBase}/general/` },
 ].filter((t) => t.id === 'all' || t.count > 0);
 
 const activeId: string = currentModel ?? 'all';

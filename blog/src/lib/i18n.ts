@@ -10,7 +10,7 @@ export const DEFAULT_LANG: Lang = 'es';
 export const SITE_URL = 'https://nextscenario.com';
 
 export function postUrl(lang: Lang, slug: string): string {
-  return lang === 'es' ? `/es/${slug}/` : `/${slug}/`;
+  return lang === 'es' ? `/es/blog-es/${slug}/` : `/blog/${slug}/`;
 }
 
 export function postAbsUrl(lang: Lang, slug: string): string {

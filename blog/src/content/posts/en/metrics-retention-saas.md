@@ -36,7 +36,7 @@ But how can we measure this engagement? This is where KPIs or key performance in
 
 Let's take a look at some common engagement KPIs that you can use in your SaaS startup:
 
-  1. **[MAU, WAU, DAU](https://nextscenario.com/how-to-calculate-active-users-in-a-saas-startup/):** These acronyms stand for Monthly Active Users (MAU), Weekly Active Users (WAU) and Daily Active Users (DAU). They are metrics that give you an idea of how many people are actually using your product in different time periods.
+  1. **[MAU, WAU, DAU](https://nextscenario.com/blog/how-to-calculate-active-users-in-a-saas-startup/):** These acronyms stand for Monthly Active Users (MAU), Weekly Active Users (WAU) and Daily Active Users (DAU). They are metrics that give you an idea of how many people are actually using your product in different time periods.
   2. **DAU/MAU Ratio:** This ratio compares Daily Active Users to Monthly Active Users. It helps you understand what percentage of your users are consistently engaged.
   3. **Retention on different days:** Here, you can evaluate the retention of users on day 0 (when they sign up), day 1+, day 7+ and day 28. This shows you how many users are still using your product after a certain number of days.
   4. **Number of returning users:** This metric tells you how many users come back and use your product on a recurring basis. It is a good indicator of engagement.

@@ -60,7 +60,7 @@ El Net Churn es útil para comprender el impacto que tienen las ventas adicional
 
 Para la mayoría de las startups de SaaS, el Net Churn es un indicador importante de la sostenibilidad del negocio. Si la empresa no tiene una tasa de rotación neta negativa o nula, no puede aprovechar plenamente los nuevos ingresos. Esto puede limitar drásticamente el crecimiento del negocio a largo plazo.
 
-#### ¿Cuándo se puede producir el [Net Churn negativo](https://nextscenario.com/es/net-churn-negativo-en-saas-definicion-y-consejos/)?
+#### ¿Cuándo se puede producir el [Net Churn negativo](https://nextscenario.com/es/blog-es/net-churn-negativo-en-saas-definicion-y-consejos/)?
 
 El churn negativo se produce cuando el churn neto de ingresos es negativo. Aunque parezca algo malo, en realidad significa que tus ingresos por expansión superan tu tasa de rotación general. Esto sugiere que tu negocio seguirá creciendo sin nuevas ventas si la tasa de rotación neta se mantiene estable. Una tasa de rotación negativa es una gran métrica para mostrar a posibles inversores durante la recaudación de fondos.
 

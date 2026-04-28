@@ -57,7 +57,7 @@ const courseUrl =
     : 'https://b2bsaasmetrics.com/?utm_source=nextscenario&utm_medium=blog_sidebar&utm_campaign=course&utm_content=english';
 
 const listingBase = lang === 'es' ? '/es/blog-es' : '/blog';
-const filterUrl = (m: Model) => `${listingBase}/${m}/`;
+const filterUrl = (m: Model) => `${listingBase}/category/${m}/`;
 const allUrl = `${listingBase}/`;
 
 const totalPosts = Object.values(modelCounts).reduce((a, b) => a + b, 0);

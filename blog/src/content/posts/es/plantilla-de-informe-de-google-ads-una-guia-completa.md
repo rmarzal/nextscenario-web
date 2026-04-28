@@ -38,7 +38,7 @@ Ahora que entiendes la importancia de una plantilla de informe de Google Ads, ve
 
 ## 1\. Decide qué métricas incluir
 
-El primer paso para crear tu plantilla de informe es decidir qué métricas incluir. Esto dependerá de tus metas y objetivos específicos. Por ejemplo, si tu objetivo principal es [aumentar el tráfico del sitio web](https://nextscenario.com/how-to-export-google-analytics-data/), podrías centrarte en métricas como impresiones y clics. Si te interesan más las conversiones, querrás incluir métricas como la tasa de conversión y el coste por conversión.
+El primer paso para crear tu plantilla de informe es decidir qué métricas incluir. Esto dependerá de tus metas y objetivos específicos. Por ejemplo, si tu objetivo principal es [aumentar el tráfico del sitio web](https://nextscenario.com/blog/how-to-export-google-analytics-data/), podrías centrarte en métricas como impresiones y clics. Si te interesan más las conversiones, querrás incluir métricas como la tasa de conversión y el coste por conversión.
 
 Recuerda que la clave de un buen informe es la claridad. Así que intenta que tu plantilla sea lo más sencilla y directa posible. Incluye sólo las métricas más relevantes y evita saturar tu informe con datos innecesarios.
 

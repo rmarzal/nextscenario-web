@@ -1,15 +1,13 @@
 ---
 import { getCollection, render } from 'astro:content';
-import BaseLayout from '../../layouts/BaseLayout.astro';
-import CTABlock from '../../components/CTABlock.astro';
-import BlogSidebar from '../../components/BlogSidebar.astro';
-import PostNav from '../../components/PostNav.astro';
-import { formatDate, postAbsUrl, UI } from '../../lib/i18n';
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import CTABlock from '../../../../components/CTABlock.astro';
+import BlogSidebar from '../../../../components/BlogSidebar.astro';
+import PostNav from '../../../../components/PostNav.astro';
+import { formatDate, postAbsUrl, UI } from '../../../../lib/i18n';
 
 export async function getStaticPaths() {
-  const posts = await getCollection('post', ({ data }) => data.lang === 'en' && !data.draft);
-  // Sort newest → oldest. "prev" is the newer post (one above in the
-  // listing), "next" is the older post (one below).
+  const posts = await getCollection('post', ({ data }) => data.lang === 'es' && !data.draft);
   const sorted = posts.slice().sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
   return sorted.map((post, i) => ({
     params: { slug: post.data.slug },
@@ -37,12 +35,11 @@ const {
   businessModel,
 } = post.data;
 
-const alternates = translationOf ? [{ lang: 'es' as const, slug: translationOf }] : [];
-const ui = UI.en;
+const alternates = translationOf ? [{ lang: 'en' as const, slug: translationOf }] : [];
+const ui = UI.es;
 
-// Counts of posts per business model — for the sidebar filter index
-const allEnPosts = await getCollection('post', ({ data }) => data.lang === 'en' && !data.draft);
-const counts = allEnPosts.reduce(
+const allEsPosts = await getCollection('post', ({ data }) => data.lang === 'es' && !data.draft);
+const counts = allEsPosts.reduce(
   (acc, p) => ({ ...acc, [p.data.businessModel]: (acc[p.data.businessModel] ?? 0) + 1 }),
   {} as Record<string, number>
 );
@@ -51,7 +48,7 @@ const modelLabels = {
   saas: 'SaaS',
   ecommerce: 'Ecommerce',
   both: 'SaaS + Ecommerce',
-  general: 'Finance',
+  general: 'Finanzas',
 } as const;
 
 const jsonLd = {
@@ -71,16 +68,16 @@ const jsonLd = {
       url: 'https://nextscenario.com/og-default.png',
     },
   },
-  mainEntityOfPage: postAbsUrl('en', post.data.slug),
-  inLanguage: 'en',
+  mainEntityOfPage: postAbsUrl('es', post.data.slug),
+  inLanguage: 'es',
 };
 ---
 
 <BaseLayout
   title={`${title} — NextScenario`}
   description={description}
-  lang="en"
-  canonical={canonical ?? postAbsUrl('en', post.data.slug)}
+  lang="es"
+  canonical={canonical ?? postAbsUrl('es', post.data.slug)}
   ogImage={heroImage}
   alternates={alternates}
   jsonLd={jsonLd}
@@ -94,9 +91,9 @@ const jsonLd = {
           <div class="meta">
             <span>{author}</span>
             <a
-              href={`/blog/${businessModel}/`}
+              href={`/es/blog-es/category/${businessModel}/`}
               class={`post-card__model post-card__model--${businessModel} article__model-link`}
-              aria-label={`See more ${modelLabels[businessModel]} articles`}
+              aria-label={`Ver más artículos de ${modelLabels[businessModel]}`}
             >
               {modelLabels[businessModel]}
             </a>
@@ -124,18 +121,18 @@ const jsonLd = {
           <Content />
         </div>
 
-        <CTABlock lang="en" campaign="blog_post" />
+        <CTABlock lang="es" campaign="blog_post" />
 
-        {next && <PostNav lang="en" next={next} />}
+        {next && <PostNav lang="es" next={next} />}
       </article>
 
-      <BlogSidebar lang="en" modelCounts={counts} />
+      <BlogSidebar lang="es" modelCounts={counts} />
     </div>
   </div>
 
-  <a class="sticky-cta" href="/book-demo.html" aria-label="Book a demo">
+  <a class="sticky-cta" href="/es/reservar-demo.html" aria-label="Solicitar demo">
     <span class="sticky-cta__dot" aria-hidden="true"></span>
-    Book a demo
+    Solicitar demo
     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
       <path d="M2 7h10m0 0L7 2m5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
     </svg>

@@ -67,11 +67,11 @@ If next year growth drops to 30 % and margin stays at −15 %, the sum is 15. Fa
 
 MoM growth amplifies one-off spikes. For the Rule of 40 always use **YoY (12 months)**, which smooths seasonality.
 
-### 2. Confusing [gross margin](/gross-margin-vs-net-margin/) with the Rule of 40 margin
+### 2. Confusing [gross margin](/blog/gross-margin-vs-net-margin/) with the Rule of 40 margin
 
 **Gross margin** measures product efficiency (revenue − COGS). The Rule of 40 uses **operating margin**, **EBITDA**, or **FCF margin** — metrics that also include sales, marketing, and G&A. Don't conflate them.
 
-### 3. Ignoring [free cash flow](/free-cashflow/) when there's debt
+### 3. Ignoring [free cash flow](/blog/free-cashflow/) when there's debt
 
 If you carry significant debt, EBITDA inflates real profitability. For Series B+ companies or anyone with debt on the balance sheet, **FCF margin** is the more honest input.
 
@@ -84,7 +84,7 @@ The Rule of 40 is useful month over month, but the trajectory matters more. A co
 The rule is built for **growing B2B SaaS**, typically between $1M and $100M ARR. Outside that band, accuracy drops:
 
 - **Pre-$1M ARR**: growth percentages can be absurdly high and margins deeply negative. The rule tells you very little.
-- **Mature companies above $500M ARR**: growth stabilises below 30 %, and the focus shifts to finer [unit economics](/unit-economics/): NRR, magic number, CAC payback.
+- **Mature companies above $500M ARR**: growth stabilises below 30 %, and the focus shifts to finer [unit economics](/blog/unit-economics/): NRR, magic number, CAC payback.
 - **Non-SaaS businesses**: ecommerce, marketplaces, services. Margin and revenue dynamics behave differently.
 
 ## How it connects to other metrics
@@ -92,9 +92,9 @@ The rule is built for **growing B2B SaaS**, typically between $1M and $100M ARR.
 The Rule of 40 is an **aggregate**. When you fail it, the metrics that tell you *why* are:
 
 - Growth rate → if it's dropping, look at CAC payback, retention, top-of-funnel.
-- [Gross margin](/gross-margin-vs-net-margin/) → if it's below 70 %, your product isn't efficient.
-- [EBITDA and EBIT](/understanding-cash-ebitda-vs-ebitda/) → if margin is deeply negative, find the spend line responsible.
-- [MRR](/mrr-saas/) and churn → predict next year's growth.
+- [Gross margin](/blog/gross-margin-vs-net-margin/) → if it's below 70 %, your product isn't efficient.
+- [EBITDA and EBIT](/blog/understanding-cash-ebitda-vs-ebitda/) → if margin is deeply negative, find the spend line responsible.
+- [MRR](/blog/mrr-saas/) and churn → predict next year's growth.
 
 Passing doesn't mean everything is fine — it means the aggregate is healthy. Keep watching the components.
 

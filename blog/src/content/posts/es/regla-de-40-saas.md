@@ -67,11 +67,11 @@ Si en el año siguiente el crecimiento baja a 30 % y el margen sigue en −15 %,
 
 El crecimiento MoM amplifica picos puntuales. Para la regla del 40 usa siempre **YoY (12 meses)**, que normaliza estacionalidad.
 
-### 2. Confundir [margen bruto](/es/que-es-el-gross-margin/) con margen de la regla del 40
+### 2. Confundir [margen bruto](/es/blog-es/que-es-el-gross-margin/) con margen de la regla del 40
 
 El **gross margin** mide eficiencia de producto (ingresos − COGS). La regla del 40 usa **margen operativo**, **EBITDA** o **FCF margin** — métricas que incluyen también gastos de venta, marketing, y G&A. No las mezcles.
 
-### 3. Ignorar [free cash flow](/es/free-cashflow/) cuando hay deuda
+### 3. Ignorar [free cash flow](/es/blog-es/free-cashflow/) cuando hay deuda
 
 Si tienes deuda significativa, el EBITDA infla la rentabilidad real. Para empresas en serie B+ o con deuda en balance, **FCF margin** es más honesto.
 
@@ -84,17 +84,17 @@ La regla del 40 es útil mes a mes, pero más útil aún es mirar su tendencia. 
 La regla está pensada para **SaaS B2B en crecimiento**, típicamente de €1M a €100M de ARR. Fuera de ese rango pierde precisión:
 
 - **Pre-ARR €1M**: el numerador (crecimiento) puede ser absurdamente alto y el margen muy negativo. Te dirá poco.
-- **Empresas mature de €500M+ ARR**: el crecimiento se estabiliza por debajo del 30 % y el foco pasa a [unit economics](/es/unit-economics/) más finos: NRR, magic number, payback de CAC.
+- **Empresas mature de €500M+ ARR**: el crecimiento se estabiliza por debajo del 30 % y el foco pasa a [unit economics](/es/blog-es/unit-economics/) más finos: NRR, magic number, payback de CAC.
 - **Negocios no-SaaS**: ecommerce, marketplaces, services. Los márgenes y dinámicas de ingreso son distintas.
 
 ## Cómo se conecta con otras métricas
 
 La regla del 40 es un **agregado**. Si suspendes, las métricas que te dicen *por qué* son:
 
-- [Tasa de crecimiento](/es/growth-rate/) → si baja, mira CAC payback, retention, top-of-funnel.
-- [Margen bruto](/es/que-es-el-gross-margin/) → si está por debajo del 70 %, tu producto no es eficiente.
-- [EBITDA y EBIT](/es/que-es-el-ebitda-y-ebit/) → si margen EBITDA es muy negativo, mira en qué línea de gasto.
-- [MRR](/es/mrr-saas/) y churn → predicen el crecimiento futuro.
+- [Tasa de crecimiento](/es/blog-es/growth-rate/) → si baja, mira CAC payback, retention, top-of-funnel.
+- [Margen bruto](/es/blog-es/que-es-el-gross-margin/) → si está por debajo del 70 %, tu producto no es eficiente.
+- [EBITDA y EBIT](/es/blog-es/que-es-el-ebitda-y-ebit/) → si margen EBITDA es muy negativo, mira en qué línea de gasto.
+- [MRR](/es/blog-es/mrr-saas/) y churn → predicen el crecimiento futuro.
 
 Si pasas, no significa que todo esté bien — significa que el agregado es saludable. Sigue mirando los componentes.
 
